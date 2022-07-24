@@ -8,4 +8,4 @@ target/
 # Intellij files #
 **/*.iml
 **/.gradle
-/.idea
+**/*.idea
