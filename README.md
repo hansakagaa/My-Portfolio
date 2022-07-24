@@ -20,4 +20,4 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/akila-dhambure-liyanage-034162173/)
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/hansakagaa)
