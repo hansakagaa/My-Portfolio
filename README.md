@@ -2,7 +2,7 @@
 
 <h3 align="left">This is my portfoliyo reference</h3>
 <p align="left">
-   <a href="http://ashenhansaka.epizy.com/" target="blank"><img align="center" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/AH-Logo.png" height="30" width="30" />  </a> <a href="http://ashenhansaka.epizy.com/" target="blank" > My Website URL </a><br>
+   <a href="http://ashenhansaka.epizy.com/" target="blank"><img align="center" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/favicon.png" height="30" width="30" />  </a> <a href="http://ashenhansaka.epizy.com/" target="blank" > My Website URL </a><br>
   
   <a href="https://www.gloomaps.com" target="blank"><img align="center" src="https://www.gloomaps.com/favicon.ico" height="30" width="30" />  </a> <a href="https://www.gloomaps.com/FhHQZ6RQ2l" target="blank" > My Site Map URL </a><br>
   
@@ -13,3 +13,11 @@
   <a href="https://www.github.com" target="blank"><img align="center" src="https://www.github.com/favicon.ico" height="30" width="30" />  </a> <a href="https://github.com/hansakagaa/My-Portfoliyo" target="blank" > GitHub Page URL </a><br>
   
 </p>
+
+---
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/akila-dhambure-liyanage-034162173/)
