@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4364f239-2051-418e-b898-9c2307e9cfd6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -69,7 +71,10 @@
       <workItem from="1658324237618" duration="118000" />
       <workItem from="1658336401748" duration="2461000" />
       <workItem from="1658339310969" duration="4866000" />
-      <workItem from="1658683508205" duration="6439000" />
+      <workItem from="1658683508205" duration="6658000" />
+      <workItem from="1658893616931" duration="242000" />
+      <workItem from="1658942435832" duration="615000" />
+      <workItem from="1659031936712" duration="1635000" />
     </task>
     <servers />
   </component>
@@ -97,9 +102,17 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="549" y="266" width="251" height="270" key="#Notifications/0.27.1366.741@0.27.1366.741" timestamp="1658324267385" />
+    <state x="461" y="141" width="424" height="520" key="FileChooserDialogImpl" timestamp="1658893780444">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="461" y="141" width="424" height="520" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1658893780444" />
     <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1658336584080">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="172" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1658336584080" />
+    <state x="0" y="27" width="1356" height="741" key="new project wizard" timestamp="1658893864400">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="0" y="27" width="1356" height="741" key="new project wizard/0.27.1366.741@0.27.1366.741" timestamp="1658893864400" />
   </component>
 </project>
