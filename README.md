@@ -10,7 +10,7 @@
   
   <a href="https://www.figma.com" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" height="30" width="30" />  </a> <a href="https://www.figma.com/file/7vT31AKkYoYE7eh696Ak08/My-profile?node-id=143%3A9" target="blank" > My Mock-up URL </a><br>
   
-  <a href="https://www.github.com" target="blank"><img align="center" src="https://www.github.com/favicon.ico" height="30" width="30" />  </a> <a href="https://github.com/hansakagaa/My-Portfoliyo" target="blank" > GitHub Page URL </a><br>
+  <a href="https://www.github.com" target="blank"><img align="center" src="https://www.github.com/favicon.ico" height="30" width="30" />  </a> <a href="https://hansakagaa.github.io/My-Portfoliyo/" target="blank" > GitHub Page URL </a><br>
   
 </p>
 
