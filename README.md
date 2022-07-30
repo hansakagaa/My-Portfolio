@@ -22,6 +22,7 @@
 ![Stargazers](https://img.shields.io/github/stars/hansakagaa/My-Portfoliyo?&labelColor=black&color=f7b731&style=for-the-badge)
 ![Issues](https://img.shields.io/github/issues/hansakagaa/My-Portfoliyo?&labelColor=black&color=EE5A24&style=for-the-badge)
 ![MIT License](https://img.shields.io/github/license/hansakagaa/My-Portfoliyo?&labelColor=black&color=FFC312&style=for-the-badge)
+![languages](https://img.shields.io/github/languages/count/hansakagaa/My-Portfoliyo?color=ff3838&labelColor=black&style=for-the-badge)
 ![repo size](https://img.shields.io/github/repo-size/hansakagaa/My-Portfoliyo?label=Repo%20Size&style=for-the-badge&labelColor=black&color=0652DD)
 ![GitHub LastCommit](https://img.shields.io/github/last-commit/hansakagaa/My-Portfoliyo?logo=github&labelColor=black&color=d1d8e0&style=for-the-badge)
 </div>
