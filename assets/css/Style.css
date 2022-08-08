@@ -1,0 +1,12 @@
+/*------ Header ------*/
+header div{
+    position: absolute;
+    width: 1440px;
+    height: 50px;
+    left: 0;
+    top: 0;
+
+    background: #FFB800;
+}
+
+
