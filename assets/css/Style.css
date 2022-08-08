@@ -20,7 +20,22 @@ header>div.logo img{
     border-right: 20px;
 }
 
+header>div>p{
+    margin: auto;
+    position: absolute;
+    width: 219px;
+    height: 44px;
+    left: 90px;
+    top: 3px;
 
+    font-family: 'Permanent Marker', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+
+    color: #000000;
+}
 
 
 
