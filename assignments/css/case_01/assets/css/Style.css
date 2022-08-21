@@ -16,10 +16,17 @@ main>section:nth-child(1){
     top: 0;
     left: 0;
 }
+
 main>section:nth-child(2){
     background-color: green;
     top: 0;
     right: 0;
+}
+
+main>section:nth-child(3){
+    background-color: yellow;
+    bottom: 0;
+    left: 0;
 }
 
 main>section>div{
