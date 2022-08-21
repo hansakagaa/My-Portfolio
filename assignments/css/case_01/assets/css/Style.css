@@ -88,5 +88,5 @@ main>div:nth-child(7){
 main>div:nth-child(8){
     border-top-left-radius: 100%;
     bottom: 0;
-    left: 0;
+    right: 0;
 }
