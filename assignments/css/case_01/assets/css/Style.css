@@ -38,8 +38,8 @@ main>section:nth-child(4){
 main>section>div{
     border-radius: 100%;
     background-color: white;
-    height: 15vh;
-    width: 15vw;
+    height: 20vh;
+    width: 20vw;
     position: absolute;
     left: 0;
     right: 0;
