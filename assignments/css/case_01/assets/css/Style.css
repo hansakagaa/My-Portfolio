@@ -110,7 +110,7 @@ main>div:nth-child(10){
     border-top-right-radius: 100vw;
 }
 
-main>div:nth-child(11){
+main>div:nth-child(11) {
     top: 0;
     left: 0;
     right: 0;
@@ -128,5 +128,4 @@ main>div>div{
     background-color: red;
     height: 10vw;
     width: 10vw;
-    margin: auto;
 }
