@@ -117,12 +117,16 @@ main>div:nth-child(10){
     border-top-right-radius: 100vw;
 }
 
-main>div:nth-child(11) {
+main>div:last-child {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    width: 15vw;
+    height: 15vh;
     margin: auto;
+    position: absolute;
+    background-color: white;
 }
 
 main>div>div{
