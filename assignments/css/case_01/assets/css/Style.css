@@ -60,3 +60,9 @@ main>section>div>div{
     width: 8vw;
 }
 
+main>div{
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    background: white;
+}
