@@ -68,8 +68,9 @@ main>div{
 }
 
 main>div:nth-child(5){
-    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
     top: 0;
     left: 0;
 }
+
 
