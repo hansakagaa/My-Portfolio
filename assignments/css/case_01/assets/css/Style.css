@@ -63,9 +63,9 @@ main>section>div>div{
     width: 8vw;
 }
 
-main>div{
-    width: 15vw;
-    height: 15vh;
+main>div:nth-child(5), main>div:nth-child(6), main>div:nth-child(7), main>div:nth-child(8) {
+    width: 10vw;
+    height: 10vh;
     position: absolute;
     background: white;
 }
