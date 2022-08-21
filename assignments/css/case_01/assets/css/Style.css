@@ -56,13 +56,13 @@ main>section>div>div{
     bottom: 0;
     margin: auto;
     background-color: red;
-    height: 8vw;
-    width: 8vw;
+    height: 10vw;
+    width: 10vw;
 }
 
 main>div{
-    width: 15vw;
-    height: 15vh;
+    width: 20vw;
+    height: 20vh;
     position: absolute;
     background: white;
 }
@@ -107,7 +107,7 @@ main>div>div{
     right: 0;
     bottom: 0;
     background-color: red;
-    height: 8vw;
-    width: 8vw;
+    height: 10vw;
+    width: 10vw;
     margin: auto;
 }
