@@ -98,3 +98,16 @@ main>div:nth-child(9){
     bottom: 0;
     margin: auto;
 }
+
+main>div>div{
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    height: 8vw;
+    width: 8vw;
+    margin: auto;
+}
