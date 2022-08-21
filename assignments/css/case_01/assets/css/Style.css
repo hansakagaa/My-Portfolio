@@ -9,7 +9,7 @@ main>section{
     height: 50vh;
     width: 50vw;
     position: absolute;
-    background-color: black;
+    display: inline-block;
 }
 
 main>section>div{
