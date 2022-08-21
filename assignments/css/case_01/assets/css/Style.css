@@ -23,3 +23,16 @@ main>section>div{
     bottom: 0;
     margin: auto;
 }
+
+main>section>div>div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: red;
+    height: 8vw;
+    width: 8vw;
+}
+
