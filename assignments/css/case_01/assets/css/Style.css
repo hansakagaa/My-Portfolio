@@ -73,4 +73,8 @@ main>div:nth-child(5){
     left: 0;
 }
 
-
+main>div:nth-child(6){
+    border-bottom-left-radius: 100%;
+    top: 0;
+    right: 0;
+}
