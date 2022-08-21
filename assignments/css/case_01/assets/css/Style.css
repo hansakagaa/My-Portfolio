@@ -91,7 +91,26 @@ main>div:nth-child(8){
     right: 0;
 }
 
+main>div:nth-child(9), main>div:nth-child(10){
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main>div:nth-child(9){
+    top: 0;
+    border-bottom-left-radius: 100vw;
+    border-bottom-right-radius: 100vw;
+}
+
+main>div:nth-child(10){
+    bottom: 0;
+    border-top-left-radius: 100vw;
+    border-top-right-radius: 100vw;
+}
+
+main>div:nth-child(11){
     top: 0;
     left: 0;
     right: 0;
