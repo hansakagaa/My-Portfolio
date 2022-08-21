@@ -11,6 +11,12 @@ main>section{
     display: inline-block;
 }
 
+main>section:nth-child(1){
+    background-color: red;
+    top: 0;
+    left: 0;
+}
+
 main>section>div{
     border-radius: 100%;
     background-color: white;
