@@ -83,3 +83,8 @@ main ul > li > i {
     font-size: 20px;
     color: white;
 }
+
+main>section{
+    margin-left: 20vw;
+    padding: 10px;
+}
