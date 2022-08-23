@@ -88,3 +88,15 @@ main>section{
     margin-left: 20vw;
     padding: 10px;
 }
+
+main>section section:first-child{
+    position: relative;
+    height: 300px;
+    display: flex;
+}
+
+main>section section:first-child>div{
+    border: 1px solid black;
+    height: 100%;
+    width: calc(100%/3);
+}
