@@ -91,7 +91,7 @@ main>section{
 
 main>section section:first-child{
     position: relative;
-    height: 300px;
+    height: 289px;
     display: flex;
 }
 
@@ -99,4 +99,10 @@ main>section section:first-child>div{
     border: 1px solid black;
     height: 100%;
     width: calc(100%/3);
+    padding: 1px;
+}
+
+main>section section:first-child>div>img{
+    height: 100%;
+    width: 100%;
 }
