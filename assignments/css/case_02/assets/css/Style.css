@@ -28,11 +28,19 @@ header>nav>ul>li{
     font-size: 20px;
 }
 
-header>nav>ul>li>a{
+header ul>li>a{
     color: black;
     text-decoration: none;
 }
 
+header ul>li>i{
+    padding-right: 10px;
+}
+
 header ul>li:hover a{
+    color: #FFB800;
+}
+
+header ul>li:hover i{
     color: #FFB800;
 }
