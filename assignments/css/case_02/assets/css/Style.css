@@ -77,3 +77,9 @@ main>nav{
     top: 0;
     bottom: 0;
 }
+
+main ul > li > i {
+    padding-right: 15px;
+    font-size: 20px;
+    color: white;
+}
