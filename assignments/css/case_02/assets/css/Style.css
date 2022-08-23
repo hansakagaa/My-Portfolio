@@ -1,7 +1,7 @@
 header{
     position: fixed;
     background-color: white;
-    box-shadow: 0 2px 4px 0 black;
+    box-shadow: 20vw 2px 4px -1px black;
     width: 100%;
     top: 0;
     z-index: 2;
