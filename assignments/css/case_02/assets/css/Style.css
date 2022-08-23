@@ -38,11 +38,16 @@ header ul>li>i{
 }
 
 header ul>li:hover a{
-    color: #FFB800;
+    color: red;
 }
 
 header ul>li:hover i{
-    color: #FFB800;
+    color: red;
+}
+
+main{
+    position: relative;
+    margin-top: 60px;
 }
 
 main>nav ul>li{
@@ -50,4 +55,25 @@ main>nav ul>li{
     cursor: pointer;
     font-size: 20px;
     padding-top: 20px;
+}
+
+main>nav ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+main>nav ul>li:hover a{
+    color: red;
+}
+
+main>nav ul>li:hover i{
+    color: red;
+}
+
+main>nav{
+    position: absolute;
+    background-color: blue;
+    width: 20vw;
+    top: 0;
+    bottom: 0;
 }
