@@ -1,0 +1,36 @@
+section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+div{
+    position: sticky;
+    height: 50px;
+    top: 0;
+}
+
+div>h1{
+    position: absolute;
+    margin: auto;
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+}
+
+main>section:nth-child(1)>div{
+    background-color: #EA2027;
+}
+
+main>section:nth-child(2)>div{
+    background-color: #0652DD;
+}
+
+main>section:nth-child(3)>div{
+    background-color: #2E3542;
+}
+
+main>section:nth-child(4)>div{
+    background-color: #e84118;
+}
+
