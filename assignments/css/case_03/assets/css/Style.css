@@ -1,0 +1,29 @@
+main{
+    position: relative;
+}
+
+main>div:nth-child(1){
+    position: fixed;
+    width: 15vw;
+    height: 15vw;
+    border: 15px solid #718093;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>div:nth-child(2){
+    position: fixed;
+    width: 13vw;
+    height: 13vw;
+    border: 15px solid #EB2F06;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
