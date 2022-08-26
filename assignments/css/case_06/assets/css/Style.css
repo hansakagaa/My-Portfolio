@@ -10,44 +10,61 @@ section{
     display: grid;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+div{
+    box-shadow: 1px 2px 3px 1px #aaa69d;
 }
 
 section>div:nth-child(1){
     grid-column: 1/3;
-    background-color: #ffa502;
+    /*background-color: #ffa502;*/
+    background: url("../image/ship.png");
+    background-size: cover;
 }
 
 section>div:nth-child(2){
-    background-color: #ff4757;
+    /*background-color: #ff4757;*/
+    background: url("../image/scenic.png");
+    background-size: cover;
 }
 
 section>div:nth-child(3){
-    background-color: #4cd137;
+    /*background-color: #4cd137;*/
+    background: url("../image/master.png");
+    background-size: cover;
 }
 
 section>div:nth-child(4){
-    background-color: #0097e6;
+    /*background-color: #0097e6;*/
+    background: url("../image/camera.png");
+    background-size: cover;
 }
 
 section>div:nth-child(5){
-    background-color: #EA2027;
+    /*background-color: #EA2027;*/
+    background: url("../image/camera-girl.png");
+    background-size: cover;
 }
 
 section>div:nth-child(6){
-    background-color: #fed330;
+    /*background-color: #fed330;*/
+    background: url("../image/car.png");
+    background-size: cover;
 }
 
 section>div:nth-child(7){
     grid-column: 2/4;
-    background-color: #32ff7e;
+    /*background-color: #32ff7e;*/
+    background: url("../image/around.png");
+    background-size: cover;
 }
 
 section>div:nth-child(8){
-    background-color: #eb3b5a;
-}
-
-section>div:nth-child(9){
     grid-row: 1/4;
     grid-column: 4/5;
-    background-color: #fff200;
+    /*background-color: #fff200;*/
+    background: url("../image/cycling.png");
+    background-size: cover;
 }
