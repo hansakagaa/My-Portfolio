@@ -1,19 +1,18 @@
 /*----------Header-Start----------*/
 body>header{
     top: 0;
-    left: 0;
-    right: 0;
     width: 100vw;
     height: 50px;
     position: fixed;
     background-color: #FFB800;
+    z-index: 2;
 }
 
 .header>.logo>a img{
     height: 45px;
     left: 15px;
     top: 2px;
-    position: absolute;
+    position: relative;
     background-blend-mode: darken;
 }
 
@@ -28,13 +27,15 @@ body>header{
     left: 75px;
 }
 
-nav>.menu{
+.header>nav{
     position: absolute;
-    height: 18px;
-    list-style: none;
+    top: 0;
+    margin: auto;
+    right: 50px;
+    height: 50px;
 }
 
-nav>.menu>li{
+.menu>li{
     display: inline-block;
     padding: 10px;
     cursor: pointer;
@@ -43,20 +44,20 @@ nav>.menu>li{
     font-family: 'Inter', sans-serif;
 }
 
-nav>.menu>li>a{
+.menu>li>a{
     color: black;
     text-decoration: none;
 }
 
-nav>.menu>li:hover a{
+.menu>li:hover a{
     color: white;
 }
 
 .header>nav>.menu{
-    top: 0;
+    top: 12px;
     margin: 0;
-    padding-top: 6px;
-    right: 32px;
+    padding: 0;
+    position: relative;
 }
 /*----------Header-End----------*/
 
@@ -238,3 +239,11 @@ nav>.menu>li:hover a{
     width: 50px;
 }
 /*----------Home-End----------*/
+section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+/*----------Skill-Start----------*/
+
+/*----------Skill-End----------*/
