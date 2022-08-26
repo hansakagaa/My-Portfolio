@@ -1,9 +1,9 @@
-::-webkit-scrollbar {
-    width: 0;
-}
-
 *{
     font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 section{
