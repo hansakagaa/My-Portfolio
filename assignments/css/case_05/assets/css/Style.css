@@ -14,55 +14,78 @@ section{
 }
 
 div{
-    background: url("../image/ball.png");
     box-shadow: 1px 2px 3px 1px #aaa69d;
 }
 
 section>div:nth-child(1){
-    background-color: #ffa502;
+    /*background-color: #ffa502;*/
+    background: url("../image/ball.png");
+    background-size: cover;
 }
 
 section>div:nth-child(2){
-    background-color: #ff4757;
+    /*background-color: #ff4757;*/
+    background: url("../image/car.png");
+    background-size: cover;
 }
 
 section>div:nth-child(3){
-    background-color: #4cd137;
+    /*background-color: #4cd137;*/
+    background: url("../image/elephant.png");
+    background-size: cover;
 }
 
 section>div:nth-child(4){
-    background-color: #0097e6;
+    /*background-color: #0097e6;*/
+    background: url("../image/girl.png");
+    background-size: cover;
 }
 
 section>div:nth-child(5){
-    background-color: #EA2027;
+    /*background-color: #EA2027;*/
+    background: url("../image/hotel.png");
+    background-size: cover;
 }
 
 section>div:nth-child(6){
-    background-color: #fed330;
+    /*background-color: #fed330;*/
+    background: url("../image/lap.png");
+    background-size: cover;
 }
 
 section>div:nth-child(7){
-    background-color: #20bf6b;
+    /*background-color: #20bf6b;*/
+    background: url("../image/leopar.png");
+    background-size: cover;
 }
 
 section>div:nth-child(8){
-    background-color: #eb3b5a;
+    /*background-color: #eb3b5a;*/
+    background: url("../image/programmer.png");
+    background-size: cover;
 }
 
 section>div:nth-child(9){
-    background-color: #fff200;
+    /*background-color: #fff200;*/
+    background: url("../image/ring.png");
+    background-size: cover;
 }
 
 section>div:nth-child(10){
-    background-color: #c56cf0;
+    /*background-color: #c56cf0;*/
+    background: url("../image/ship.png");
+    background-size: cover;
 }
 
 section>div:nth-child(11){
-    background-color: #7d5fff;
+    /*background-color: #7d5fff;*/
+    background: url("../image/tower.png");
+    background-size: cover;
 }
 
 section>div:nth-child(12){
-    background-color: #ff5252;
+    /*background-color: #ff5252;*/
+    background: url("../image/water.png");
+    background-size: cover;
 }
 
