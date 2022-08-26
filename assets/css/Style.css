@@ -57,3 +57,75 @@ nav>.menu>li:hover a{
     padding-top: 6px;
     right: 32px;
 }
+
+main{
+    position: relative;
+}
+
+.home>aside:first-child>img{
+    position: absolute;
+    top: 155px;
+    left: 90px;
+    width: 250px;
+    height: 280px;
+}
+
+.hello-txt{
+    position: absolute;
+    left: 55px;
+    top: 105px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    color: #848484;
+}
+
+.name-txt{
+    position: absolute;
+    width: 259px;
+    height: 41px;
+    left: 150px;
+    top: 250px;
+    font-family: 'DynaPuff', cursive;
+    font-weight: 600;
+    font-size: 43px;
+    color: #000000;
+}
+
+.name-txt>u{
+    color: #FFB800;
+    text-decoration-color: black;
+}
+
+.name-txt>img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.des-txt{
+    position: absolute;
+    left: 150px;
+    top: 320px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+}
+
+.home>nav:last-child>div{
+    position: absolute;
+    top: 525px;
+    left: 225px;
+}
+
+.home>nav:last-child>div a{
+    text-decoration: none;
+}
+
+.home>nav:last-child>div img{
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+}
