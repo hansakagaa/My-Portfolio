@@ -159,6 +159,10 @@ body>header{
     border: 2px solid #FFB800;
 }
 
+.home-btn>a:hover{
+    box-shadow: 0 0 10px 2px var(--cl);
+}
+
 .home-btn>a::before{
     content: '';
     position: absolute;
