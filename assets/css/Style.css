@@ -287,25 +287,71 @@ section>header>h1 {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 35px;
     color: #020202;
 }
 
 .sub-topic{
     font-family: 'Permanent Marker', cursive;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 35px;
     color: #FFB800;
 }
+/*///////////////////////////*/
+.background-logo{
+    width: 50px;
+}
 /*----------Skill-Start----------*/
+.skill{
+    width: 0;
+    height: 0;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.skill>div{
+    width: 680px;
+    position: relative;
+    top: 60px;
+}
+
+.skill-icon{
+    width: 0;
+    height: 0;
+    top: 25px;
+    left: 115px;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.skill-icon>div {
+    width: 100px;
+    height: 100px;
+    background: #D9D9D9;
+    border-radius: 25px;
+    position: relative;
+}
+
+.skill .sub-topic{
+    position: relative;
+    left: 225px;
+    display: inline-block;
+}
+
+.skill-icon img{
+    width: 60px;
+    background-size: contain;
+    margin: 20%;
+}
 /*----------Skill-End----------*/
 
 
 
-.skill-icon img{
-    width: 50px;
-}
+
 
 .img img{
     width: 50px;
