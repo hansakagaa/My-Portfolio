@@ -290,16 +290,23 @@ section>header>h1 {
     font-size: 24px;
     color: #020202;
 }
+
+.sub-topic{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFB800;
+}
 /*----------Skill-Start----------*/
 
 /*----------Skill-End----------*/
 
 
 
-
 .skill-icon img{
     width: 50px;
 }
+
 .img img{
     width: 50px;
 }
