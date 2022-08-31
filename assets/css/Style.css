@@ -85,7 +85,6 @@ body>header{
     position: absolute;
     left: 100px;
     top: 105px;
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 120px;
     color: #848484;
@@ -257,6 +256,10 @@ body>header{
     background: #FFB800;
 }
 
+*{
+    font-family: 'Inter', sans-serif;
+}
+
 section{
     width: 99.5vw;
     height: 100vh;
@@ -282,14 +285,14 @@ section>header>h1 {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 30px;
     color: #020202;
 }
 
 .sub-topic{
     font-family: 'Permanent Marker', cursive;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 33px;
     color: #FFB800;
 }
 /*///////////////////////////*/
@@ -298,9 +301,11 @@ section>header>h1 {
 }
 /*----------Skill-Start----------*/
 .skill{
+    top: 50px;
     width: 0;
     height: 0;
     display: grid;
+    position: absolute;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
 }
@@ -308,14 +313,14 @@ section>header>h1 {
 .skill>div{
     width: 680px;
     position: relative;
-    top: 60px;
+    top: 70px;
 }
 
 .skill-icon{
     width: 0;
     height: 0;
-    top: 25px;
-    left: 115px;
+    top: 35px;
+    left: 85px;
     position: relative;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -332,9 +337,9 @@ section>header>h1 {
 }
 
 .skill .sub-topic{
-    position: relative;
-    left: 225px;
-    display: inline-block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
 }
 
 .skill-icon img{
