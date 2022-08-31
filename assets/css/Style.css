@@ -402,10 +402,17 @@ section>header>h1 {
     margin: 0;
 }
 
+.my-sev>ul div{
+    width: 3px;
+    height: 3px;
+    border-radius: 80%;
+    background-color: black;
+}
+
 .my-sev li{
     display: block;
     cursor: pointer;
-    padding-bottom: 3px;
+    padding-bottom: 4px;
     font-weight: 800;
     font-size: 16px;
     color: #020202;
