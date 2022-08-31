@@ -388,10 +388,10 @@ section>header>h1 {
 .my-sev>h5{
     position: absolute;
     top: 30px;
-    left: 495px;
+    left: 485px;
     margin: 0;
-    font-weight: 800;
-    font-size: 26px;
+    font-weight: bold;
+    font-size: 28px;
     color: #020202;
 }
 
@@ -403,10 +403,12 @@ section>header>h1 {
 }
 
 .my-sev>ul div{
-    width: 3px;
-    height: 3px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
     border-radius: 80%;
     background-color: black;
+    margin-right: 10px;
 }
 
 .my-sev li{
@@ -418,10 +420,16 @@ section>header>h1 {
     color: #020202;
 }
 
-.my-sev li:hover{
+.my-sev li:hover {
     padding-left: 10px;
     color: white;
     transition-property: color,padding-left;
+    transition-duration: 0.5s;
+}
+
+.my-sev li:hover div{
+    background-color: white;
+    transition-property: background-color;
     transition-duration: 0.5s;
 }
 
