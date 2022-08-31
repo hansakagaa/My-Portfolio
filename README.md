@@ -4,7 +4,7 @@
 <p align="left">
   <img align="right" src="https://qph.fs.quoracdn.net/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13" alt="Programmer" width="500">
     
-  <a href="http://ashenhansaka.epizy.com/" target="_blank"><img align="center" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/favicon.png" height="30" width="30" />  </a> <a href="http://ashenhansaka.epizy.com/" target="_blank" > My Website URL </a><br>
+  <a href="http://ashenhansaka.epizy.com/" target="_blank"><img align="center" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/png/favicon.png" height="30" width="30" />  </a> <a href="http://ashenhansaka.epizy.com/" target="_blank" > My Website URL </a><br>
   
   <a href="https://www.gloomaps.com" target="_blank"><img align="center" src="https://www.gloomaps.com/favicon.ico" height="30" width="30" />  </a> <a href="https://www.gloomaps.com/FhHQZ6RQ2l" target="_blank" > My Site Map URL </a><br>
   
