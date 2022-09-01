@@ -360,6 +360,184 @@ section>header>h1 {
 /*----------Education-Start----------*/
 /*----------Education-End----------*/
 /*----------About-Start----------*/
+.about{
+    height: 150vh;
+}
+
+.gallery>.sub-topic{
+    position: absolute;
+    top: 115px;
+    left: 35px;
+    margin: 0;
+}
+
+.gallery>.photo{
+    display: flex;
+    /*width: 150vw;*/
+    height: 250px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    right: 50px;
+    margin: auto;
+}
+
+.gallery>.photo>div{
+    width: 300px;
+}
+
+.details{
+    position: relative;
+    top: 500px;
+    left: 108px;
+    width: 400px;
+    font-style: normal;
+}
+
+.about-line-left>hr:first-child{
+    position: absolute;
+    height: 180px;
+    width: 0;
+    margin: 0;
+    top: 5px;
+    left: -20px;
+    border: 1px solid #FFB800;
+}
+
+.about-line-left>hr:last-child{
+    position: absolute;
+    height: 160px;
+    width: 0;
+    top: 5px;
+    margin: 0;
+    left: -10px;
+    border: 1px solid #FFB800;
+}
+
+.about-topic{
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.details>p{
+    padding-left: 40px;
+}
+
+.details>p>span:first-child{
+    padding-right: 10px;
+}
+
+.about-txt-left{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.about-txt-right{
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.about-line-right>hr:first-child{
+    position: absolute;
+    height: 180px;
+    width: 0;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #FFB800;
+}
+
+.about-line-right>hr:last-child{
+    position: absolute;
+    height: 160px;
+    width: 0;
+    bottom: 0;
+    margin: 0;
+    right: 10px;
+    border: 1px solid #FFB800;
+}
+
+.interests{
+    position: absolute;
+    height: 470px;
+    width: 505px;
+    top: 440px;
+    right: 125px;
+}
+
+.interests .box{
+    width: 150px;
+    height: 115px;
+    background: rgba(217, 217, 217, 0.6);
+    border-radius: 50px;
+}
+
+.interests .box>.box{
+    margin-left: 20px;
+}
+
+.interests .box img{
+    position: relative;
+    top: 12px;
+    left: 35px;
+}
+
+.interests .box p{
+    position: relative;
+    top: 15px;
+    margin: 0;
+    text-align: center;
+    width: 130px;
+}
+
+.interests>div{
+    position: absolute;
+    width: 485px;
+    height: 365px;
+    bottom: 0;
+}
+
+.interests>div>div:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.interests>div>div:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.interests>div>div:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.interests>div>div:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.interests>div>div:nth-child(5){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 /*----------About-End----------*/
 /*----------Contact-Start----------*/
 .contact>article{
