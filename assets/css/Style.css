@@ -297,7 +297,12 @@ section>header>h1 {
 }
 /*///////////////////////////*/
 .background-logo{
-    width: 50px;
+    width: 500px;
+    height: 500px;
+    opacity: 0.1;
+    left: 0;
+    right: 0;
+    position: absolute;
 }
 /*----------Skill-Start----------*/
 .skill{
@@ -357,6 +362,121 @@ section>header>h1 {
 /*----------About-Start----------*/
 /*----------About-End----------*/
 /*----------Contact-Start----------*/
+.contact>article{
+    width: 375px;
+    height: 220px;
+    position: absolute;
+    top: 125px;
+    left: 170px;
+}
+
+.contact .sub-topic{
+    margin: 0;
+}
+
+.contact>article>div{
+    display: flex;
+}
+
+.contact-article-underline>hr{
+    height: 2px;
+    background-color: rgba(2, 2, 2, 0.5);
+}
+
+.contact-article-underline>hr:first-child{
+    margin: 0;
+    width: 125px;
+}
+
+.contact-article-underline>hr:last-child{
+    margin: 0 0 0 13px;
+    width: 25px;
+}
+
+.contact>article>p{
+    margin: 0;
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+    color: #000000;
+}
+
+.contact>article>p:nth-child(3){
+    top: 70px;
+}
+
+.contact>article>p:nth-child(4){
+    top: 170px;
+}
+
+.contact>article>p span{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.contact>address{
+    display: flex;
+    height: 150px;
+    width: 650px;
+    position: absolute;
+    bottom: 120px;
+    left: 35px;
+}
+
+.contact>address>div{
+    height: 100%;
+    width: calc(100%/3);
+    position: relative;
+}
+
+.contact-details>img{
+    left: 0;
+    right: 0;
+    width: 50px;
+    margin: auto;
+    position: absolute;
+}
+
+.contact-details>h3{
+    text-align: center;
+    top: 60px;
+    margin: 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    font-style: normal;
+}
+
+.contact-details>h4{
+    text-align: center;
+    top: 60px;
+    margin: 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    opacity: 0.8;
+    font-style: normal;
+}
+
+.contact-details:first-child a{
+    position: absolute;
+    font-size: 11px;
+    color: #0652DD;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: auto;
+    right: 35px;
+    bottom: 10px;
+}
 /*----------Contact-End----------*/
 /*----------Footer-Start----------*/
 .foot{
@@ -469,9 +589,5 @@ h6>span{
 
 
 .img img{
-    width: 50px;
-}
-
-.contact img{
     width: 50px;
 }
