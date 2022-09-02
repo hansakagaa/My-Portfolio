@@ -1,0 +1,48 @@
+section{
+    width: 100vw;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    justify-content: space-around;
+    right: 110px;
+}
+
+div{
+    left: 0;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    background-color: #be2edd;
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
+h1{
+    height: max-content;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    top: 10px;
+    margin: 0;
+    position: absolute;
+}
+
+i{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    height: max-content;
+    margin: auto;
+    font-size: 25px;
+}
+
+div:hover{
+    left: 110px;
+    transition-property: all;
+    transition-duration: 1.5s;
+}
