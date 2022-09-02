@@ -13,10 +13,7 @@ div{
     position: absolute;
     width: 250px;
     height: 250px;
-    border: 15px solid white;
-    background-color: #7f8fa6;
     border-radius: 100%;
-    border-top: 15px solid red;
 }
 
 h1{
@@ -31,12 +28,20 @@ h1{
     color: white;
 }
 
-div:hover{
+div:hover::before{
     transform: rotate(360deg);
     transition-duration: 2s;
 }
 
-div:hover h1{
-    transform: rotate(-360deg);
-    transition-duration: 2s;
+div::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 15px solid white;
+    background-color: #7f8fa6;
+    border-radius: 100%;
+    border-top: 15px solid red;
 }
