@@ -358,6 +358,9 @@ section>header>h1 {
 /*----------Assignment-Start----------*/
 /*----------Assignment-End----------*/
 /*----------Education-Start----------*/
+.education{
+    height: 180vh;
+}
 /*----------Education-End----------*/
 /*----------About-Start----------*/
 .about{
