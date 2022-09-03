@@ -300,8 +300,11 @@ section>header>h1 {
     width: 500px;
     height: 500px;
     opacity: 0.1;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    margin: auto;
     position: absolute;
 }
 /*----------Skill-Start----------*/
