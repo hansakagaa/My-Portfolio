@@ -392,6 +392,75 @@ section>header>h1 {
 
 /*----------Project-End----------*/
 /*----------Assignment-Start----------*/
+.assignment>aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    height: max-content;
+    width: 1230px;
+    gap: 10px;
+}
+
+.assignment>aside>div{
+    position: relative;
+    height: 375px;
+    /*width: 300px;*/
+    background-color: #eee;
+    border: 1px solid;
+}
+
+.assignment>aside>div>.img{
+    height: 210px;
+    /*width: 290px;*/
+    position: relative;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.assignment>aside>div>.text{
+}
+
+.assignment>aside>div>.btn{
+    height: 25px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #FFB800;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    margin: auto;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.assignment>aside>div>.btn>a{
+    color: #020202;
+    height: max-content;
+    position: absolute;
+    width: max-content;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.assignment>aside>div>.btn>a:hover {
+    color: #eee;
+    letter-spacing: 0.1em;
+    text-shadow: #020202;
+}
+
+
+
+
 /*----------Assignment-End----------*/
 /*----------Education-Start----------*/
 .education{
