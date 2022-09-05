@@ -834,7 +834,7 @@ main>section>header>h1 {
 /*----------Education-End----------*/
 /*----------About-Start----------*/
 .about{
-    height: 150vh;
+    height: 190vh;
 }
 
 .gallery>.sub-topic{
@@ -845,23 +845,27 @@ main>section>header>h1 {
 }
 
 .gallery>.photo{
-    display: flex;
-    /*width: 150vw;*/
-    height: 250px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    width: 1262px;
+    height: 610px;
     position: absolute;
-    top: 180px;
-    left: 50px;
-    right: 50px;
+    top: 190px;
+    left: 0;
+    right: 0;
     margin: auto;
 }
 
 .gallery>.photo>div{
-    width: 300px;
+    width: 310px;
+    border: 1px solid;
 }
 
 .details{
-    position: relative;
-    top: 500px;
+    position: absolute;
+    bottom: 80px;
     left: 108px;
     width: 400px;
     font-style: normal;
@@ -943,8 +947,8 @@ main>section>header>h1 {
     position: absolute;
     height: 470px;
     width: 505px;
-    top: 440px;
-    right: 125px;
+    bottom: 100px;
+    right: 60px;
 }
 
 .interests .box{
