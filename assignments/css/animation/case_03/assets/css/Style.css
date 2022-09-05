@@ -1,0 +1,75 @@
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+section{
+    width: 1000%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    animation-name: section;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+div{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes section {
+    0%, 5%{
+        transform: translateX(0);
+    }
+
+    10%, 15%{
+        transform: translateX(-100vw);
+    }
+
+    20%, 25%{
+        transform: translateX(-200vw);
+    }
+
+    30%, 35%{
+        transform: translateX(-300vw);
+    }
+
+    40%, 45%{
+        transform: translateX(-400vw);
+    }
+
+    50%, 55%{
+        transform: translateX(-500vw);
+    }
+
+    60%, 65%{
+        transform: translateX(-600vw);
+    }
+
+    70%, 75%{
+        transform: translateX(-700vw);
+    }
+
+    80%, 85%{
+        transform: translateX(-800vw);
+    }
+
+    90%, 95%{
+        transform: translateX(-900vw);
+    }
+}
