@@ -8,9 +8,9 @@ main{
 
 main>div:nth-child(4){
     position: fixed;
-    width: 15vw;
-    height: 15vw;
-    border: 15px solid #718093;
+    width: 17vw;
+    height: 17vw;
+    border: 17px solid #718093;
     border-radius: 100%;
     top: 0;
     bottom: 0;
@@ -21,8 +21,8 @@ main>div:nth-child(4){
 
 main>div:nth-child(5){
     position: fixed;
-    width: 13vw;
-    height: 13vw;
+    width: 15vw;
+    height: 15vw;
     border: 15px solid #EB2F06;
     border-radius: 100%;
     top: 0;
@@ -40,8 +40,8 @@ section{
 
 main>section:nth-child(1)>div{
     position: absolute;
-    width: 13vw;
-    height: 13vw;
+    width: 15vw;
+    height: 15vw;
     background-color: #be2edd;
     border-radius: 100%;
     top: 0;
@@ -53,8 +53,8 @@ main>section:nth-child(1)>div{
 
 main>section:nth-child(2)>div{
     position: absolute;
-    width: 13vw;
-    height: 13vw;
+    width: 15vw;
+    height: 15vw;
     background-color: #0652DD;
     border-radius: 100%;
     top: 0;
@@ -66,8 +66,8 @@ main>section:nth-child(2)>div{
 
 main>section:nth-child(3)>div{
     position: absolute;
-    width: 13vw;
-    height: 13vw;
+    width: 15vw;
+    height: 15vw;
     background-color: #ff6348;
     border-radius: 100%;
     top: 0;
@@ -81,5 +81,12 @@ h1{
     color: white;
     font-size: 18px;
     text-align: center;
-    margin: 2.25em 0;
+    margin: auto;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
