@@ -291,12 +291,13 @@ body>header{
 }
 /*----------Home-End----------*/
 ::-webkit-scrollbar{
-    width: 3px;
+    width: 5px;
     height: 0;
 }
 
 ::-webkit-scrollbar-thumb{
     background: #FFB800;
+    border-radius: 50px;
 }
 
 *{
@@ -417,6 +418,17 @@ main>section>header>h1 {
     height: 150px;
 }
 
+.project>.img-box>div .box>div{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #020202;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .project>.disc-box{
     position: absolute;
     top: 200px;
@@ -475,7 +487,30 @@ main>section>header>h1 {
     height: 325px;
 }
 
+.project>.disc-box>aside>div h3{
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    top: 25px;
+    margin: 0;
+}
 
+.project>.disc-box>aside>div P{
+    font-size: 19px;
+    line-height: 24px;
+    text-align: justify;
+    color: #000000;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 275px;
+}
 /*----------Project-End----------*/
 /*----------Assignment-Start----------*/
 .assignment>section{
