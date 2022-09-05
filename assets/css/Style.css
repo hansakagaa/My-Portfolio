@@ -392,28 +392,77 @@ main>section>header>h1 {
 
 /*----------Project-End----------*/
 /*----------Assignment-Start----------*/
-.assignment>aside{
+.assignment>section{
+    width: 1190px;
     position: absolute;
     top: 180px;
     left: 0;
     right: 0;
     margin: auto;
-    display: flex;
-    height: max-content;
-    width: 1190px;
-    gap: 10px;
-    border: 1px solid;
+    overflow: hidden;
 }
 
-.assignment>aside>div{
+.assignment aside{
+    display: flex;
+    height: max-content;
+    gap: 10px;
+    animation-name: aside;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes aside {
+    0%, 5%{
+        transform: translateX(0);
+    }
+
+    10%, 15%{
+        transform: translateX(-300px);
+    }
+
+    20%, 25%{
+        transform: translateX(-600px);
+    }
+
+    30%, 35%{
+        transform: translateX(-900px);
+    }
+
+    40%, 45%{
+        transform: translateX(-1200px);
+    }
+
+    50%, 55%{
+        transform: translateX(-1500px);
+    }
+
+    60%, 65%{
+        transform: translateX(-1800px);
+    }
+
+    70%, 75%{
+        /*transform: translateX();*/
+    }
+
+    80%, 85%{
+        /*transform: translateX();*/
+    }
+
+    90%, 95%{
+        /*transform: translateX();*/
+    }
+}
+
+.assignment aside>div{
     position: relative;
     height: 375px;
     width: 300px;
     background-color: #eee;
-    border: 1px solid;
+    box-shadow: 1px 3px 5px 1px #eee;
 }
 
-.assignment>aside>div>.img{
+.assignment aside>div>.img{
     height: 210px;
     width: 290px;
     position: relative;
@@ -423,10 +472,10 @@ main>section>header>h1 {
     margin: auto;
 }
 
-.assignment>aside>div>.text{
+.assignment aside>div>.text{
 }
 
-.assignment>aside>div>.btn{
+.assignment aside>div>.btn{
     height: 25px;
     width: 60px;
     border-radius: 10px;
@@ -435,10 +484,10 @@ main>section>header>h1 {
     bottom: 25px;
     right: 25px;
     margin: auto;
-    box-shadow: 1px 1px 5px 1px black;
+    box-shadow: 1px 1px 5px 1px #000000;
 }
 
-.assignment>aside>div>.btn>a{
+.assignment aside>div>.btn>a{
     color: #020202;
     height: max-content;
     position: absolute;
@@ -452,7 +501,7 @@ main>section>header>h1 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.assignment>aside>div>.btn>a:hover {
+.assignment aside>div>.btn>a:hover {
     color: #eee;
     letter-spacing: 0.1em;
     text-shadow: #020202;
