@@ -573,6 +573,10 @@ main>section>header>h1 {
     90%, 95%{
         /*transform: translateX();*/
     }
+
+    100%{
+        /*transform: translateX();*/
+    }
 }
 
 .assignment aside>div{
