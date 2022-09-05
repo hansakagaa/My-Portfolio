@@ -1,7 +1,7 @@
 /*----------Header-Start----------*/
 body>header{
     top: 0;
-    width: 99.5vw;
+    width: 100vw;
     height: 50px;
     position: fixed;
     background-color: #FFB800;
@@ -267,7 +267,7 @@ body>header{
 
 .home>.social-bar>.social ul li:hover div{
     transition: 0.5s;
-    transform: translateY(60px);
+    transform: translateY(63px);
 }
 
 .dot-bord-02>.div{
@@ -291,7 +291,7 @@ body>header{
 }
 /*----------Home-End----------*/
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 3px;
     height: 0;
 }
 
@@ -304,7 +304,7 @@ body>header{
 }
 
 main>section{
-    width: 99.5vw;
+    width: 100vw;
     height: 100vh;
     position: relative;
 }
@@ -1138,7 +1138,7 @@ main>section>header>h1 {
 /*----------Footer-Start----------*/
 .foot{
     position: relative;
-    width: 99.5vw;
+    width: 100vw;
     height: 230px;
     background-color: #FFB800;
 }
