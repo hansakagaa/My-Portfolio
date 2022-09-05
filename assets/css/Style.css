@@ -772,30 +772,64 @@ main>section>header>h1 {
 
 .certificate{
     position: absolute;
-    bottom: 150px;
+    bottom: 500px;
+    width: 100%;
 }
 
 .certificate>.sub-topic{
     position: relative;
     margin: 0;
     left: 35px;
+    display: inline;
 }
 
 .certificate>.img{
-    display: flex;
-    height: max-content;
-    position: relative;
-    top: 50px;
-    gap: 10px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1345px;
+    overflow: hidden;
 }
 
 .certificate>.img>div{
+    display: flex;
+    height: 100%;
+    gap: 5px;
+
+    animation-name: certificate;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes certificate {
+    0%, 10%{
+        transform: translateX(0);
+    }
+
+    20%, 30%{
+        transform: translateX(-450px);
+    }
+
+    40%, 50%{
+        transform: translateX(-900px);
+    }
+}
+
+.certificate>.img>div>div{
     border: 5px solid #eee;
+    border-radius: 25px;
     height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .certificate>.img img{
-    width: 425px;
+    width: 435px;
+    border-radius: 20px;
 }
 /*----------Education-End----------*/
 /*----------About-Start----------*/
