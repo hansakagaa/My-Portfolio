@@ -418,7 +418,7 @@ main>section>header>h1 {
     height: 150px;
 }
 
-.project>.img-box>div .box>div{
+.project>.img-box>div .box>div:nth-child(2){
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
