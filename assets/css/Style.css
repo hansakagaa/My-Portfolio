@@ -260,13 +260,13 @@ body>header{
     font-family: 'Inter', sans-serif;
 }
 
-section{
+main>section{
     width: 99.5vw;
     height: 100vh;
     position: relative;
 }
 
-section>header{
+main>section>header{
     position: sticky;
     top: 70px;
     left: 0;
@@ -276,7 +276,7 @@ section>header{
     height: 30px;
 }
 
-section>header>h1 {
+main>section>header>h1 {
     position: absolute;
     top: 0;
     width: 100%;
@@ -394,28 +394,28 @@ section>header>h1 {
 /*----------Assignment-Start----------*/
 .assignment>aside{
     position: absolute;
-    top: 0;
+    top: 180px;
     left: 0;
     right: 0;
-    bottom: 0;
     margin: auto;
     display: flex;
     height: max-content;
-    width: 1230px;
+    width: 1190px;
     gap: 10px;
+    border: 1px solid;
 }
 
 .assignment>aside>div{
     position: relative;
     height: 375px;
-    /*width: 300px;*/
+    width: 300px;
     background-color: #eee;
     border: 1px solid;
 }
 
 .assignment>aside>div>.img{
     height: 210px;
-    /*width: 290px;*/
+    width: 290px;
     position: relative;
     top: 5px;
     left: 0;
