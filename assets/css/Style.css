@@ -376,17 +376,60 @@ main>section>header>h1 {
 
 .project>.disc-box{
     position: absolute;
-    display: flex;
     top: 200px;
     left: 965px;
-}
-
-.project>.disc-box>div{
-    background-color: #eee;
-    border-radius: 20px;
     height: 325px;
     width: 300px;
-    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project>.disc-box>aside{
+    display: flex;
+    flex-flow: column;
+    height: max-content;
+    width: max-content;
+    animation-name: project;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes project {
+    0%, 10%{
+        transform: translateY(0);
+    }
+
+    15%, 25%{
+        transform: translateY(-325px);
+    }
+
+    30%, 40%{
+        transform: translateY(-650px);
+    }
+
+    45%, 55%{
+        transform: translateY(-975px);
+    }
+
+    60%, 70%{
+        transform: translateY(-1300px);
+    }
+
+    75%, 85%{
+        transform: translateY(-1625px);
+    }
+
+    90%, 100%{
+        /*transform: translateX(-1800px);*/
+    }
+}
+
+.project>.disc-box>aside>div{
+    background-color: #eee;
+    position: relative;
+    width: 300px;
+    height: 325px;
 }
 
 
@@ -406,13 +449,13 @@ main>section>header>h1 {
     display: flex;
     height: max-content;
     gap: 10px;
-    animation-name: aside;
+    animation-name: assign;
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
 
-@keyframes aside {
+@keyframes assign {
     0%, 5%{
         transform: translateX(0);
     }
