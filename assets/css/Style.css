@@ -214,8 +214,8 @@ body>header{
 
 .home>.social-bar>.social{
     position: absolute;
-    top: 485px;
-    left: 195px;
+    top: 480px;
+    left: 190px;
 }
 
 .home>.social-bar>.social a{
@@ -225,7 +225,49 @@ body>header{
 .home>.social-bar>.social img{
     width: 50px;
     height: 50px;
-    padding-right: 10px;
+}
+
+.home>.social-bar>.social div{
+    position: absolute;
+    top: -60px;
+    height: 60px;
+    width: 60px;
+}
+
+.home>.social-bar>.social ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+.home>.social-bar>.social ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.home>.social-bar>.social ul li .fa {
+    font-size: 55px;
+    -webkit-text-stroke: 2px #FFB800;
+    color: transparent;
+}
+
+.home>.social-bar>.social ul li:hover .fa{
+    transition: 0.5s;
+    -webkit-text-stroke: 2px white;
+}
+
+.home>.social-bar>.social ul li:hover div{
+    transition: 0.5s;
+    transform: translateY(60px);
 }
 
 .dot-bord-02>.div{
@@ -250,6 +292,7 @@ body>header{
 /*----------Home-End----------*/
 ::-webkit-scrollbar{
     width: 5px;
+    height: 0;
 }
 
 ::-webkit-scrollbar-thumb{
