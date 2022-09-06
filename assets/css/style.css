@@ -37,7 +37,13 @@ body>header{
     padding: 10px;
     cursor: pointer;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.menu>li i{
+    padding-right: 5px;
+    font-size: 19px;
 }
 
 .menu>li>a{
@@ -47,6 +53,12 @@ body>header{
 
 .menu>li:hover a{
     color: white;
+    -webkit-text-stroke: 0.01em black;
+}
+
+.menu>li:hover i{
+    color: white;
+    -webkit-text-stroke: 0.01em black;
 }
 
 .menu{
@@ -1054,7 +1066,7 @@ main>section>header>h1 {
 
 .foot>.social-bar>.social{
     position: absolute;
-    top: 85px;
+    top: 110px;
     right: 145px;
 }
 
@@ -1066,6 +1078,22 @@ main>section>header>h1 {
     width: 35px;
     height: 35px;
     padding-right: 15px;
+}
+
+.foot>.menu-bar>.menu li{
+    top: 25px;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    margin: 0;
+}
+
+.foot>.menu-bar>.menu i{
+    position: relative;
+    top: -10px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
 }
 
 h6{
