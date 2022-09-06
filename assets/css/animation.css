@@ -240,3 +240,96 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
+
+/*-----Call-Box-----*/
+
+.call{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 39px;
+    bottom: 49px;
+    border-radius: 100%;
+    border: 5px solid #fff200;
+
+    animation-name: call-div;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes call-div {
+    from{
+        transform: translateY(15px);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
+
+.call div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #FFB800;
+}
+
+.call div::before{
+    position: absolute;
+    content: ' ';
+    top: -5px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+}
+
+.call div i{
+    font-size: 25px;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    -webkit-text-stroke: 1px black;
+
+    animation-name: call;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes call {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(15deg);
+    }
+}
+
+.call:hover i{
+    animation-duration: 0s;
+    color: black;
+}
+
+.call:hover {
+    animation-duration: 0s;
+    border: 5px solid #fff;
+}
+
+.call:hover div::before{
+    border: 5px solid #fff200;
+    background-color: white;
+}
