@@ -1,7 +1,7 @@
 /*----------Header-Start----------*/
 body>header{
     top: 0;
-    width: 100vw;
+    width: 99.6vw;
     height: 50px;
     position: fixed;
     background-color: #FFB800;
@@ -305,7 +305,7 @@ body>header{
 }
 
 main>section{
-    width: 100vw;
+    width: 99.6vw;
     height: 100vh;
     position: relative;
 }
@@ -397,7 +397,16 @@ main>section>header>h1 {
 .skill-icon img{
     width: 60px;
     background-size: contain;
-    margin: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.skill-icon img:hover{
+    width: 65px;
 }
 /*----------Skill-End----------*/
 /*----------Project-Start----------*/
@@ -528,7 +537,7 @@ main>section>header>h1 {
     height: max-content;
     gap: 10px;
     animation-name: assign;
-    animation-duration: 25s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
@@ -625,27 +634,30 @@ main>section>header>h1 {
     bottom: 30px;
     right: 30px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .assignment aside>div>.btn a{
     color: #020202;
-    height: max-content;
-    position: absolute;
-    width: max-content;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    height: 100px;
+    width: 100px;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.assignment aside>div>.btn:hover {
+    height: 35px;
+    width: 75px;
 }
 
 .assignment aside>div>.btn a:hover {
     color: #eee;
     letter-spacing: 0.1em;
     text-shadow: #020202;
+    font-weight: bold;
 }
 /*----------Assignment-End----------*/
 /*----------Education-Start----------*/
@@ -1193,7 +1205,7 @@ main>section>header>h1 {
 /*----------Footer-Start----------*/
 .foot{
     position: relative;
-    width: 100vw;
+    width: 99.6vw;
     height: 230px;
     background-color: #FFB800;
 }
