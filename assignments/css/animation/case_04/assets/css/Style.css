@@ -1,0 +1,106 @@
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+main > div:nth-child(1)>div{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/sky.jpg);
+}
+
+main > div:nth-child(3){
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+main > div:nth-child(3)>div{
+    display: flex;
+    width: 300%;
+}
+
+main > div:nth-child(3)>div>div{
+    width: 1347px;
+    height: 275px;
+    background-image: url(../images/road.jpg);
+
+    animation-name: city;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+main > div:nth-child(2)>div>div{
+    width: 1347px;
+    height: 335px;
+    background-image: url(../images/city.png);
+
+    animation-name: city;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes city {
+
+}
+
+main > div:nth-child(2){
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    bottom: 190px;
+}
+
+main > div:nth-child(2)>div{
+    display: flex;
+    width: 300%;
+}
+
+main > div:nth-child(4){
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+main > div:nth-child(4)>div:first-child>div{
+    width: 460px;
+    height: 160px;
+    background-image: url(../images/car.png);
+    position: relative;
+    background-size: cover;
+    top: 50px;
+}
+
+main > div:nth-child(4)>div:last-child>div{
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/wheel.png);
+    position: absolute;
+    background-size: cover;
+    top: 149px;
+
+    animation-name: wheel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes wheel {
+
+}
+
+main > div:nth-child(4)>div:last-child>div:first-child{
+    left: 37px;
+}
+
+main > div:nth-child(4)>div:last-child>div:last-child{
+    right: 52px;
+}
