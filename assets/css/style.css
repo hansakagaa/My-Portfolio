@@ -153,16 +153,6 @@ body>header{
     border: 2px solid #FFB800;
 }
 
-.home-btn a:hover{
-    box-shadow: 0 0 10px 2px var(--cl);
-}
-
-.home-btn a::before{
-    content: '';
-    position: absolute;
-    inset: 2px;
-}
-
 .home-btn a span{
     position: relative;
     z-index: 1;
@@ -172,44 +162,6 @@ body>header{
     position: absolute;
     inset: 0;
     display: block;
-}
-
-.home-btn a i::before{
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 100%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    background: white;
-    border: 2px solid var(--cl);
-    transition: 0.5s;
-}
-
-.home-btn a:hover i::before{
-    left: 0;
-    transform: translateX(-50%) rotate(45deg);
-    box-shadow: 33px 32px var(--cl);
-}
-
-.home-btn a i::after{
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: -1px;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    background: white;
-    border: 2px solid var(--cl);
-    transition: 0.5s;
-}
-
-.home-btn a:hover i::after{
-    left: 100%;
-    transform: translateX(-50%) rotate(-45deg);
-    box-shadow: 33px -32px var(--cl);
 }
 
 .home>.social-bar>.social{
@@ -258,16 +210,6 @@ body>header{
     font-size: 55px;
     -webkit-text-stroke: 2px #FFB800;
     color: transparent;
-}
-
-.home>.social-bar>.social ul li:hover .fa{
-    transition: 0.5s;
-    -webkit-text-stroke: 2px white;
-}
-
-.home>.social-bar>.social ul li:hover div{
-    transition: 0.5s;
-    transform: translateY(63px);
 }
 
 .dot-bord-02>.div{
@@ -453,40 +395,6 @@ main>section>header>h1 {
     flex-flow: column;
     height: max-content;
     width: max-content;
-    animation-name: project;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-
-@keyframes project {
-    0%, 10%{
-        transform: translateY(0);
-    }
-
-    15%, 25%{
-        transform: translateY(-325px);
-    }
-
-    30%, 40%{
-        transform: translateY(-650px);
-    }
-
-    45%, 55%{
-        transform: translateY(-975px);
-    }
-
-    60%, 70%{
-        transform: translateY(-1300px);
-    }
-
-    75%, 85%{
-        transform: translateY(-1625px);
-    }
-
-    90%, 100%{
-        /*transform: translateX(-1800px);*/
-    }
 }
 
 .project>.disc-box>aside>div{
@@ -536,56 +444,6 @@ main>section>header>h1 {
     display: flex;
     height: max-content;
     gap: 10px;
-    animation-name: assign;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-
-@keyframes assign {
-    0%, 5%{
-        transform: translateX(0);
-    }
-
-    10%, 15%{
-        transform: translateX(-300px);
-    }
-
-    20%, 25%{
-        transform: translateX(-600px);
-    }
-
-    30%, 35%{
-        transform: translateX(-900px);
-    }
-
-    40%, 45%{
-        transform: translateX(-1200px);
-    }
-
-    50%, 55%{
-        transform: translateX(-1500px);
-    }
-
-    60%, 65%{
-        transform: translateX(-1800px);
-    }
-
-    70%, 75%{
-        transform: translateX(-2100px);
-    }
-
-    80%, 85%{
-        /*transform: translateX();*/
-    }
-
-    90%, 95%{
-        /*transform: translateX();*/
-    }
-
-    100%{
-        /*transform: translateX();*/
-    }
 }
 
 .assignment aside>div{
@@ -864,25 +722,6 @@ main>section>header>h1 {
     display: flex;
     height: 100%;
     gap: 5px;
-
-    animation-name: certificate;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-
-@keyframes certificate {
-    0%, 10%{
-        transform: translateX(0);
-    }
-
-    20%, 30%{
-        transform: translateX(-450px);
-    }
-
-    40%, 50%{
-        transform: translateX(-900px);
-    }
 }
 
 .certificate>.img>div>div{
@@ -912,10 +751,6 @@ main>section>header>h1 {
 }
 
 .gallery>.photo{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
     width: 1262px;
     height: 610px;
     position: absolute;
