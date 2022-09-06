@@ -17,7 +17,6 @@ body>header{
 }
 
 .header>.logo>p{
-    font-family: 'Permanent Marker', cursive;
     font-weight: 400;
     font-size: 30px;
     color: #000000;
@@ -39,7 +38,6 @@ body>header{
     cursor: pointer;
     font-weight: 600;
     font-size: 15px;
-    font-family: 'Inter', sans-serif;
 }
 
 .menu>li>a{
@@ -63,24 +61,6 @@ body>header{
     left: 65px;
 }
 
-/*dot-bord*/
-.div {
-    width: 0;
-    height: 0;
-    display: grid;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(10, 1fr);
-    gap: 40px;
-}
-
-.div>div {
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: #eee;
-}
-/*dot-bord*/
-
 .hello-txt{
     position: absolute;
     left: 100px;
@@ -96,7 +76,6 @@ body>header{
     height: 41px;
     left: 200px;
     top: 250px;
-    font-family: 'DynaPuff', cursive;
     font-weight: 600;
     font-size: 43px;
     color: #000000;
@@ -118,7 +97,6 @@ body>header{
     position: absolute;
     left: 200px;
     top: 320px;
-    font-family: 'Inter',sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #000000;
@@ -206,12 +184,6 @@ body>header{
     overflow: hidden;
 }
 
-.home>.social-bar>.social ul li .fa {
-    font-size: 55px;
-    -webkit-text-stroke: 2px #FFB800;
-    color: transparent;
-}
-
 .dot-bord-02>.div{
     position: absolute;
     top: 190px;
@@ -242,10 +214,6 @@ body>header{
     border-radius: 50px;
 }
 
-*{
-    font-family: 'Inter', sans-serif;
-}
-
 main>section{
     width: 99.6vw;
     height: 100vh;
@@ -269,14 +237,12 @@ main>section>header>h1 {
     height: 100%;
     text-align: center;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 30px;
     color: #020202;
 }
 
 .sub-topic{
-    font-family: 'Permanent Marker', cursive;
     font-weight: 400;
     font-size: 33px;
     color: #FFB800;
@@ -298,10 +264,7 @@ main>section>header>h1 {
     top: 50px;
     width: 0;
     height: 0;
-    display: grid;
     position: absolute;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .skill>div{
@@ -316,10 +279,6 @@ main>section>header>h1 {
     top: 35px;
     left: 85px;
     position: relative;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
 }
 
 .skill-icon>div {
@@ -356,10 +315,6 @@ main>section>header>h1 {
     position: absolute;
     top: 200px;
     left: 100px;
-    display: grid;
-    gap: 20px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .project>.img-box>div{
@@ -370,7 +325,6 @@ main>section>header>h1 {
 }
 
 .project>.img-box>div .box>div:nth-child(2){
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -479,7 +433,6 @@ main>section>header>h1 {
     width: 265px;
     font-size: 16px;
     font-weight: 300;
-    font-family: 'Ubuntu', sans-serif;
     text-align: justify;
 }
 
@@ -492,10 +445,6 @@ main>section>header>h1 {
     bottom: 30px;
     right: 30px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .assignment aside>div>.btn a{
@@ -503,7 +452,6 @@ main>section>header>h1 {
     height: 100px;
     width: 100px;
     text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .assignment aside>div>.btn:hover {
@@ -564,7 +512,6 @@ main>section>header>h1 {
 
 .educate>div p{
     position: relative;
-    font-family: 'Poppins', sans-serif;
     color: #000000;
     margin: 0;
     text-align: center;
@@ -794,7 +741,6 @@ main>section>header>h1 {
 }
 
 .about-topic{
-    font-family: 'Tomorrow', sans-serif;
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
@@ -810,7 +756,6 @@ main>section>header>h1 {
 }
 
 .about-txt-left{
-    font-family: 'Tinos', serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -818,7 +763,6 @@ main>section>header>h1 {
 }
 
 .about-txt-right{
-    font-family: 'Tomorrow', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -953,7 +897,6 @@ main>section>header>h1 {
 .contact>article>p{
     margin: 0;
     position: absolute;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
@@ -1002,7 +945,6 @@ main>section>header>h1 {
     top: 60px;
     margin: 0;
     position: relative;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -1015,7 +957,6 @@ main>section>header>h1 {
     top: 60px;
     margin: 0;
     position: relative;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -1054,7 +995,6 @@ main>section>header>h1 {
 }
 
 .foot>.logo p{
-    font-family: 'Permanent Marker', cursive;
     font-weight: 400;
     font-size: 36px;
     position: absolute;

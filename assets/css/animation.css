@@ -50,6 +50,12 @@
 
 /*-----Home-social-----*/
 
+.home>.social-bar>.social ul li .fa {
+    font-size: 55px;
+    -webkit-text-stroke: 2px #FFB800;
+    color: transparent;
+}
+
 .home>.social-bar>.social ul li:hover .fa{
     transition: 0.5s;
     -webkit-text-stroke: 2px white;
@@ -61,6 +67,13 @@
 }
 
 /*-----Project-description-----*/
+
+.project>.img-box{
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
 
 .project>.disc-box>aside{
     animation-name: project;
@@ -100,6 +113,13 @@
 }
 
 /*-----Assignment-----*/
+
+.assignment aside>div>.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
 
 .assignment aside{
     animation-name: assign;
@@ -185,4 +205,38 @@
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+}
+
+/*dot-bord*/
+.div {
+    width: 0;
+    height: 0;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    gap: 40px;
+}
+
+.div>div {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #eee;
+}
+/*dot-bord*/
+
+/*-----Skills-----*/
+
+.skill{
+    display: grid;
+    position: absolute;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skill-icon{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
