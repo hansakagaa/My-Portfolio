@@ -1,0 +1,176 @@
+@media all and (max-width: 325px) {
+    /*----------Header-Start----------*/
+    body>header{
+        height: 65px;
+    }
+
+    .header>.logo>a {
+        display: none;
+    }
+
+    .header>.logo>p{
+        top: 5px;
+        left: 0;
+        right: 0;
+        width: max-content;
+        margin: auto;
+    }
+
+    .menu-bar{
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+    }
+
+    .menu{
+        padding: 0;
+        width: max-content;
+    }
+
+    .menu>li{
+        cursor: pointer;
+        font-size: 12px;
+        padding: 0 5px 0 0;
+        margin: 0;
+    }
+
+    .menu>li i {
+        display: none;
+    }
+
+    /*----------Home-Start----------*/
+    .dot-bord-01>.div{
+        top: 80px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        gap: 20px;
+    }
+
+    .hello-txt{
+        left: 15px;
+        top: 80px;
+        font-size: 65px;
+    }
+
+    .name-txt{
+        left: 10px;
+        top: 175px;
+        font-size: 30px;
+    }
+
+    .name-txt>img{
+        width: 30px;
+    }
+
+    .des-txt{
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        top: 235px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .home-btn {
+        top: 270px;
+        left: 0;
+        right: 0;
+        gap: 45px;
+    }
+
+    .home-btn a {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .home-img .dot-bord-02{
+        display: none;
+    }
+
+    .home-img>.vector{
+        right: 0;
+        top: 85px;
+        width: 130px;
+    }
+
+    .home-img>.img{
+        width: 94px;
+        top: 92px;
+        right: 15px;
+    }
+
+    .home .social-bar{
+        position: absolute;
+        top: 315px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+    }
+
+    .home>.social-bar>.social img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home>.social-bar>.social ul li .fa {
+        font-size: 45px;
+    }
+
+    .home>.social-bar>.social ul {
+        gap: 10px;
+        width: max-content;
+    }
+
+    .home>.social-bar>.social ul li {
+        width: 50px;
+        height: 50px;
+    }
+
+    .home>.social-bar>.social img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home>.social-bar>.social {
+        position: initial;
+        top: 484px;
+        left: 190px;
+    }
+
+
+    .skills{
+        display: none;
+    }
+    .project{
+        display: none;
+    }
+    .assignment{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .education{
+        display: none;
+    }
+
+    .my-sev{
+        display: none;
+    }
+
+    .call{
+        display: none;
+    }
+    footer{
+        top: 120px;
+    }
+}
