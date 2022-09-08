@@ -41,22 +41,21 @@ body>header{
     margin-right: 5px;
 }
 
-.menu>li i{
+.menu>li i:first-child{
     padding-right: 5px;
     font-size: 19px;
 }
 
-.menu>li>a{
+.menu>li>a {
     color: black;
     text-decoration: none;
 }
 
-.menu>li:hover a{
-    color: white;
-    -webkit-text-stroke: 0.01em black;
+.menu>li>a i{
+    font-style: normal;
 }
 
-.menu>li:hover i{
+.menu>li:hover a{
     color: white;
     -webkit-text-stroke: 0.01em black;
 }
@@ -1088,7 +1087,7 @@ main>section>header>h1 {
     margin: 0;
 }
 
-.foot>.menu-bar>.menu i{
+.foot>.menu-bar>.menu i:first-child{
     position: relative;
     top: -10px;
     width: 100%;
