@@ -164,7 +164,7 @@
     }
 
     .skill{
-        display: inline;
+        display: block;
         position: relative;
         left: 13px;
     }
@@ -207,12 +207,190 @@
         top: 285px;
     }
 
+    /*----------Project-Start----------*/
+
     .project{
-        display: none;
+        height: 580px;
     }
+
+    .project>.img-box{
+        top: 70px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .project>.img-box aside {
+        display: flex;
+        flex-flow: row;
+        height: max-content;
+        width: max-content;
+        gap: 0;
+    }
+
+    .project>.img-box .card{
+        border-radius: 0;
+    }
+
+    .project>.img-box aside {
+        animation-name: project-img;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    @keyframes project-img {
+
+        0%, 10% {
+            transform: translateX(0);
+        }
+        15%, 25% {
+            transform: translateX(-250px);
+        }
+        30%, 40% {
+            transform: translateX(-500px);
+        }
+        45%, 55% {
+            transform: translateX(-750px);
+        }
+        60%, 70% {
+            transform: translateX(-1000px);
+        }
+        75%, 85% {
+            transform: translateX(-1250px);
+        }
+        90%, 100% {
+            /* transform: translateX(-1800px); */
+        }
+    }
+
+    .project>.disc-box{
+        top: 235px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 295px;
+        width: 285px;
+    }
+
+    @keyframes project {
+
+        0%, 10% {
+            transform: translateY(0);
+        }
+        15%, 25% {
+            transform: translateY(-295px);
+        }
+        30%, 40% {
+            transform: translateY(-590px);
+        }
+        45%, 55% {
+            transform: translateY(-885px);
+        }
+        60%, 70% {
+            transform: translateY(-1180px);
+        }
+        75%, 85% {
+            transform: translateY(-1475px);
+        }
+        90%, 100% {
+            /* transform: translateY(-1800px); */
+        }
+    }
+
+    .project>.disc-box>aside>div{
+        height: 295px;
+        width: 285px;
+    }
+
+    .project>.disc-box>aside>div h3{
+        font-size: 19px;
+    }
+
+    .project>.disc-box>aside>div P{
+        font-size: 15px;
+        width: 255px;
+    }
+
+    /*----------Assignment-Start----------*/
+
     .assignment{
-        display: none;
+        height: 500px;
     }
+
+    .assignment>section{
+        width: 300px;
+        top: 70px;
+    }
+
+    .assignment aside{
+        animation-duration: 55s;
+        gap: 0;
+    }
+
+    @keyframes assign {
+        0%, 2.5% {
+            transform: translateX(0);
+        }
+        5%, 7.5% {
+            transform: translateX(-300px);
+        }
+        10%, 12.5% {
+            transform: translateX(-600px);
+        }
+        15%, 17.5% {
+            transform: translateX(-900px);
+        }
+        20%, 22.5% {
+            transform: translateX(-1200px);
+        }
+        25%, 27.5% {
+            transform: translateX(-1500px);
+        }
+        30%, 32.5% {
+            transform: translateX(-1800px);
+        }
+        35%, 37.5% {
+            transform: translateX(-2100px);
+        }
+        40%, 42.5% {
+            transform: translateX(-2400px);
+        }
+        45%, 47.5% {
+            transform: translateX(-2700px);
+        }
+        50%, 52.5% {
+            transform: translateX(-3000px);
+        }
+        55%, 57.5% {
+            transform: translateX(-3300px);
+        }
+        60%, 62.5% {
+            /*transform: translateX(-3600px);*/
+        }
+        65%, 67.5% {
+            /*transform: translateX(-3900px);*/
+        }
+        100% {
+        }
+    }
+
+    .assignment aside>div>.img{
+        height: 185px;
+        width: 300px;
+    }
+
+    .assignment aside>div img {
+        height: 185px;
+        width: 300px;
+    }
+
+
+
     .about{
         display: none;
     }
@@ -223,14 +401,71 @@
         display: none;
     }
 
-    .my-sev{
+
+    .call {
+        width: 50px;
+        height: 50px;
+        right: 24px;
+        bottom: 50px;
+    }
+
+    .call div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .call div::before {
+        width: 40px;
+        height: 40px;
+    }
+
+    /*----------Footer-Start----------*/
+
+    .foot .logo{
         display: none;
     }
 
-    .call{
+    .my-sev {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        height: max-content;
+        width: max-content;
+    }
+
+    .my-sev h5 {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .my-sev ul {
+        position: relative;
+        top: 5px;
+        left: 0;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .my-sev li{
+        padding-bottom: 5px;
+    }
+
+    .foot .menu-bar{
         display: none;
     }
-    footer{
-        top: 120px;
+
+    .foot>.social-bar>.social {
+        top: 10px;
+        right: 20px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .foot>.social-bar>.social img {
+        width: 25px;
+        height: 25px;
+        padding-bottom: 5px;
+        padding-right: 0;
     }
 }
