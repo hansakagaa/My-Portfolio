@@ -328,14 +328,14 @@ main>section>header>h1 {
     left: 100px;
 }
 
-.project>.img-box>div{
+.project>.img-box .card{
     border-radius: 10px;
     background-color: #D9D9D9;
     width: 250px;
     height: 150px;
 }
 
-.project>.img-box>div .box>div:nth-child(2){
+.project>.img-box div .box>div:nth-child(2){
     font-style: normal;
     font-weight: 400;
     font-size: 15px;

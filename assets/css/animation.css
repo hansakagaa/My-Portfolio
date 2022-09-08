@@ -68,7 +68,7 @@
 
 /*-----Project-description-----*/
 
-.project>.img-box{
+.project>.img-box aside{
     display: grid;
     gap: 20px;
     grid-template-rows: repeat(2, 1fr);
