@@ -1,4 +1,15 @@
-@media all and (max-width: 380px) {
+@media all and (max-width: 325px) {
+
+    main>section>header {
+        left: 40px;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+
+    main>section>header>h1 {
+        height: max-content;
+    }
     /*----------Header-Start----------*/
     body>header{
         height: 65px;
@@ -51,19 +62,20 @@
     }
 
     .hello-txt{
-        left: 15px;
+        left: 25px;
         top: 80px;
         font-size: 65px;
     }
 
     .name-txt{
-        left: 10px;
-        top: 175px;
+        left: 80px;
+        top: 160px;
         font-size: 30px;
     }
 
     .name-txt>img{
         width: 30px;
+        height: 30px;
     }
 
     .des-txt{
@@ -71,13 +83,13 @@
         right: 0;
         margin: auto;
         width: max-content;
-        top: 235px;
+        top: 215px;
         font-weight: 400;
         font-size: 15px;
     }
 
     .home-btn {
-        top: 270px;
+        top: 265px;
         left: 0;
         right: 0;
         gap: 45px;
@@ -93,15 +105,11 @@
     }
 
     .home-img>.vector{
-        right: 0;
-        top: 85px;
-        width: 130px;
+        display: none;
     }
 
-    .home-img>.img{
-        width: 94px;
-        top: 92px;
-        right: 15px;
+    .home-img>.img {
+        display: none;
     }
 
     .home .social-bar{
@@ -143,10 +151,59 @@
         left: 190px;
     }
 
-
-    .skills{
-        display: none;
+    .home{
+        height: 420px;
     }
+
+    /*----------Skill-Start----------*/
+    .skills{
+        height: 670px;
+    }
+
+    .skill{
+        display: inline;
+        position: relative;
+        left: 13px;
+    }
+
+    .skill>div:first-child{
+        width: 0;
+        top: 10px;
+    }
+
+    .skill .sub-topic {
+        position: relative;
+        margin: 0;
+        left: 12px;
+        font-size: 30px;
+        width: max-content;
+    }
+
+    .skill-icon {
+        width: max-content;
+        top: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: relative;
+        gap: 20px;
+    }
+
+    .skill-icon>div {
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+    }
+
+    .skill-icon img{
+        width: 40px;
+    }
+
+    .skill>div:last-child{
+        width: 0;
+        top: 285px;
+    }
+
     .project{
         display: none;
     }
