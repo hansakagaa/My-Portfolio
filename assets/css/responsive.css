@@ -3,10 +3,10 @@
     main>section>header {
         left: 40px;
         margin: 0;
-        width: 0;
-        height: 0;
+        width: max-content;
+        height: max-content;
         top: 0;
-        position: relative;
+        position: sticky;
     }
 
     main>section>header>h1 {
@@ -389,24 +389,186 @@
         width: 300px;
     }
 
+    /*----------Education-Start----------*/
+    .education{
+        height: 935px;
+    }
 
+    .educate>div {
+        width: 265px;
+        right: 5px !important;
+    }
 
-    .about{
+    .educate>.div-01>div:last-child{
+        width: max-content;
+        left: 65px;
+    }
+
+    .educate>div p:nth-child(1){
+        font-size: 11px;
+        height: 22px;
+        width: max-content;
+    }
+
+    .educate>div p:nth-child(2){
+        font-size: 13px;
+        height: 22px;
+        width: max-content;
+    }
+
+    .educate>div p:nth-child(3) {
+        font-size: 15px;
+        height: 24px;
+        width: max-content;
+    }
+
+    .educate>.div-01 {
+        top: 90px;
+    }
+
+    .educate>.div-02 {
+        top: 200px;
+        left: 46px;
+    }
+
+    .educate>.div-02>div:last-child{
+        width: max-content;
+        left: 62px;
+    }
+
+    .educate>.div-03 {
+        top: 310px;
+    }
+
+    .educate>.div-04 {
+        top: 455px;
+        left: 46px;
+    }
+
+    .educate>.div-01 img{
+        width: 68px;
+    }
+
+    .educate>.div-02 img{
+        width: 60px;
+    }
+
+    .educate>.div-03 img{
+        left: 38px;
+        width: 195px;
+    }
+
+    .educate>.div-03 div:last-child p, .educate>.div-04 div:last-child p{
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .educate>.chart>.circle>div {
+        width: 18px;
+        height: 18px;
+        left: 2px;
+        margin: 0;
+    }
+
+    .educate>.chart>.circle>div:nth-child(1){
+        top: 120px;
+    }
+
+    .educate>.chart>.circle>div:nth-child(2){
+        top: 228px;
+    }
+
+    .educate>.chart>.circle>div:nth-child(3){
+        top: 356px;
+    }
+
+    .educate>.chart>.circle>div:nth-child(4){
+        top: 496px;
+    }
+    .educate>.chart>.arrow>div>i{
+        font-size: 30px;
+    }
+
+    .educate>.chart>.arrow>div{
+        left: 13px !important;
+    }
+
+    .educate>.chart>.arrow>div:nth-child(1){
+        top: 114px;
+    }
+
+    .educate>.chart>.arrow>div:nth-child(2){
+        top: 222px;
+        transform: rotate(0);
+    }
+
+    .educate>.chart>.arrow>div:nth-child(3){
+        top: 350px;
+    }
+
+    .educate>.chart>.arrow>div:nth-child(4){
+        top: 490px;
+        transform: rotate(0);
+    }
+
+    .chart>.line{
         display: none;
     }
+
+    .certificate {
+        bottom: 300px;
+    }
+
+    .certificate>.img {
+        width: 305px;
+        top: 70px;
+    }
+
+    .certificate>.img>div {
+        animation-duration: 20s;
+    }
+
+    @keyframes certificate {
+        0%, 5% {
+            transform: translateX(0);
+        }
+        10%, 15% {
+            transform: translateX(-310px);
+        }
+        20%, 25% {
+            transform: translateX(-620px);
+        }
+        30%, 35% {
+            transform: translateX(-930px);
+        }
+        40%, 45% {
+            transform: translateX(-1240px);
+        }
+    }
+
+    .certificate>.img>div>div {
+        border: 5px solid #FFB800;
+    }
+
+    .certificate>.img img{
+        width: 295px;
+    }
+
+
+
+
     .contact{
         display: none;
     }
-    .education{
-        display: none;
-    }
+
 
 
     .call {
         width: 50px;
         height: 50px;
-        right: 24px;
-        bottom: 50px;
+        margin: 0 0 15px 78vw;
     }
 
     .call div {
