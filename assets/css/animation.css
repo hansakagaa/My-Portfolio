@@ -244,11 +244,11 @@
 /*-----Call-Box-----*/
 
 .call{
-    position: fixed;
+    position: sticky;
     width: 60px;
     height: 60px;
-    right: 39px;
-    bottom: 49px;
+    bottom: 0;
+    margin: 0 0 20px 93vw;
     border-radius: 100%;
     border: 5px solid #fff200;
 
@@ -260,10 +260,10 @@
 
 @keyframes call-div {
     from{
-        transform: translateY(15px);
+        transform: translateY(-5px);
     }
     to{
-        transform: translateY(-15px);
+        transform: translateY(-45px);
     }
 }
 
