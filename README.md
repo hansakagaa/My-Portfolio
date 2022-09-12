@@ -4,15 +4,15 @@
 <p align="left">
   <img align="right" src="https://qph.fs.quoracdn.net/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13" alt="Programmer" width="500">
     
-  <a href="http://ashenhansaka.epizy.com/" target="_blank"><img align="center" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/png/favicon.png" height="30" width="30" />  </a> <a href="http://ashenhansaka.epizy.com/" target="_blank" > My Website URL </a><br>
+  <a href="http://ashenhansaka.epizy.com/" target="_blank"><img align="center" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/png/favicon.png" height="30" width="30" />  </a> <a href="http://ashenhansaka.epizy.com/" target="_blank" > ∷ Website URL </a><br>
   
-  <a href="https://www.gloomaps.com" target="_blank"><img align="center" src="https://www.gloomaps.com/favicon.ico" height="30" width="30" />  </a> <a href="https://www.gloomaps.com/FhHQZ6RQ2l" target="_blank" > My Site Map URL </a><br>
+  <a href="https://www.gloomaps.com" target="_blank"><img align="center" src="https://www.gloomaps.com/favicon.ico" height="30" width="30" />  </a> <a href="https://www.gloomaps.com/FhHQZ6RQ2l" target="_blank" > ∷ Site Map URL </a><br>
   
-  <a href="https://wireframe.cc" target="_blank"><img align="center" src="https://wireframe.cc/favicon.ico" height="30" width="30" />  </a> <a href="https://wireframe.cc/ceHFJW" target="_blank" > My Wire-frame URL </a><br>
+  <a href="https://wireframe.cc" target="_blank"><img align="center" src="https://wireframe.cc/favicon.ico" height="30" width="30" />  </a> <a href="https://wireframe.cc/ceHFJW" target="_blank" > ∷ Wire-frame URL </a><br>
   
-  <a href="https://www.figma.com" target="_blank"><img align="center" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" height="30" width="30" />  </a> <a href="https://www.figma.com/file/7vT31AKkYoYE7eh696Ak08/My-profile?node-id=143%3A9" target="_blank" > My Mock-up URL </a><br>
+  <a href="https://www.figma.com" target="_blank"><img align="center" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" height="30" width="30" />  </a> <a href="https://www.figma.com/file/7vT31AKkYoYE7eh696Ak08/My-profile?node-id=143%3A9" target="_blank" > ∷ Mock-up URL </a><br>
   
-  <a href="https://www.github.com" target="_blank"><img align="center" src="https://www.github.com/favicon.ico" height="30" width="30" />  </a> <a href="https://hansakagaa.github.io/My-Portfolio/" target="_blank" > GitHub Page URL </a><br>
+  <a href="https://www.github.com" target="_blank"><img align="center" src="https://www.github.com/favicon.ico" height="30" width="30" />  </a> <a href="https://hansakagaa.github.io/My-Portfolio/" target="_blank" > ∷ GitHub Page URL </a><br>
   
 </p>
 
