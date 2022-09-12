@@ -707,7 +707,7 @@ main>section>header>h1 {
     margin: 0;
 }
 
-.gallery>.photo{
+.gallery .photo{
     width: 1262px;
     height: 610px;
     position: absolute;
@@ -717,7 +717,7 @@ main>section>header>h1 {
     margin: auto;
 }
 
-.gallery>.photo>div{
+.gallery .photo>div{
     width: 310px;
     border: 1px solid;
 }
