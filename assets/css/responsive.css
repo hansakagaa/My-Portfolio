@@ -559,7 +559,7 @@
     /*----------About-Start----------*/
 
     .about {
-        height: 1340px;
+        height: 1385px;
     }
 
     .gallery>.sub-topic{
@@ -645,7 +645,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        bottom: 10px;
+        bottom: 50px;
         width: 305px;
         height: 700px;
     }
@@ -669,14 +669,53 @@
         bottom: 125px;
     }
 
-
-
-
-
+    /*----------Contact-Start----------*/
     .contact{
-        display: none;
+        height: 750px;
     }
 
+    .contact>article{
+        left: 25px;
+        top: 50px;
+        width: max-content;
+        height: max-content;
+    }
+
+    .contact .sub-topic{
+        display: inline;
+    }
+
+    .contact>article>p{
+        font-size: 15px;
+        width: 280px;
+    }
+
+    .contact>address{
+        flex-flow: column;
+        top: 390px;
+        height: max-content;
+        width: max-content;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .contact>address>div{
+        width: 100%;
+        height: calc(100%/3);
+        margin-bottom: 85px;
+    }
+
+    .contact-details:first-child a{
+        top: 130px;
+        right: 40px;
+        bottom: 0;
+    }
+
+    .background-logo {
+        width: 300px;
+        height: 300px;
+    }
 
 
     .call {
