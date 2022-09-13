@@ -1212,7 +1212,7 @@ input:invalid{
     outline: none;
     position: absolute;
     background: #EEEEEE;
-    padding: 0 0 0 30px;
+    padding: 15px 0 0 30px;
     resize: none;
 }
 .contact-form textarea:focus{
