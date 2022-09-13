@@ -721,7 +721,7 @@
 
     /*----------Contact-Start----------*/
     .contact{
-        height: 750px;
+        height: 1010px;
     }
 
     .contact>article{
@@ -741,32 +741,118 @@
     }
 
     .contact>address{
-        flex-flow: column;
-        top: 390px;
-        height: max-content;
-        width: max-content;
+        position: absolute;
+        width: 300px;
+        height: 220px;
+        display: inline;
+        top: 290px;
+        bottom: unset;
         left: 0;
         right: 0;
         margin: auto;
     }
 
     .contact>address>div{
-        width: 100%;
-        height: calc(100%/3);
-        margin-bottom: 85px;
+        width: 100px;
+        height: 115px;
+        position: absolute;
+    }
+
+    .contact>address>div:nth-child(1){
+        left: 20px;
+    }
+
+    .contact>address>div:nth-child(2){
+        right: 20px;
+    }
+
+    .contact>address>div:nth-child(3){
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 170px;
+        height: 90px;
+        margin: auto;
+    }
+
+    .contact-details img{
+        top: 0;
+        width: 35px;
+    }
+
+    .contact-details h3 {
+        font-size: 15px;
+        line-height: 25px;
+        top: 40px;
+    }
+
+    .contact-details h4 {
+        font-size: 13px;
+        line-height: 16px;
+        top: 40px;
     }
 
     .contact-details:first-child a{
-        top: 130px;
-        right: 40px;
+        top: 100px;
+        right: 10px;
         bottom: 0;
     }
 
-    .background-logo {
-        width: 300px;
-        height: 300px;
+    .contact-form {
+        top: 540px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        height: 450px;
+        width: 295px;
     }
 
+    .contact-form h1{
+        position: relative;
+        font-size: 26px;
+        left: 20px;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .contact-form .txt-box{
+        width: 280px;
+        height: 40px;
+    }
+
+    .contact-form .txt-box .text{
+        padding: 0 0 0 15px;
+    }
+
+    .contact-form label{
+        top: 20px;
+        left: 10px;
+        font-size: 13px;
+    }
+
+    .contact-form>div:nth-child(3) {
+        display: block;
+    }
+
+    .contact-form>div:nth-child(3) .text {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .contact-form>div:nth-child(4) {
+        left: 0;
+        width: 280px;
+    }
+
+    .contact-form .txt-area{
+        width: 280px;
+        height: 80px;
+    }
+
+    .contact-form .txt-area .text{
+        padding: 15px 0 0 15px;
+    }
 
     .call {
         width: 50px;
