@@ -95,13 +95,63 @@
         top: 265px;
         left: 0;
         right: 0;
-        gap: 45px;
+        gap: 35px;
     }
 
     .home-btn a {
         font-size: 12px;
         letter-spacing: 1px;
+        color: white;
+        border: none;
+        font-weight: 600;
     }
+
+    /*-------------*/
+    .home-btn a i{
+        display: none;
+    }
+
+    .home-btn a::before{
+        content: ' ';
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        height: 100%;
+        width: 10px;
+        transition: 2s;
+        transform: skewY(-45deg);
+    }
+
+    .home-btn a::after{
+        content: ' ';
+        position: absolute;
+        bottom: -10px;
+        left: -5px;
+        height: 10px;
+        width: 100%;
+        transition: 2s;
+        transform: skewX(-45deg);
+    }
+
+    .contact-btn{
+        background-color: rgba(255, 184, 0, 0.9);
+    }
+    .contact-btn::before{
+        background-color: rgba(255, 184, 0, 0.8);
+    }
+    .contact-btn::after{
+        background-color: rgba(255, 184, 0, 0.7);
+    }
+    .downloadCV-btn{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .downloadCV-btn::before{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .downloadCV-btn::after{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    /*-------------*/
 
     .home-img .dot-bord-02{
         display: none;
