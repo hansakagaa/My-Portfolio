@@ -1109,3 +1109,147 @@ h6>span{
     pointer-events: painted;
 }
 /*----------Footer-End----------*/
+
+.contact-form{
+    position: absolute;
+    top: 175px;
+    right: 100px;
+    width: max-content;
+    height: 430px;
+}
+
+.contact-form>h1{
+    color: #FFB800;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.contact-form>.txt-box{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-form>.txt-box .text{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: absolute;
+    background: #EEEEEE;
+    padding: 0 0 0 30px;
+}
+
+.contact-form label{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    height: max-content;
+    transform: translateY(-50%);
+}
+
+.contact-form>div:nth-child(3){
+    display: inline;
+}
+
+.contact-form>div:nth-child(3) .text{
+    width: 210px;
+    height: 50px;
+}
+
+.contact-form>div:nth-child(4){
+    width: 150px;
+    left: 250px;
+}
+
+.contact-form .txt-box .text:focus{
+    background: #D9D9D9;
+    outline: #ffb800 solid 2px;
+}
+
+.contact-form .txt-box .text:valid{
+    outline: #ffb800 solid 2px;
+}
+
+.contact-form .txt-box .text:focus ~ label{
+    top: 6px;
+    left: 10px;
+    color: #FFB800;
+    background: #D9D9D9;
+    font-weight: bold;
+    -webkit-text-stroke: 0.01em white;
+}
+
+.contact-form .txt-box .text:valid ~ label{
+    top: 6px;
+    left: 10px;
+    color: #FFB800;
+    background: #EEEEEE;
+    font-weight: bold;
+    -webkit-text-stroke: 0.01em white;
+}
+
+input:invalid{
+    color: #EEEEEE;
+}
+
+.contact-form .txt-area{
+    position: relative;
+    width: 400px;
+    height: 100px;
+}
+
+.contact-form textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: absolute;
+    background: #EEEEEE;
+    padding: 0 0 0 30px;
+    resize: none;
+}
+.contact-form textarea:focus{
+    background: #D9D9D9;
+    outline: #ffb800 solid 2px;
+}
+
+.contact-form textarea:focus ~ label{
+    top: 6px;
+    left: 10px;
+    color: #FFB800;
+    background: #D9D9D9;
+    font-weight: bold;
+    -webkit-text-stroke: 0.01em white;
+}
+
+.contact-form .txt-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.contact-form .txt-btn:hover .btn{
+    background-color: #FFF;
+    color: #FFB800;
+}
+
+.contact-form .txt-btn .btn{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #FFB800;
+    border: 2px solid #FFB800;
+    color: white;
+    font-weight: 600;
+}

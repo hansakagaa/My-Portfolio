@@ -523,7 +523,37 @@
                     <h4>hansakagaa@gmail.com</h4>
                 </div>
             </address>
-            <img class="background-logo" src="assets/images/png/favicon.png" alt="Logo">
+            <form class="contact-form">
+                <h1>Message me</h1>
+                <div class="txt-box">
+                    <input class="text" type="text" id="name" minlength="5" maxlength="40" required>
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="txt-box">
+                    <input class="text" type="email" id="email" pattern="[a-z]{6,}@[a-z]{3,}.com" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="txt-box">
+                    <input class="text" type="tel" id="number" pattern="[0-9]{10}" required>
+                    <label for="number">Mobile</label>
+                </div>
+
+                <div class="txt-box">
+                    <input class="text" type="text" id="subject" pattern="[A-z]{5,}" required>
+                    <label for="subject">Subject</label>
+                </div>
+
+                <div class="txt-area">
+                    <textarea class="text" id="text" minlength="10" maxlength="100"></textarea>
+                    <label for="text">Message</label>
+                </div>
+
+                <div class="txt-btn">
+                    <input class="btn" type="submit" value="Send Message">
+                </div>
+            </form>
         </section>
 
         <div class="call">

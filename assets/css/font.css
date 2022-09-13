@@ -65,3 +65,7 @@ main>section>header>h1 {
 .foot>.logo p {
     font-family: 'Permanent Marker', cursive;
 }
+
+.contact-form h1{
+    font-family: 'Poppins', sans-serif;
+}
