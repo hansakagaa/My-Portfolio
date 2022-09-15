@@ -937,3 +937,153 @@
 }
 
 /*====================================================================*/
+
+@media all and (min-width: 425px) {
+
+    .menu>li {
+        padding: 0 10px 0 0;
+    }
+
+    .hello-txt{
+        font-size: 70px;
+    }
+
+    .name-txt{
+        font-size: 35px;
+    }
+
+    .des-txt{
+        font-size: 17px;
+    }
+
+    .skills{
+        height: 730px;
+    }
+
+    .skill>div:first-child{
+        top: 5px;
+    }
+
+    .skill-icon {
+        left: 40px;
+    }
+
+    .skill-icon>div {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skill-icon img{
+        width: 50px;
+    }
+
+    .skill-icon img:hover {
+        width: 60px;
+    }
+
+    .skill>div:last-child{
+        top: 300px;
+    }
+
+    .education{
+        height: 950px;
+    }
+
+    .certificate {
+        bottom: 330px;
+    }
+
+    .certificate>.img {
+        width: 350px;
+        top: 65px;
+    }
+
+    @keyframes certificate {
+        0%, 5% {
+            transform: translateX(0);
+        }
+        10%, 15% {
+            transform: translateX(-355px);
+        }
+        20%, 25% {
+            transform: translateX(-710px);
+        }
+        30%, 35% {
+            transform: translateX(-1065px);
+        }
+        40%, 45% {
+            transform: translateX(-1420px);
+        }
+    }
+
+    .certificate>.img>div>div {
+        border: 5px solid #FFB800;
+    }
+
+    .certificate>.img img{
+        width: 340px;
+    }
+
+    .contact>article>p {
+        font-size: 16px;
+        width: 350px;
+    }
+
+    .contact>address{
+        width: 335px;
+        height: 225px;
+    }
+
+    .contact>address>div {
+        width: 102px;
+    }
+
+    .contact-details img{
+        width: 40px;
+    }
+
+    .contact-details h3 {
+        font-size: 17px;
+        line-height: 30px;
+        top: 42px;
+    }
+
+    .contact-details h4 {
+        font-size: 14px;
+        line-height: 20px;
+        top: 40px;
+    }
+
+    .contact-details:first-child a{
+        left: 75px;
+    }
+
+    .contact-form {
+        height: 460px;
+        width: 325px;
+    }
+
+    .contact-form h1{
+        font-size: 28px;
+    }
+
+    .contact-form .txt-box{
+        width: 310px;
+        height: 45px;
+    }
+
+    .contact-form>div:nth-child(4) {
+        width: 310px;
+    }
+
+    .contact-form .txt-area{
+        width: 310px;
+    }
+
+    .foot>.social-bar>.social img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/*====================================================================*/
