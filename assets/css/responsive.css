@@ -1,4 +1,4 @@
-@media all and (max-width: 325px) {
+@media all and (min-width: 320px) {
 
     main>section>header {
         left: 40px;
@@ -43,14 +43,20 @@
     }
 
     .menu>li{
-        cursor: pointer;
-        font-size: 12px;
         padding: 0 5px 0 0;
         margin: 0;
     }
 
+    .menu>li i:first-child {
+        font-size: 20px;
+    }
+
     .menu>li i:last-child {
         display: none;
+    }
+
+    .menu>li:last-child{
+        padding: 0;
     }
 
     /*----------Home-Start----------*/
@@ -104,6 +110,7 @@
         color: white;
         border: none;
         font-weight: 600;
+        padding: 10px 16px 10px 16px;
     }
 
     /*-------------*/
@@ -153,17 +160,10 @@
     }
     /*-------------*/
 
-    .home-img .dot-bord-02{
+    .home-img {
         display: none;
     }
 
-    .home-img>.vector{
-        display: none;
-    }
-
-    .home-img>.img {
-        display: none;
-    }
 
     .home .social-bar{
         position: absolute;
@@ -236,8 +236,6 @@
         width: max-content;
         top: 30px;
         left: 0;
-        right: 0;
-        margin: auto;
         position: relative;
         gap: 20px;
     }
@@ -444,9 +442,9 @@
         height: 935px;
     }
 
-    .educate>div {
+    .education>.educate>div {
         width: 265px;
-        right: 5px !important;
+        right: 5px;
     }
 
     .educate>.div-01>div:last-child{
@@ -541,8 +539,8 @@
         font-size: 30px;
     }
 
-    .educate>.chart>.arrow>div{
-        left: 13px !important;
+    .education>.educate>.chart>.arrow>div{
+        left: 10px
     }
 
     .educate>.chart>.arrow>div:nth-child(1){
@@ -599,7 +597,7 @@
     }
 
     .certificate>.img>div>div {
-        border: 5px solid #FFB800;
+        border: 3px solid #FFB800;
     }
 
     .certificate>.img img{
@@ -919,3 +917,5 @@
         padding-right: 0;
     }
 }
+
+/*====================================================================*/
