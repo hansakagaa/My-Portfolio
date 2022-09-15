@@ -1215,6 +1215,7 @@ input:invalid{
     padding: 15px 0 0 30px;
     resize: none;
 }
+
 .contact-form textarea:focus{
     background: #D9D9D9;
     outline: #ffb800 solid 2px;
