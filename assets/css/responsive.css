@@ -6,7 +6,7 @@
 
 /*====================================================================*/
 
-@media all and (min-width: 320px) and (max-width: 768px){
+@media all and (min-width: 320px) and (max-width: 1023px){
 
     main>section>header {
         left: 40px;
@@ -928,7 +928,7 @@
 
 /*====================================================================*/
 
-@media all and (min-width: 375px) and (max-width: 768px){
+@media all and (min-width: 375px) and (max-width: 1023px){
 
     .des-txt{
         font-size: 16px;
@@ -946,7 +946,7 @@
 
 /*====================================================================*/
 
-@media all and (min-width: 425px) and (max-width: 768px){
+@media all and (min-width: 425px) and (max-width: 1023px){
 
     .menu>li {
         padding: 0 10px 0 0;
@@ -1096,7 +1096,7 @@
 
 /*====================================================================*/
 
-@media all and (min-width: 768px) and (max-width: 770px){
+@media all and (min-width: 768px) and (max-width: 1023px){
 
     main>section>header {
         left: 100px;
@@ -1776,6 +1776,350 @@
     .foot>.social-bar>.social abbr:nth-child(5)::before {
         content: 'FaceBook';
         right: -120px;
+    }
+}
+
+/*====================================================================*/
+
+@media all and (min-width: 1024px) and (max-width: 1300px){
+
+    .menu-bar {
+        top: 13px;
+        right: 15px;
+    }
+
+    .menu>li {
+        padding: 5px;
+    }
+
+    .dot-bord-01>.div {
+        top: 75px;
+        left: 40px;
+        gap: 30px;
+    }
+
+    .hello-txt {
+        left: 70px;
+        top: 90px;
+        font-size: 110px;
+    }
+
+    .name-txt {
+        left: 125px;
+        top: 230px;
+    }
+
+    .des-txt {
+        left: 125px;
+        top: 300px;
+    }
+
+    .home-btn {
+        top: 365px;
+        left: 70px;
+    }
+
+    .dot-bord-02>.div {
+        top: 160px;
+        right: 370px;
+        gap: 30px;
+    }
+
+    .home-img>.vector {
+        right: 40px;
+        width: 370px;
+    }
+
+    .home-img>.img {
+        width: 260px;
+        right: 90px;
+    }
+
+    .home>.social-bar>.social {
+        top: 445px;
+        left: 140px;
+    }
+
+    .skill>div {
+        width: calc(99.6vw/2);
+    }
+
+    .skill-icon {
+        gap: 25px;
+        left: 60px;
+    }
+
+    .skill-icon>div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill-icon img {
+        width: 50px;
+    }
+
+    .project>.img-box {
+        top: 175px;
+        left: 85px;
+        width: 515px;
+        overflow: hidden;
+    }
+
+    .project>.img-box aside {
+        gap: 15px;
+        animation-name: project-img;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    @keyframes project-img {
+        0%, 10%{
+            transform: translateX(0);
+        }
+        20%, 30%{
+            transform: translateX(-265px);
+        }
+    }
+
+    .project>.disc-box {
+        top: 175px;
+        left: 660px;
+    }
+
+    .assignment>section {
+        width: 890px;
+        top: 155px;
+    }
+
+    @keyframes assign {
+        0%, 5% {
+            transform: translateX(0);
+        }
+        10%, 15% {
+            transform: translateX(-300px);
+        }
+        20%, 25% {
+            transform: translateX(-600px);
+        }
+        30%, 35% {
+            transform: translateX(-900px);
+        }
+        40%, 45% {
+            transform: translateX(-1200px);
+        }
+        50%, 55% {
+            transform: translateX(-1500px);
+        }
+        60%, 65% {
+            transform: translateX(-1800px);
+        }
+        70%, 75% {
+            transform: translateX(-2100px);
+        }
+        80%, 85% {
+            transform: translateX(-2400px);
+        }
+        90%, 95% {
+        }
+        100% {
+        }
+    }
+
+    .educate>div {
+        width: 400px;
+    }
+
+    .educate>.div-01 {
+        top: 130px;
+        right: 40px;
+    }
+
+    .educate>.div-02 {
+        top: 235px;
+        left: 40px;
+    }
+
+    .educate>.div-03 {
+        top: 340px;
+        right: 40px;
+    }
+
+    .educate>.div-04 {
+        top: 480px;
+        left: 40px;
+    }
+
+    .educate>.div-01 div:last-child, .educate>.div-02 div:last-child {
+        width: 310px;
+        left: 70px;
+    }
+
+    .educate>div p:nth-child(1) {
+        font-size: 16px;
+        width: 100%;
+        line-height: 25px;
+    }
+
+    .educate>div p:nth-child(2) {
+        width: 100%;
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .educate>div p:nth-child(3) {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .educate>.div-01 img {
+        width: 75px;
+    }
+
+    .educate>.div-02 img {
+        width: 66px;
+        left: 10px;
+    }
+
+    .educate>.div-03 img {
+        left: 65px;
+        width: 280px;
+    }
+
+    .educate>.chart>.arrow>div:nth-child(1) {
+        top: 145px;
+        left: 515px;
+    }
+
+    .educate>.chart>.arrow>div:nth-child(2) {
+        top: 255px;
+        left: 505px;
+    }
+
+    .educate>.chart>.arrow>div:nth-child(3) {
+        top: 380px;
+        left: 515px;
+    }
+
+    .educate>.chart>.arrow>div:nth-child(4) {
+        top: 505px;
+        left: 505px;
+    }
+
+    .educate>.chart>.circle>div:nth-child(1) {
+        top: 160px;
+    }
+
+    .educate>.chart>.circle>div:nth-child(2) {
+        top: 268px;
+    }
+
+    .educate>.chart>.circle>div:nth-child(3) {
+        top: 395px;
+    }
+
+    .educate>.chart>.circle>div:nth-child(4) {
+        top: 517px;
+    }
+
+    .educate>.chart>.line>div:nth-child(1) {
+        top: 175px;
+    }
+
+    .educate>.chart>.line>div:nth-child(2) {
+        top: 289px;
+    }
+
+    .educate>.chart>.line>div:nth-child(3) {
+        top: 413px;
+    }
+
+    .certificate {
+        bottom: 400px;
+    }
+
+    .certificate>.img {
+        top: 75px;
+        width: 895px;
+    }
+
+    @keyframes certificate {
+        0%, 10% {
+            transform: translateX(0);
+        }
+        20%, 30% {
+            transform: translateX(-450px);
+        }
+        40%, 50% {
+            transform: translateX(-900px);
+        }
+        60%, 70% {
+            transform: translateX(-1350px);
+        }
+    }
+
+
+
+
+    .gallery{
+        display: none;
+    }
+
+
+
+    .details {
+        left: 50px;
+    }
+
+    .interests {
+        right: 25px;
+    }
+
+    .contact>article {
+        left: 70px;
+    }
+
+    .contact>address {
+        width: 500px;
+        bottom: 20px;
+    }
+
+    .contact-details>img {
+        width: 47px;
+    }
+
+    .contact-details>h3 {
+        font-size: 19px;
+    }
+
+    .contact-details:first-child a {
+        right: 15px;
+    }
+
+    .contact-form {
+        top: 115px;
+        right: 50px;
+    }
+
+    .call{
+        margin: 0 0 20px 940px;
+    }
+
+    .foot>.logo img {
+        width: 80px;
+        height: 80px;
+        left: 105px;
+    }
+
+    .foot>.logo p {
+        font-size: 34px;
+        top: 120px;
+        left: 25px;
+    }
+
+    .foot>.my-sev {
+        position: relative;
+        left: -165px;
     }
 }
 
