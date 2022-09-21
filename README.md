@@ -29,7 +29,7 @@
   
   <a href="https://wireframe.cc" target="_blank"><img align="center" src="https://wireframe.cc/favicon.ico" height="30" width="30" />  </a> <a href="https://wireframe.cc/tihugW" target="_blank" > ∷ Wire-frame URL </a><br>
   
-  <a href="https://www.figma.com" target="_blank"><img align="center" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" height="30" width="30" />  </a> <a href="https://www.figma.com/file/" target="_blank" > ∷ Mock-up URL </a><br>
+  <a href="https://www.figma.com" target="_blank"><img align="center" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" height="30" width="30" />  </a> <a href="https://www.figma.com/file/LefDhOLEiQ6K8qspXOAV8B/Hasii-POS-System?node-id=7%3A2" target="_blank" > ∷ Mock-up URL </a><br>
   
 </p>
 <br>
