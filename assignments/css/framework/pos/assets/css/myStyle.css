@@ -20,3 +20,15 @@
     --cl-green-75: rgba(32, 191, 107, 0.75);
     --cl-light-blue: rgba(30, 144, 255, 1);
 }
+
+.full-view-point{
+    width: 100vw;
+    height: 100vh;
+}
+
+main>section:last-child>div>div .img-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--cl-theme) !important;
+}
