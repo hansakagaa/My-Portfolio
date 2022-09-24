@@ -50,20 +50,31 @@
 }
 
 .header{
-    top: 35%;
-    left: 0;
-    right: 0;
-    margin: auto;
+    top: 30%;
     width: max-content;
     color: var(--cl-theme);
 }
 
 .header-h1{
     font-family: var(--family-inter);
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
     font-weight: 700;
     font-size: 65px;
     line-height: 45px;
     text-shadow: 0 4px 4px var(--cl-black-25);
+}
+
+.header-line{
+    width: 500px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--cl-gray);
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 main>section:first-child>div>div .img-btn {
