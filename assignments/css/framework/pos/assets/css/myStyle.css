@@ -6,6 +6,7 @@
     --cl-white-50: rgba(255, 255, 255, 0.5);
     --cl-black: rgba(0, 0, 0, 1);
     --cl-black-60: rgba(0, 0, 0, 0.6);
+    --cl-black-25: rgba(0, 0, 0, 0.25);
     --cl-gray: rgba(238, 238, 238, 1);
     --cl-gray-65: rgba(238, 238, 238, 0.65);
     --cl-blue: rgba(6, 82, 221, 1);
@@ -19,6 +20,7 @@
     --cl-green: rgba(32, 191, 107, 1);
     --cl-green-75: rgba(32, 191, 107, 0.75);
     --cl-light-blue: rgba(30, 144, 255, 1);
+    --family-inter: 'Inter', sans-serif;
 }
 
 .full-view-point{
@@ -45,6 +47,23 @@
 .btn-login:hover{
     background-color: var(--cl-light-green) !important;
     border-color: var(--cl-white) !important;
+}
+
+.header{
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    color: var(--cl-theme);
+}
+
+.header-h1{
+    font-family: var(--family-inter);
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 45px;
+    text-shadow: 0 4px 4px var(--cl-black-25);
 }
 
 main>section:first-child>div>div .img-btn {
