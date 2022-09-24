@@ -1,7 +1,3 @@
-.header {
-    width: 50%;
-}
-
 .header-h1{
     top: 190px;
     font-size: 45px;
@@ -19,5 +15,20 @@
 }
 
 .form{
-    width: 50%;
+    width: 500px;
+    height: 400px;
+    top: 145px;
+    background: var(--cl-gray-65);
+    border-radius: 50px;
+}
+
+.form-txt{
+    left: 55px;
+    bottom: -20px;
+}
+
+.login-header{
+    top: 30px;
+    position: relative;
+    padding-left: 150px;
 }
