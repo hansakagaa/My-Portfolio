@@ -26,7 +26,28 @@
     height: 100vh;
 }
 
-main>section:last-child>div>div .img-btn {
+.top-right-50{
+    top:50px;
+    right: 50px
+}
+
+.btn-login{
+    width: 125px;
+    height: 50px;
+    border-radius: 50px;
+    border-width: 3px;
+    font-weight: 500;
+    font-size: 20px;
+    border-color: var(--cl-blue);
+    color: var(--cl-blue);
+}
+
+.btn-login:hover{
+    background-color: var(--cl-light-green) !important;
+    border-color: var(--cl-white) !important;
+}
+
+main>section:first-child>div>div .img-btn {
     width: 15px;
     height: 15px;
     border-radius: 100%;
