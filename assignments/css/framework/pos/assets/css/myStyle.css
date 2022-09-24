@@ -28,6 +28,12 @@
     height: 100vh;
 }
 
+.center{
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 .top-right-50{
     top:50px;
     right: 50px
@@ -57,9 +63,6 @@
 
 .header-h1{
     font-family: var(--family-inter);
-    left: 0;
-    right: 0;
-    margin: auto;
     width: max-content;
     font-weight: 700;
     font-size: 65px;
@@ -72,9 +75,17 @@
     height: 10px;
     border-radius: 10px;
     background-color: var(--cl-gray);
-    left: 0;
-    right: 0;
-    margin: auto;
+}
+
+.header-p {
+    font-family: var(--family-inter);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--cl-white);
+    width: 800px;
+    padding-top: 50px;
 }
 
 main>section:first-child>div>div .img-btn {
