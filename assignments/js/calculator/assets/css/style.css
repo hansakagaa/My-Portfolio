@@ -362,6 +362,10 @@ div:hover>i{
     margin-left: auto;
 }
 
+.toggle-btn:hover .span{
+    background-color: var(--cl-white);
+}
+
 .span{
     width: 70%;
     height: 0.35em;
@@ -395,12 +399,14 @@ div:hover>i{
     transform: rotate(-45deg) translate(-50%, -50%);
 }
 .main.skew{
+    transition: 0.5s;
     transform: rotateY(45deg) scale(0.6);
     background-color: var(--cl-light-gray);
     box-shadow: 0 20px 20px 0 var(--cl-black-01);
 }
 
 .main.skew::before{
+    transition: 0.5s;
     content: ' ';
     position: absolute;
     top: 0;
@@ -416,6 +422,7 @@ div:hover>i{
 }
 
 .main.skew::after{
+    transition: 0.5s;
     content: ' ';
     position: absolute;
     top: 0;
