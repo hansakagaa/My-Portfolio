@@ -4,6 +4,11 @@ const num = document.querySelectorAll(".num");
 const opr = document.querySelectorAll(".opr");
 const pow = document.querySelector(".pow");
 const pi = document.querySelector(".pi");
+const sin = document.querySelector(".sin");
+const cos = document.querySelector(".cos");
+const tan = document.querySelector(".tan");
+const log = document.querySelector(".log");
+const x_3 = document.querySelector(".x_3");
 const e = document.querySelector(".e");
 const equal = document.querySelector(".equal");
 const all_clear = document.querySelector(".all-clear");
@@ -71,6 +76,47 @@ e.addEventListener('click', function (e) {
     }
 });
 
+sin.addEventListener('click', function (e) {
+    if (dis2Num){
+        d_1.innerText = dis2Num +''+ e.target.innerText;
+        dis1Num = Math.sin(dis2Num);
+        d_2.innerText = dis1Num;
+    }
+});
+
+cos.addEventListener('click', function (e) {
+    if (dis2Num){
+        d_1.innerText = dis2Num +''+ e.target.innerText;
+        dis1Num = Math.cos(dis2Num);
+        d_2.innerText = dis1Num;
+    }
+});
+
+tan.addEventListener('click', function (e) {
+    if (dis2Num){
+        d_1.innerText = dis2Num +''+ e.target.innerText;
+        dis1Num = Math.tan(dis2Num);
+        d_2.innerText = dis1Num;
+    }
+});
+
+log.addEventListener('click', function (e) {
+    if (dis2Num){
+        d_1.innerText = dis2Num +''+ e.target.innerText;
+        dis1Num = Math.log(dis2Num);
+        d_2.innerText = dis1Num;
+    }
+});
+
+x_3.addEventListener('click', function (e) {
+    if (!dis2Num){
+        return;
+    }
+    dis1Num = dis2Num;
+    dis2Num = parseFloat(dis1Num) * parseFloat(dis2Num) * parseFloat(dis2Num);
+    d_1.innerText = dis1Num;
+    d_2.innerText = dis2Num;
+});
 
 pi.addEventListener('click', function (e) {
     if (d_2.innerText === '0'){
@@ -111,10 +157,41 @@ last_clear.addEventListener('click', function () {
 });
 
 // ****************************************
+const imgBtn = document.querySelector(".img");
+const all_btn = document.querySelector(".all-btn");
+const margin = document.querySelector(".margin");
+const btn = document.querySelectorAll(".b-h");
+
+imgBtn.addEventListener('click', function () {
+    imgBtn.classList.toggle('active');
+    all_btn.classList.toggle('active');
+    margin.classList.toggle('active');
+    btn.forEach((btn, index) => {
+        btn.classList.toggle('active');
+    });
+});
+
+// ****************************************
 
 const toggleBtn = document.querySelector(".toggle-btn");
 const ul = document.querySelector("nav .link");
 const main = document.querySelector(".main");
+const li_btn_1 = document.querySelector(".li-btn-1");
+const fa_btn_1 = document.querySelector(".fa-btn-1");
+const n_btn_1 = document.querySelector(".b-h-1");
+const li_btn_2 = document.querySelector(".li-btn-2");
+const fa_btn_2 = document.querySelector(".fa-btn-2");
+const n_btn_2 = document.querySelector(".b-h-2");
+
+li_btn_1.addEventListener('click', function () {
+    fa_btn_1.classList.toggle('active');
+    n_btn_1.classList.toggle('active');
+});
+
+li_btn_2.addEventListener('click', function () {
+    fa_btn_2.classList.toggle('active');
+    n_btn_2.classList.toggle('active');
+});
 
 toggleBtn.addEventListener('click', function () {
     toggleBtn.classList.toggle('active');
