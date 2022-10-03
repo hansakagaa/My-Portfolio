@@ -1,5 +1,5 @@
 :root {--cl-theme: rgba(255, 184, 0, 1);--cl-light-theme: rgba(255, 200, 0, 1);--cl-white: rgba(255, 255, 255, 1);
---cl-black: rgba(0, 0, 0, 1);--cl-light-gray: rgba(238, 238, 238, 1);--cl-dark-gray: rgba(170, 170, 170, 1);
+--cl-black: rgb(0, 0, 0);--cl-light-gray: rgba(238, 238, 238, 1);--cl-dark-gray: rgba(170, 170, 170, 1);
 --cl-light-blue: rgba(55, 66, 250,1.0);--cl-blue: rgba(6, 82, 221, 1);--cl-light-purple: rgba(165, 94, 234,1.0);
 --cl-purple: rgba(136, 84, 208,1.0);--cl-light-red: rgba(255, 94, 87,1.0);--cl-red: rgba(255, 63, 52,1.0);
 --cl-light-green: rgba(38, 222, 129,1.0);--cl-green: rgba(32, 191, 107, 1);--cl-pink: rgba(232, 67, 147,1.0);

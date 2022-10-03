@@ -1,10 +1,83 @@
+:root{
+    --cl-main: rgba(255, 184, 0, 1);
+    --cl-black: rgba(0, 0, 0, 1);
+    --cl-shadow: rgba(0, 0, 0, 0.5);
+    --cl-gray: rgb(238, 238, 238);
+    --cl-blue: rgba(6, 82, 221, 1);
+    --cl-white: rgba(255, 255, 255, 1);
+    --cl-text-gary: rgba(132, 132, 132, 1);
+    --cl-text-black: rgb(2, 2, 2);
+    --cl-text-light-black: rgba(2, 2, 2, 0.5);
+    --cl-card-gary: rgba(217, 217, 217, 1);
+    --cl-card-light-gary: rgba(217, 217, 217, 0.5);
+    --cl-none: transparent;
+    --ft-inter: 'Inter', sans-serif;
+    --ft-permanent-marker: 'Permanent Marker', cursive;
+    --ft-dynaPuff: 'DynaPuff', cursive;
+    --ft-poppins: 'Poppins', sans-serif;
+    --ft-ubutu: 'Ubuntu', sans-serif;
+    --ft-tomorrow: 'Tomorrow', sans-serif;
+    --ft-tinos: 'Tinos', serif;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+::-webkit-scrollbar:hover{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--cl-main);
+    border-radius: 50px;
+}
+
+*{
+    font-family: var(--ft-inter);
+}
+
+main>section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+main>section>header{
+    position: sticky;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 30px;
+}
+
+main>section>header>h1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--cl-text-black);
+}
+
+.sub-topic{
+    font-weight: 400;
+    font-size: 33px;
+    color: var(--cl-main);
+}
+
 /*----------Header-Start----------*/
 body>header{
     top: 0;
     width: 99.6vw;
     height: 50px;
     position: fixed;
-    background-color: #FFB800;
+    background-color: var(--cl-none);
     z-index: 2;
 }
 
@@ -19,7 +92,7 @@ body>header{
 .header>.logo>p{
     font-weight: 400;
     font-size: 30px;
-    color: #000000;
+    color: var(--cl-black);
     position: absolute;
     margin: 0;
     top: 7px;
@@ -33,10 +106,11 @@ body>header{
 }
 
 .menu>li{
+    position: relative;
     display: inline-block;
-    padding: 10px;
+    padding: 0 15px 6px 0;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     margin-right: 5px;
 }
@@ -47,16 +121,47 @@ body>header{
 }
 
 .menu>li>a {
-    color: black;
+    color: var(--cl-black);
 }
 
 .menu>li>a i{
     font-style: normal;
 }
 
-.menu>li:hover a{
-    color: white;
-    -webkit-text-stroke: 0.01em black;
+.menu .i{
+    width: 60%;
+    height: 3px;
+    background-color: var(--cl-white);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 50px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.menu .i::before{
+    content: '';
+    width: 20%;
+    height: 3px;
+    background-color: var(--cl-white);
+    position: absolute;
+    left: 110%;
+    border-radius: 50px;
+}
+
+.menu .i::after{
+    content: '';
+    width: 15%;
+    height: 3px;
+    background-color: var(--cl-white);
+    position: absolute;
+    left: 140%;
+    border-radius: 50px;
+}
+
+.menu .menu-link.active .i, .menu-link:hover .i{
+    opacity: 1;
 }
 
 .menu{
@@ -200,73 +305,22 @@ body>header{
 
 .home-img>.vector{
     position: absolute;
-    right: 70px;
-    top: 80px;
-    width: 450px;
+    right: 0;
+    top: 0;
+    width: 810px;
+    height: 135%;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: #FFB800;
 }
 
 .home-img>.img{
     width: 330px;
     position: absolute;
     top: 100px;
-    right: 130px;
+    right: 40px;
 }
 /*----------Home-End----------*/
-::-webkit-scrollbar{
-    width: 5px;
-    height: 0;
-}
 
-::-webkit-scrollbar-thumb{
-    background: #FFB800;
-    border-radius: 50px;
-}
-
-main>section{
-    width: 99.6vw;
-    height: 100vh;
-    position: relative;
-}
-
-main>section>header{
-    position: sticky;
-    top: 70px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 200px;
-    height: 30px;
-}
-
-main>section>header>h1 {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    margin: 0;
-    font-weight: 400;
-    font-size: 30px;
-    color: #020202;
-}
-
-.sub-topic{
-    font-weight: 400;
-    font-size: 33px;
-    color: #FFB800;
-}
-
-.background-logo{
-    width: 500px;
-    height: 500px;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-}
 /*----------Skill-Start----------*/
 .skill{
     top: 50px;
@@ -292,7 +346,7 @@ main>section>header>h1 {
 .skill-icon>div {
     width: 100px;
     height: 100px;
-    background: #D9D9D9;
+    background: #d9d9d9;
     border-radius: 25px;
     position: relative;
 }
@@ -314,9 +368,6 @@ main>section>header>h1 {
     margin: auto;
 }
 
-.skill-icon img:hover{
-    width: 65px;
-}
 /*----------Skill-End----------*/
 /*----------Project-Start----------*/
 .project>.img-box{
@@ -327,7 +378,7 @@ main>section>header>h1 {
 
 .project>.img-box .card{
     border-radius: 10px;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     width: 250px;
     height: 150px;
 }
@@ -339,7 +390,7 @@ main>section>header>h1 {
     line-height: 22px;
     text-align: center;
     color: #020202;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .project>.disc-box{
@@ -424,7 +475,7 @@ main>section>header>h1 {
     left: 0;
     right: 0;
     margin: auto;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
 }
 
 .assignment aside>div  img{
@@ -462,17 +513,6 @@ main>section>header>h1 {
     text-decoration: none;
 }
 
-.assignment aside>div>.btn:hover {
-    height: 35px;
-    width: 75px;
-}
-
-.assignment aside>div>.btn a:hover {
-    color: #eee;
-    letter-spacing: 0.1em;
-    text-shadow: #020202;
-    font-weight: bold;
-}
 /*----------Assignment-End----------*/
 /*----------Education-Start----------*/
 .education{
@@ -808,7 +848,7 @@ main>section>header>h1 {
 .interests .box{
     width: 150px;
     height: 115px;
-    background: rgba(217, 217, 217, 0.6);
+    background: rgba(217, 217, 217, 0.5);
     border-radius: 50px;
 }
 
@@ -974,14 +1014,13 @@ main>section>header>h1 {
 .contact-details:first-child a{
     position: absolute;
     font-size: 11px;
-    color: #0652DD;
+    color: #0652dd;
     font-weight: 600;
     letter-spacing: 1px;
     margin: auto;
     right: 35px;
     bottom: 10px;
 }
-
 
 /*----------Contact-End----------*/
 /*----------Footer-Start----------*/
@@ -1043,19 +1082,6 @@ main>section>header>h1 {
     font-weight: 800;
     font-size: 16px;
     color: #020202;
-}
-
-.my-sev li:hover {
-    padding-left: 10px;
-    color: white;
-    transition-property: color,padding-left;
-    transition-duration: 0.5s;
-}
-
-.my-sev li:hover div{
-    background-color: white;
-    transition-property: background-color;
-    transition-duration: 0.5s;
 }
 
 .foot>.social-bar>.social{
@@ -1201,7 +1227,7 @@ input:invalid{
     position: absolute;
     background: #EEEEEE;
     padding: 15px 0 0 30px;
-    resize: none;
+    resize: vertical;
 }
 
 .contact-form textarea:focus{
@@ -1227,11 +1253,6 @@ input:invalid{
     border-radius: 10px;
 }
 
-.contact-form .txt-btn:hover .btn{
-    background-color: #FFF;
-    color: #FFB800;
-}
-
 .contact-form .txt-btn .btn{
     position: relative;
     width: 100%;
@@ -1241,4 +1262,14 @@ input:invalid{
     border: 2px solid #FFB800;
     color: white;
     font-weight: 600;
+}
+
+.side-vector{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 220px;
+    height: 235px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: #FFB800;
 }

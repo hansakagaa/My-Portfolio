@@ -1,3 +1,10 @@
+/*-----Header-----*/
+
+.menu .menu-link:hover a, .menu .menu-link.active a{
+    color: white;
+    font-weight: 600;
+}
+
 /*-----Home-btn-----*/
 
 .home-btn a:hover{
@@ -174,6 +181,18 @@
     }
 }
 
+.assignment aside>div>.btn:hover {
+    height: 35px;
+    width: 75px;
+}
+
+.assignment aside>div>.btn a:hover {
+    color: #eee;
+    letter-spacing: 0.1em;
+    text-shadow: #020202;
+    font-weight: bold;
+}
+
 /*-----Certificate-----*/
 
 
@@ -239,6 +258,26 @@
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+}
+
+.skill-icon img:hover{
+    width: 65px;
+}
+
+/*-----Footer-----*/
+
+
+.my-sev li:hover {
+    padding-left: 10px;
+    color: white;
+    transition-property: color,padding-left;
+    transition-duration: 0.5s;
+}
+
+.my-sev li:hover div{
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 /*-----Call-Box-----*/
@@ -332,4 +371,11 @@
 .call:hover div::before{
     border: 5px solid #fff200;
     background-color: white;
+}
+
+/*-----Contact-Form-----*/
+
+.contact-form .txt-btn:hover .btn{
+    background-color: #FFF;
+    color: #FFB800;
 }

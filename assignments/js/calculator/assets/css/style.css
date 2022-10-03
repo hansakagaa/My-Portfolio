@@ -3,8 +3,8 @@
     --cl-light-theme: rgba(255, 200, 0, 1);
     --cl-white: rgba(255, 255, 255, 1);
     --cl-black: rgba(0, 0, 0, 1);
-    --cl-light-gray: rgba(238, 238, 238, 1);
-    --cl-dark-gray: rgba(170, 170, 170, 1);
+    --cl-light-gray: rgb(238, 238, 238);
+    --cl-dark-gray: rgb(170, 170, 170);
     --cl-light-blue: rgba(55, 66, 250,1.0);
     --cl-blue: rgba(6, 82, 221, 1);
     --cl-light-purple: rgba(165, 94, 234,1.0);

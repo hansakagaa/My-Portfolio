@@ -22,7 +22,7 @@
     }
     /*----------Header-Start----------*/
     body>header{
-        height: 70px;
+        height: 75px;
     }
 
     .header>.logo>a {
@@ -50,20 +50,21 @@
         width: max-content;
     }
 
-    .menu>li{
+    .menu li{
         padding: 0 5px 0 0;
         margin: 0;
     }
 
-    .menu>li i:first-child {
+    .menu li i:first-child {
         font-size: 20px;
+        padding-bottom: 5px;
     }
 
-    .menu>li i:last-child {
+    .menu li .menu-name {
         display: none;
     }
 
-    .menu>li:last-child{
+    .menu li:last-child{
         padding: 0;
     }
 
@@ -1122,7 +1123,7 @@
         left: -50px;
     }
 
-    .menu>li i:last-child {
+    .menu>li .menu-name {
         display: inline-block;
     }
 
