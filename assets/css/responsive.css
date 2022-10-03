@@ -914,16 +914,14 @@
 
     .foot>.social-bar>.social {
         top: 10px;
-        right: 20px;
+        right: 15px;
         display: flex;
         flex-flow: column;
     }
 
-    .foot>.social-bar>.social img {
-        width: 25px;
-        height: 25px;
-        padding-bottom: 5px;
-        padding-right: 0;
+    .foot>.social-bar>.social .fa-brands {
+        font-size: 20px;
+        padding: 0 0 10px 0;
     }
 }
 
@@ -1717,7 +1715,7 @@
     .foot .menu-bar{
         display: block;
         top: 20px;
-        left: 100px;
+        left: 110px;
     }
 
     .foot .menu-bar .menu{
@@ -1728,6 +1726,7 @@
     .foot>.menu-bar>.menu i:first-child {
         display: inline;
         top: 0;
+        margin-right: 10px;
     }
 
     .foot>.menu-bar>.menu li {
@@ -1739,44 +1738,43 @@
     }
 
     .foot>.social-bar>.social {
-        right: 120px;
+        right: 75px;
     }
 
-    .foot>.social-bar>.social img {
-        padding-bottom: 8px;
+    .foot>.social-bar>.social li {
+        width: 100px;
     }
 
-    .foot>.social-bar>.social abbr::before {
-        content: ' ';
+    .foot>.social-bar>.social a::after {
         position: relative;
-        top: -15px;
+        left: 10px;
+        letter-spacing: 0.01em;
         color: #000;
         font-weight: 600;
     }
 
-    .foot>.social-bar>.social abbr:nth-child(1)::before {
+    .foot>.social-bar>.social li:hover a::after {
+        color: white;
+    }
+
+    .foot>.social-bar>.social li:nth-child(1) a::after {
         content: 'GitHub';
-        right: -100px;
     }
 
-    .foot>.social-bar>.social abbr:nth-child(2)::before {
+    .foot>.social-bar>.social li:nth-child(2) a::after {
         content: 'Linkedin';
-        right: -115px;
     }
 
-    .foot>.social-bar>.social abbr:nth-child(3)::before {
+    .foot>.social-bar>.social li:nth-child(3) a::after {
         content: 'Twitter';
-        right: -100px;
     }
 
-    .foot>.social-bar>.social abbr:nth-child(4)::before {
+    .foot>.social-bar>.social li:nth-child(4) a::after {
         content: 'Instagram';
-        right: -125px;
     }
 
-    .foot>.social-bar>.social abbr:nth-child(5)::before {
+    .foot>.social-bar>.social li:nth-child(5) a::after {
         content: 'FaceBook';
-        right: -120px;
     }
 }
 

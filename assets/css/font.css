@@ -2,7 +2,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-.header>.logo>p {
+.header>.logo>p,  .header>.logo>p span{
     font-family: 'Permanent Marker', cursive;
 }
 

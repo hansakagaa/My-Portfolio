@@ -280,6 +280,10 @@
     transition-duration: 0.5s;
 }
 
+.foot .social a:hover .fa-brands{
+    color: var(--cl-white);
+}
+
 /*-----Call-Box-----*/
 
 .call{

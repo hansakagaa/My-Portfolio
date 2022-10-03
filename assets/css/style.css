@@ -1,5 +1,6 @@
 :root{
     --cl-main: rgba(255, 184, 0, 1);
+    --cl-main-light: rgba(255, 184, 0, 0.5);
     --cl-black: rgba(0, 0, 0, 1);
     --cl-shadow: rgba(0, 0, 0, 0.5);
     --cl-gray: rgb(238, 238, 238);
@@ -21,7 +22,7 @@
 }
 
 ::-webkit-scrollbar{
-    width: 0;
+    width: 0.1em;
 }
 
 ::-webkit-scrollbar:hover{
@@ -74,14 +75,27 @@ main>section>header>h1 {
 /*----------Header-Start----------*/
 body>header{
     top: 0;
-    width: 99.6vw;
-    height: 50px;
+    width: 100vw;
+    height: 55px;
     position: fixed;
     background-color: var(--cl-none);
     z-index: 2;
+    transition: background-color 0.4s;
+    color: #FFB800;
+}
+
+.sticky{
+    box-shadow: 0 0 20px 0 var(--cl-shadow);
+    transition: 0.5s;
+    background-color: var(--cl-main);
+}
+
+.sticky .logo p span{
+    color: var(--cl-black);
 }
 
 .header>.logo>a img{
+    display: none;
     height: 45px;
     left: 15px;
     top: 2px;
@@ -99,9 +113,13 @@ body>header{
     left: 75px;
 }
 
+.logo p span{
+    color: var(--cl-main);
+}
+
 .menu-bar{
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 50px;
 }
 
@@ -383,7 +401,7 @@ body>header{
     height: 150px;
 }
 
-.project>.img-box div .box>div:nth-child(2){
+.project>.img-box .card .box>div:last-child{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1088,11 +1106,12 @@ body>header{
     position: absolute;
     top: 110px;
     right: 145px;
+    display: flex;
 }
 
-.foot>.social-bar>.social img{
-    width: 35px;
-    height: 35px;
+.foot .social .fa-brands{
+    font-size: 45px;
+    color: var(--cl-black);
     padding-right: 15px;
 }
 
