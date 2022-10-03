@@ -48,7 +48,6 @@ body>header{
 
 .menu>li>a {
     color: black;
-    text-decoration: none;
 }
 
 .menu>li>a i{
@@ -184,7 +183,6 @@ body>header{
 
 .home>.social-bar>.social ul li{
     position: relative;
-    list-style: none;
     width: 60px;
     height: 60px;
     display: flex;
@@ -959,7 +957,6 @@ main>section>header>h1 {
     font-size: 20px;
     line-height: 30px;
     color: #000000;
-    font-style: normal;
 }
 
 .contact-details>h4{
@@ -972,7 +969,6 @@ main>section>header>h1 {
     line-height: 27px;
     color: #000000;
     opacity: 0.8;
-    font-style: normal;
 }
 
 .contact-details:first-child a{
@@ -1068,10 +1064,6 @@ main>section>header>h1 {
     right: 145px;
 }
 
-.foot>.social-bar>.social a{
-    text-decoration: none;
-}
-
 .foot>.social-bar>.social img{
     width: 35px;
     height: 35px;
@@ -1138,8 +1130,6 @@ h6>span{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    border: none;
-    outline: none;
     position: absolute;
     background: #EEEEEE;
     padding: 0 0 0 30px;
@@ -1208,8 +1198,6 @@ input:invalid{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    border: none;
-    outline: none;
     position: absolute;
     background: #EEEEEE;
     padding: 15px 0 0 30px;
