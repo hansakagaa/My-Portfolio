@@ -442,7 +442,12 @@ body>header{
     position: absolute;
     background: var(--cl-shadow);
     border-radius: 10px;
-    visibility: hidden;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.project .img-box .card:hover .icon{
+    opacity: 1;
 }
 
 .project .img-box .card .box .icon-box{
@@ -476,13 +481,20 @@ body>header{
     width: 30px;
     height: 30px;
     background-color: var(--cl-main);
+    border: 2px solid var(--cl-main);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--cl-white);
-    bottom: 10px;
-    left: 10px;
+    bottom: 15px;
+    left: 15px;
+}
+
+.project .img-box .card .box .icon a:hover{
+    color: var(--cl-main);
+    background-color: var(--cl-white);
+    border: 2px solid var(--cl-main);
 }
 
 .project .disc-box{
