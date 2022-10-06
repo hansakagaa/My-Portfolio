@@ -6,7 +6,7 @@
     --cl-white-50: rgba(255, 255, 255, 0.5);
     --cl-black: rgb(0, 0, 0);
     --cl-black-60: rgba(0, 0, 0, 0.6);
-    --cl-black-25: rgba(0, 0, 0, 0.25);
+    --cl-text-shadow: rgba(0, 0, 0, 0.25);
     --cl-gray: rgba(238, 238, 238, 1);
     --cl-gray-65: rgba(238, 238, 238, 0.65);
     --cl-blue: rgba(6, 82, 221, 1);
@@ -21,6 +21,42 @@
     --cl-green-75: rgba(32, 191, 107, 0.75);
     --cl-light-blue: rgba(30, 144, 255, 1);
     --family-inter: 'Inter', sans-serif;
+}
+
+.bg-theme{
+    background-color: var(--cl-theme) !important;
+}
+
+.bg-theme-60{
+    background-color: var(--cl-theme-60) !important;
+}
+
+.bg-theme-80{
+    background-color: var(--cl-theme-80) !important;
+}
+
+.bg-gray-65{
+    background-color: var(--cl-gray-65) !important;
+}
+
+.bg-purple{
+    background-color: var(--cl-purple) !important;
+}
+
+.bg-cyan{
+    background-color: var(--cl-cyan) !important;
+}
+
+.bg-white{
+    background-color: var(--cl-white) !important;
+}
+
+.text-red{
+    color: var(--cl-red) !important;
+}
+
+.text-shadow{
+    text-shadow: 0 4px 4px var(--cl-text-shadow);
 }
 
 .full-view-point{
@@ -55,13 +91,13 @@
     border-color: var(--cl-white) !important;
 }
 
-.header{
+.welcome-text{
     top: 30%;
     width: max-content;
     color: var(--cl-theme);
 }
 
-.header-h1{
+.welcome-h1{
     font-family: var(--family-inter);
     width: max-content;
     font-weight: 700;
@@ -70,14 +106,14 @@
     text-shadow: 0 4px 4px var(--cl-black-25);
 }
 
-.header-line{
+.welcome-line{
     width: 500px;
     height: 10px;
     border-radius: 10px;
     background-color: var(--cl-gray);
 }
 
-.header-p {
+.welcome-p {
     font-family: var(--family-inter);
     font-weight: 700;
     font-size: 20px;
@@ -93,4 +129,35 @@ main>section:first-child>div>div .img-btn {
     height: 15px;
     border-radius: 100%;
     background-color: var(--cl-theme) !important;
+}
+
+.nav-img{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.btn-logout{
+    padding-right: 10px;
+}
+
+.btn-logout i{
+    padding-right: 5px;
+}
+
+.head{
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.head-img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.btn{
+    width: 250px;
+    height: 60px;
+    margin: 5px 70px 5px 5px;
 }
