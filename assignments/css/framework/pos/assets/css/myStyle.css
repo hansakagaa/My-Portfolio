@@ -51,6 +51,10 @@
     background-color: var(--cl-white) !important;
 }
 
+.bg-gray{
+    background-color: var(--cl-gray) !important;
+}
+
 .text-red{
     color: var(--cl-red) !important;
 }
@@ -170,4 +174,12 @@ main>section:first-child>div>div .img-btn {
 
 .table{
     margin-top: 10px;
+}
+
+.table th:first-child{
+    border-radius: 15px 0 0 0;
+}
+
+.table th:last-child{
+    border-radius: 0 15px 0 0;
 }
