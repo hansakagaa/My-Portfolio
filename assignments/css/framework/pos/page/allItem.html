@@ -38,10 +38,10 @@
                         <a class="nav-link" href="customer.html">Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Item</a>
+                        <a class="nav-link active" href="item.html">Item</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="item.html">Report</a>
+                        <a class="nav-link" href="#">Report</a>
                     </li>
                 </ul>
                 <div class="btn-logout text-shadow">
@@ -53,21 +53,13 @@
     <section class="container-fluid bg-gray-65">
         <div class="head">
             <img src="../assets/images/add-to-cart.png" alt="" class="head-img">
-            Item
+            Items
+        </div>
+        <div class="head-btn">
+            <a href="#" type="button" class="btn btn-lg bg-purple text-light fw-bold btn-main">New Item</a>
         </div>
         <div class="container-fluid bg-white h-100">
             <div class="row">
-                <div class="col-12" style="height: 330px;">
-                    <div class="row h-100">
-                        <div class="col-7 search-box">
-
-                        </div>
-                        <div class="col-4 main-btn d-flex flex-column align-items-end justify-content-center">
-                            <a href="#" type="button" class="btn btn-lg bg-purple text-light fw-bold btn-main">New Item</a>
-                            <a href="allItem.html" type="button" class="btn btn-lg bg-cyan text-light fw-bold btn-main">All Items</a>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-12">
                     <table class="table">
                         <thead>
@@ -76,6 +68,7 @@
                             <th scope="col">Description</th>
                             <th scope="col">Unit Price</th>
                             <th scope="col">Item QTY</th>
+                            <th scope="col">Update/Delete</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -84,18 +77,30 @@
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-success btn-sm">Update</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>I002</td>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-success btn-sm">Update</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>I003</td>
                             <td>Larry the Bird</td>
                             <td>Larry the Bird</td>
                             <td>@twitter</td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-success btn-sm">Update</button>
+                            </td>
                         </tr>
                         </tbody>
                     </table>

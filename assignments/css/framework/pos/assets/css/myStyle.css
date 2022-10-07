@@ -147,7 +147,7 @@ main>section:first-child>div>div .img-btn {
 
 .head{
     font-size: 40px;
-    margin-left: 20px;
+    margin: 0 0 10px 20px;
 }
 
 .head-img{
@@ -156,8 +156,18 @@ main>section:first-child>div>div .img-btn {
     height: 50px;
 }
 
-.btn{
-    width: 250px;
-    height: 60px;
+.head-btn{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+.btn-main{
+    width: 200px;
+    height: 50px;
     margin: 5px 70px 5px 5px;
+}
+
+.table{
+    margin-top: 10px;
 }
