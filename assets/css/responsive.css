@@ -173,6 +173,9 @@
         display: none;
     }
 
+    .side-vector {
+        display: none;
+    }
 
     .home .social-bar{
         position: absolute;
@@ -289,7 +292,7 @@
         gap: 0;
     }
 
-    .project>.img-box .card{
+    .project>.img-box .item{
         border-radius: 0;
     }
 

@@ -42,6 +42,7 @@ main>section{
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 main>section>header{
@@ -70,6 +71,18 @@ main>section>header>h1 {
     font-weight: 400;
     font-size: 33px;
     color: var(--cl-main);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.display-none{
+    display: none;
+}
+
+.visibility-hidden{
+    visibility: hidden;
 }
 
 /*----------Header-Start----------*/
@@ -140,6 +153,11 @@ body>header{
 
 .menu>li>a {
     color: var(--cl-black);
+}
+
+.menu .menu-link:hover a, .menu .menu-link.active a{
+    color: white;
+    font-weight: 600;
 }
 
 .menu>li>a i{
@@ -401,7 +419,14 @@ body>header{
     align-items: center;
 }
 
-.project .img-box .card{
+.project .img-box aside{
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.project .img-box .item{
     border-radius: 10px;
     background-color: #d9d9d9;
     width: 275px;
@@ -409,7 +434,7 @@ body>header{
     position: relative;
 }
 
-.project .img-box .card .box .img{
+.project .img-box .item .box .img{
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -418,7 +443,7 @@ body>header{
     border-radius: 10px;
 }
 
-.project .img-box .card .text{
+.project .img-box .item .text{
     font-weight: 600;
     font-size: 15px;
     line-height: 22px;
@@ -436,7 +461,7 @@ body>header{
     margin: auto;
 }
 
-.project .img-box .card .box .icon{
+.project .img-box .item .box .icon{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -446,11 +471,11 @@ body>header{
     opacity: 0;
 }
 
-.project .img-box .card:hover .icon{
+.project .img-box .item:hover .icon{
     opacity: 1;
 }
 
-.project .img-box .card .box .icon-box{
+.project .img-box .item .box .icon-box{
     display: flex;
     gap: 5px;
     flex-flow: row;
@@ -461,22 +486,22 @@ body>header{
     padding-right: 15px;
 }
 
-.project .img-box .card .box .icon-box .icon-back {
+.project .img-box .item .box .icon-box .icon-back {
     background-color: var(--cl-card-gary);
     border-radius: 20px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project .img-box .card .box .icon-box img{
-    width: 25px;
-    height: 25px;
+.project .img-box .item .box .icon-box img{
+    width: 20px;
+    height: 20px;
 }
 
-.project .img-box .card .box .icon a{
+.project .img-box .item .box .icon a{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -491,104 +516,137 @@ body>header{
     left: 15px;
 }
 
-.project .img-box .card .box .icon a:hover{
+.project .img-box .item .box .icon a:hover{
     color: var(--cl-main);
     background-color: var(--cl-white);
     border: 2px solid var(--cl-main);
 }
 
-.project .disc-box{
-    position: absolute;
-    top: 200px;
-    left: 965px;
-    height: 325px;
-    width: 300px;
-    border-radius: 20px;
-    overflow: hidden;
+.project .discBox{
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cl-shadow);
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.project .disc-box>aside{
+.project .discBox.open{
     display: flex;
-    flex-flow: column;
-    height: max-content;
-    width: max-content;
 }
 
-.project .disc-box aside>div{
-    background-color: #eee;
+.project .discBox.open .discBox-content{
+    animation: discBox .5s ease;
+}
+
+@keyframes discBox {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.project .discBox-content {
+    width: 800px;
+    margin-bottom: 90px;
+}
+
+.project .discBox-content .discBox-head{
     position: relative;
-    width: 300px;
-    height: 325px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
 }
 
-.project .disc-box>aside>div h3{
-    text-decoration: underline;
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 28px;
-    text-align: center;
-    color: #000000;
-    position: relative;
-    top: 25px;
-    margin: 0;
-}
-
-.project .disc-box>aside>div P{
-    font-size: 19px;
-    line-height: 24px;
-    text-align: justify;
-    color: #000000;
+.project .discBox-content .discBox-head .discBox-caption{
     position: absolute;
-    bottom: 25px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 275px;
+    width: max-content;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--cl-main);
 }
 
-
-.project .img-box aside{
-    display: grid;
-    gap: 20px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
+.project .discBox-content .discBox-head .discBox-close{
+    position: absolute;
+    right: 0;
+    font-size: 50px;
+    color: var(--cl-white);
+    top: -35px;
+    transition: all 0.25s ease;
 }
 
-.project>.disc-box>aside{
-    animation-name: project;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+.project .discBox-content .discBox-head .discBox-close:hover{
+    transform: scale(1.1);
 }
 
-@keyframes project {
-    0%, 10%{
-        transform: translateY(0);
-    }
+.project .discBox-content .discBox-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    15%, 25%{
-        transform: translateY(-325px);
-    }
+.project .discBox-content .discBox-img .img{
+    width: 500px;
+    border-radius: 20px;
+}
 
-    30%, 40%{
-        transform: translateY(-650px);
-    }
+.project .discBox-content .discBox-text{
+    position: absolute;
+    width: 800px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    color: var(--cl-main);
+    font-weight: bold;
+}
 
-    45%, 55%{
-        transform: translateY(-975px);
-    }
+.project .discBox .discBox-controls{
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    color: var(--cl-white);
+}
 
-    60%, 70%{
-        transform: translateY(-1300px);
-    }
+.project .discBox .discBox-controls div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 1px solid var(--cl-white);
+    transition: all 0.25s ease;
+}
 
-    75%, 85%{
-        transform: translateY(-1625px);
-    }
+.project .discBox .discBox-controls div:hover{
+    transform: scale(1.1);
+}
 
-    90%, 100%{
-        /*transform: translateX(-1800px);*/
-    }
+.project .discBox .discBox-controls div:active{
+    transform: scale(1);
+}
+
+.project .discBox .discBox-controls .prev-item{
+    left: 0;
+    margin-left: 50px;
+}
+
+.project .discBox .discBox-controls .next-item{
+    right: 0;
+    margin-right: 50px;
 }
 
 /*----------Project-End----------*/
