@@ -43,6 +43,7 @@
     </header>
     <main class="main">
         <div class="side-vector"></div>
+        <div class="vector"></div>
         <section class="home" id="home">
             <aside>
                 <div class="dot-bord-01"><div class="div">
@@ -67,7 +68,6 @@
             </aside>
             <aside>
                 <div class="home-img">
-                    <div class="vector"></div>
                     <div class="dot-bord-02"><div class="div">
                         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
                         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
@@ -98,7 +98,7 @@
 
         <section class="skills" id="skills">
             <header class="header">
-                <h1 class="topic">SKILLS</h1>
+                <h1 class="topic">SKILLS <i class="i"></i> </h1>
             </header>
             <aside class="skill">
                 <div>
@@ -113,9 +113,9 @@
                         <div><abbr title="Hibernate"><a href="https://hibernate.org/" target="_blank"><img src="assets/images/svg/hibernate-icon.svg" alt="Hibernate"></a> </abbr></div>
                         <div><abbr title="Java Script"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="assets/images/svg/javascript.webp" alt="Javascript"></a> </abbr></div>
                         <div><abbr title="C++"><a href="https://www.geeksforgeeks.org/functions-in-cpp/" target="_blank"><img src="assets/images/png/skill-img/c2Plus.png" alt="C++"></a> </abbr></div>
-                        <div><abbr title=""><a href="" target="_blank"><img src="" alt=""></a> </abbr></div>
-                        <div><abbr title=""><a href="" target="_blank"><img src="" alt=""></a> </abbr></div>
-                        <div><abbr title=""><a href="" target="_blank"><img src="" alt=""></a> </abbr></div>
+                        <div class="visibility-hidden"><abbr title=""><a href="" target="_blank"><img src="" alt=""></a> </abbr></div>
+                        <div class="visibility-hidden"><abbr title=""><a href="" target="_blank"><img src="" alt=""></a> </abbr></div>
+                        <div class="visibility-hidden"><abbr title=""><a href="" target="_blank"><img src="" alt=""></a> </abbr></div>
                     </div>
                 </div>
                 <div>
@@ -132,7 +132,7 @@
                         <div><abbr title="NetBeans"><a href="https://netbeans.apache.org/" target="_blank"><img src="assets/images/png/skill-img/net-beans.png" alt="NetBeans"></a> </abbr></div>
                         <div><abbr title="Geany"><a href="https://www.geany.org/" target="_blank"><img src="assets/images/svg/geany-logo.svg" alt="Geany"></a> </abbr></div>
                         <div><abbr title="Brave"><a href="https://brave.com/" target="_blank"><img src="assets/images/svg/brave-icon.svg" alt="Brave"></a> </abbr></div>
-                        <div><abbr title=""><a href="" target="_blank"><img src="" alt=""></a> </abbr></div>
+                        <div class="visibility-hidden"><abbr title=""><a href="" target="_blank"><img src="" alt=""></a> </abbr></div>
                     </div>
                 </div>
             </aside>
@@ -140,9 +140,8 @@
 
         <section class="project" id="project">
             <header class="header">
-                <h1 class="topic">PROJECT</h1>
+                <h1 class="topic">PROJECT <i class="i"></i> </h1>
             </header>
-
             <section class="img-box">
                 <aside>
                     <div class="item">
@@ -264,27 +263,11 @@
                     </div>
                 </aside>
             </section>
-
-            <section class="discBox">
-                <div class="discBox-content">
-                    <div class="discBox-head">
-                        <div class="discBox-caption"></div>
-                        <div class="discBox-close cursor-pointer">&times;</div>
-                    </div>
-                    <div class="discBox-img"><img src="" class="img" alt=""></div>
-                    <div class="discBox-text"></div>
-                </div>
-
-                <div class="discBox-controls">
-                    <div class="prev-item cursor-pointer"><i class="fa-solid fa-chevron-left"></i></div>
-                    <div class="next-item cursor-pointer"><i class="fa-solid fa-chevron-right"></i></div>
-                </div>
-            </section>
         </section>
 
         <section class="assignment" id="assignment">
             <header class="header">
-                <h1 class="topic">ASSIGNMENT</h1>
+                <h1 class="topic">ASSIGNMENT <i class="i"></i> </h1>
             </header>
             <section>
                 <aside>
@@ -393,7 +376,7 @@
 
         <section class="education" id="education">
             <header class="header">
-                <h1 class="topic">EDUCATION</h1>
+                <h1 class="topic">EDUCATION <i class="i"></i> </h1>
             </header>
             <aside class="educate">
                 <div class="div-01">
@@ -472,7 +455,7 @@
 
         <section class="about" id="about">
             <header class="header">
-                <h1 class="topic">ABOUT</h1>
+                <h1 class="topic">ABOUT <i class="i"></i> </h1>
             </header>
             <aside class="gallery">
                 <h2 class="sub-topic">#Gallery :</h2>
@@ -547,7 +530,7 @@
 
         <section class="contact" id="contact">
             <header class="header">
-                <h1 class="topic">CONTACT</h1>
+                <h1 class="topic">CONTACT <i class="i"></i> </h1>
             </header>
             <article>
                 <h2 class="sub-topic">Let’s Talk</h2>
@@ -656,6 +639,22 @@
         </nav>
         <h6>Copyright ©2022. All Right Reserved By <span>Ashen Hansaka</span></h6>
     </footer>
+
+    <section class="discBox">
+            <div class="discBox-content">
+                <div class="discBox-head">
+                    <div class="discBox-caption"></div>
+                    <div class="discBox-close cursor-pointer">&times;</div>
+                </div>
+                <div class="discBox-img"><img src="" class="img" alt=""></div>
+                <div class="discBox-text"></div>
+            </div>
+
+            <div class="discBox-controls">
+                <div class="prev-item cursor-pointer"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="next-item cursor-pointer"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </section>
     <script src="assets/js/style.js"></script>
 </body>
 </html>

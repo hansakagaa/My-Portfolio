@@ -27,7 +27,28 @@ menuBtn.addEventListener('click', function () {
         menuName[i].classList.toggle('active');
         menuLink[i].classList.toggle('act');
     }
-})
+});
+
+//*--------Menu btn click action--------
+
+const section = document.querySelectorAll('.main>section[id]');
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+    section.forEach(current => {
+       const  sectionHeight = current.offsetHeight
+       const  sectionTop = current.offsetTop - 50;
+       sectionId = current.getAttribute('id');
+       if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+           // const parent = document.querySelector('.menu a[href*=' + sectionId + ']').parentNode;
+           // parent.classList.add('active');
+       }else{
+           // const parent = document.querySelector('.menu a[href*=' + sectionId + ']').parentNode;
+           // parent.classList.remove('active');
+       }
+    });
+}
+
+window.addEventListener('scroll', scrollActive);
 
 /*--------Project Section--------*/
 //*--------Open description box--------

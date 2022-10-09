@@ -29,6 +29,18 @@
     width: 5px;
 }
 
+::-webkit-scrollbar:hover .header{
+    width: 99.6vw;
+}
+
+::-webkit-scrollbar:hover main>section{
+    width: 99.6vw;
+}
+
+::-webkit-scrollbar:hover .foot{
+    width: 99.6vw;
+}
+
 ::-webkit-scrollbar-thumb{
     background: var(--cl-main);
     border-radius: 50px;
@@ -39,7 +51,7 @@
 }
 
 main>section{
-    width: 100vw;
+    width: 99.9vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -51,26 +63,60 @@ main>section>header{
     left: 0;
     right: 0;
     margin: auto;
-    width: 200px;
-    height: 30px;
+    width: max-content;
 }
 
 main>section>header>h1 {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    margin: 0;
     font-weight: 400;
+    line-height: 40px;
     font-size: 30px;
     color: var(--cl-text-black);
+}
+
+main>section>header .topic .i{
+    width: 60%;
+    height: 4px;
+    background-color: var(--cl-text-black);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 50px;
+}
+
+main>section>header .topic .i::before{
+    content: '';
+    width: 25%;
+    height: 4px;
+    background-color: var(--cl-text-black);
+    position: absolute;
+    left: 110%;
+    border-radius: 50px;
+}
+
+main>section>header .topic .i::after{
+    content: '';
+    width: 18%;
+    height: 4px;
+    background-color: var(--cl-text-black);
+    position: absolute;
+    left: 140%;
+    border-radius: 50px;
 }
 
 .sub-topic{
     font-weight: 400;
     font-size: 33px;
     color: var(--cl-main);
+}
+
+.side-vector{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 210px;
+    height: 235px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: var(--cl-main);
 }
 
 .cursor-pointer {
@@ -88,7 +134,7 @@ main>section>header>h1 {
 /*----------Header-Start----------*/
 body>header{
     top: 0;
-    width: 100vw;
+    width: 99.9vw;
     height: 55px;
     position: fixed;
     background-color: var(--cl-none);
@@ -368,14 +414,14 @@ body>header{
     right: 470px;
 }
 
-.home-img>.vector{
+.vector{
     position: absolute;
     right: 0;
     top: 0;
     width: 810px;
     height: 135%;
     clip-path: polygon(100% 0, 0 0, 100% 100%);
-    background-color: #FFB800;
+    background-color:  var(--cl-main);
 }
 
 .home-img>.img{
@@ -551,8 +597,8 @@ body>header{
     border: 2px solid var(--cl-main);
 }
 
-.project .discBox{
-    position: sticky;
+.discBox{
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -563,11 +609,11 @@ body>header{
     align-items: center;
 }
 
-.project .discBox.open{
+.discBox.open{
     display: flex;
 }
 
-.project .discBox.open .discBox-content{
+.discBox.open .discBox-content{
     animation: discBox .5s ease;
 }
 
@@ -580,19 +626,19 @@ body>header{
     }
 }
 
-.project .discBox-content {
+.discBox-content {
     width: 800px;
     margin-bottom: 90px;
 }
 
-.project .discBox-content .discBox-head{
+.discBox-content .discBox-head{
     position: relative;
     width: 100%;
     height: 100%;
     margin-bottom: 60px;
 }
 
-.project .discBox-content .discBox-head .discBox-caption{
+.discBox-content .discBox-head .discBox-caption{
     position: absolute;
     left: 0;
     right: 0;
@@ -603,7 +649,7 @@ body>header{
     color: var(--cl-main);
 }
 
-.project .discBox-content .discBox-head .discBox-close{
+.discBox-content .discBox-head .discBox-close{
     position: absolute;
     right: 0;
     font-size: 50px;
@@ -612,11 +658,11 @@ body>header{
     transition: all 0.25s ease;
 }
 
-.project .discBox-content .discBox-head .discBox-close:hover{
+.discBox-content .discBox-head .discBox-close:hover{
     transform: scale(1.1);
 }
 
-.project .discBox-content .discBox-img{
+.discBox-content .discBox-img{
     position: relative;
     width: 100%;
     height: 100%;
@@ -625,12 +671,12 @@ body>header{
     align-items: center;
 }
 
-.project .discBox-content .discBox-img .img{
+.discBox-content .discBox-img .img{
     width: 500px;
     border-radius: 20px;
 }
 
-.project .discBox-content .discBox-text{
+.discBox-content .discBox-text{
     position: absolute;
     width: 800px;
     text-align: center;
@@ -641,14 +687,14 @@ body>header{
     font-weight: bold;
 }
 
-.project .discBox .discBox-controls{
+.discBox .discBox-controls{
     position: absolute;
     width: 100%;
     font-size: 40px;
     color: var(--cl-white);
 }
 
-.project .discBox .discBox-controls div{
+.discBox .discBox-controls div{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -660,20 +706,20 @@ body>header{
     transition: all 0.25s ease;
 }
 
-.project .discBox .discBox-controls div:hover{
+.discBox .discBox-controls div:hover{
     transform: scale(1.1);
 }
 
-.project .discBox .discBox-controls div:active{
+.discBox .discBox-controls div:active{
     transform: scale(1);
 }
 
-.project .discBox .discBox-controls .prev-item{
+.discBox .discBox-controls .prev-item{
     left: 0;
     margin-left: 50px;
 }
 
-.project .discBox .discBox-controls .next-item{
+.discBox .discBox-controls .next-item{
     right: 0;
     margin-right: 50px;
 }
@@ -1263,7 +1309,7 @@ body>header{
 /*----------Footer-Start----------*/
 .foot{
     position: relative;
-    width: 99.6vw;
+    width: 99.9vw;
     height: 230px;
     background-color: #FFB800;
 }
@@ -1500,14 +1546,4 @@ input:invalid{
     border: 2px solid #FFB800;
     color: white;
     font-weight: 600;
-}
-
-.side-vector{
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 220px;
-    height: 235px;
-    clip-path: polygon(100% 0, 0 0, 100% 100%);
-    background-color: #FFB800;
 }
