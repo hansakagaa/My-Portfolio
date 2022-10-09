@@ -27,7 +27,7 @@
     }
     /*----------Header-Start----------*/
     body>header{
-        height: 75px;
+        height: 55px;
     }
 
     .header.active{
@@ -40,18 +40,12 @@
 
     .header>.logo>p{
         top: 5px;
-        left: 0;
-        right: 0;
+        left: 15px;
         width: max-content;
-        margin: auto;
     }
 
     .menu-bar{
-        top: 45px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: max-content;
+        display: none;
     }
 
     .menu-bar.active{
@@ -988,11 +982,24 @@
         width: 300px;
     }
 
+    body>header {
+        height: 75px;
+    }
+
     .menu-btn {
         font-size: 22px;
         width: 27px;
         height: 27px;
         right: 13px;
+    }
+
+    .menu-bar {
+        display: block;
+        top: 45px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
     }
 }
 
