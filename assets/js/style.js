@@ -1,6 +1,13 @@
 /*--------Resize Header on Scroll--------*/
 //*--------On Scroll--------
-let header = document.querySelector('.header');
+
+const header = document.querySelector('.header'),
+    menuBtn = header.querySelector('.menu-btn'),
+    menuBar = header.querySelector('.menu-bar'),
+    menuName = header.querySelectorAll('.menu-name'),
+    menu = header.querySelector('.menu'),
+    menuLink = header.querySelectorAll('.menu-link');
+const main = document.querySelector('.main');
 
 window.onscroll = () =>{
     if (this.scrollY > 20){
@@ -9,11 +16,22 @@ window.onscroll = () =>{
         header.classList.remove('sticky');
     }
 }
-//*--------On Scroll Nav-bar--------
 
+//*--------Menu btn click action--------
+
+menuBtn.addEventListener('click', function () {
+    menuBar.classList.toggle('active');
+    menu.classList.toggle('active');
+    main.classList.toggle('active');
+    for (let i=0; i<menuLink.length; i++){
+        menuName[i].classList.toggle('active');
+        menuLink[i].classList.toggle('act');
+    }
+})
 
 /*--------Project Section--------*/
 //*--------Open description box--------
+
 const items = document.querySelectorAll('.project .item'),
     itemsCount = items.length;
 const discBox = document.querySelector('.discBox'),
@@ -62,8 +80,7 @@ function toggleDiscBox() {
 }
 
 function changeItem() {
-    imgSrc = items[itemIndex].querySelector('.img').getAttribute('src');
-    discBoxImg.src = imgSrc;
+    discBoxImg.src = items[itemIndex].querySelector('.img').getAttribute('src');
     discBoxCaption.innerHTML = items[itemIndex].querySelector('.box .text').innerHTML;
     discBoxText.innerHTML = items[itemIndex].querySelector('p').innerHTML;
 }
