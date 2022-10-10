@@ -183,3 +183,15 @@ main>section:first-child>div>div .img-btn {
 .table th:last-child{
     border-radius: 0 15px 0 0;
 }
+
+.radius-20 {
+    border-radius: 20px;
+}
+
+.modal-header {
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-btn{
+    width: 150px;
+}
