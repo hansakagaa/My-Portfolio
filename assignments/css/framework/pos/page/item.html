@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
-<main class="container-fluid p-0 full-view-point">
+<main class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg bg-theme-80">
         <div class="container-fluid">
             <a class="navbar-brand d-flex text-light fw-bold text-shadow" href="#">
@@ -63,8 +63,42 @@
 
                         </div>
                         <div class="col-4 main-btn d-flex flex-column align-items-end justify-content-center">
-                            <a href="#" type="button" class="btn btn-lg bg-purple text-light fw-bold btn-main">New Item</a>
+                            <button data-bs-toggle="modal" data-bs-target="#item-modal" type="button" class="btn btn-lg bg-purple text-light fw-bold btn-main">New Item</button>
                             <a href="allItem.html" type="button" class="btn btn-lg bg-cyan text-light fw-bold btn-main">All Items</a>
+                        </div>
+                        <div class="modal fade" id="item-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content radius-20">
+                                    <div class="modal-header bg-purple">
+                                        <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold" id="exampleModalLabel">New Item</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="item-code" class="col-form-label">Item code :</label>
+                                                <input type="text" class="form-control bg-gray radius-20" id="item-code">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="item-description" class="col-form-label">Item Description :</label>
+                                                <input type="text" class="form-control bg-gray radius-20" id="item-description">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="unit-price" class="col-form-label">Unit Price :</label>
+                                                <input type="text" class="form-control bg-gray radius-20" id="unit-price">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="item-qty" class="col-form-label">Item QY :</label>
+                                                <input type="text" class="form-control bg-gray radius-20" id="item-qty">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer justify-content-sm-around">
+                                        <button type="button" class="btn btn-outline-danger modal-btn fw-bold radius-20" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-primary modal-btn fw-bold radius-20">Save Item</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
