@@ -37,7 +37,7 @@ function scrollActive() {
     section.forEach(current => {
        const  sectionHeight = current.offsetHeight
        const  sectionTop = current.offsetTop - 50;
-       sectionId = current.getAttribute('id');
+       let sectionId = current.getAttribute('id');
        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
            // const parent = document.querySelector('.menu a[href*=' + sectionId + ']').parentNode;
            // parent.classList.add('active');
