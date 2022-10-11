@@ -222,6 +222,7 @@ main>section:first-child>div>div .img-btn {
 
 .modal-btn{
     width: 150px;
+    border-width: 2px;
 }
 
 .search-box-btn .btn{
