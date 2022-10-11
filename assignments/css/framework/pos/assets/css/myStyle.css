@@ -15,7 +15,7 @@
     --cl-light-green: rgba(50, 255, 126, 1);
     --cl-cyan: rgba(15, 185, 177, 1);
     --cl-purple: rgba(165, 94, 234, 1);
-    --cl-light-cyan: rgba(10, 189, 227, 1);
+    --cl-light-cyan: rgb(10, 189, 227);
     --cl-red: rgba(234, 32, 39, 1);
     --cl-green: rgba(32, 191, 107, 1);
     --cl-green-75: rgba(32, 191, 107, 0.75);
@@ -47,6 +47,10 @@
     background-color: var(--cl-cyan) !important;
 }
 
+.bg-light-cyan{
+    background-color: var(--cl-light-cyan) !important;
+}
+
 .bg-white{
     background-color: var(--cl-white) !important;
 }
@@ -55,17 +59,37 @@
     background-color: var(--cl-gray) !important;
 }
 
+.bg-light-red{
+    background-color: var(--cl-light-red) !important;
+}
+
+.bg-green{
+    background-color: var(--cl-green) !important;
+}
+
+.bg-blue{
+    background-color: var(--cl-blue) !important;
+}
+
 .text-red{
     color: var(--cl-red) !important;
 }
 
 .text-shadow{
-    text-shadow: 0 4px 4px var(--cl-text-shadow);
+    text-shadow: 0 4px 4px var(--cl-text-shadow) !important;
+}
+
+.text-hover-white:hover{
+    color: var(--cl-white) !important;
 }
 
 .full-view-point{
     width: 100vw;
     height: 100vh;
+}
+
+.w-0{
+    width: 0 !important;
 }
 
 .center{
@@ -166,10 +190,14 @@ main>section:first-child>div>div .img-btn {
     right: 60px;
 }
 
+.main-btn{
+    padding-top: 40px;
+}
+
 .btn-main{
     width: 200px;
     height: 50px;
-    margin: 5px 70px 5px 5px;
+    margin: 5px;
 }
 
 .table{
@@ -194,4 +222,46 @@ main>section:first-child>div>div .img-btn {
 
 .modal-btn{
     width: 150px;
+}
+
+.search-box-btn .btn{
+    margin-right: 10px;
+    height: 32px;
+    width: 100px;
+}
+
+.search-box-content{
+    width: 550px;
+}
+
+.search-box-head{
+    margin: 0 0 0 20px;
+}
+
+.search-box-header{
+    height: 45px;
+    border-radius: 10px 10px 0 0;
+}
+
+.search-box-body .box{
+    height: 90px;
+}
+
+.search-box-body .dropdown .btn{
+    width: 200px;
+    border-color: #ced4da;
+}
+
+.btn-search{
+    height: 40px;
+    width: 135px;
+}
+
+.search-box-content .content-box{
+    height: 230px;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.btn:hover, .btn-logout:hover{
+    transform: scale(1.02);
 }
