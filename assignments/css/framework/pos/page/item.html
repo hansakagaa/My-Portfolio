@@ -97,24 +97,24 @@
                                         </div>
                                     </div>
                                     <div class="col-12 h-25 d-flex justify-content-end search-box-btn pt-2">
-                                        <button type="button" class="btn btn-primary btn-sm fw-bold bg-light-red border-0">Delete</button>
-                                        <button type="button" class="btn btn-primary btn-sm fw-bold bg-green border-0">Update</button>
-                                        <button type="button" class="btn btn-primary btn-sm fw-bold bg-blue border-0">View</button>
+                                        <button id="delete-item" type="button" class="btn btn-primary btn-sm fw-bold bg-light-red border-0">Delete</button>
+                                        <button id="update-item" type="button" data-bs-toggle="modal" data-bs-target="#item-modal" class="btn btn-primary btn-sm fw-bold bg-green border-0">Update</button>
+                                        <button id="view-item" type="button" class="btn btn-primary btn-sm fw-bold bg-blue border-0">View</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-4 main-btn d-flex flex-column align-items-end justify-content-sm-start">
-                            <button data-bs-toggle="modal" data-bs-target="#item-modal" type="button" class="btn btn-lg bg-purple text-light fw-bold btn-main mb-3 text-shadow">New Item</button>
-                            <a href="allItem.html" type="button" class="btn btn-lg bg-cyan text-light fw-bold btn-main text-shadow">All Items</a>
+                            <button id="new-item" data-bs-toggle="modal" data-bs-target="#item-modal" type="button" class="btn btn-lg bg-purple text-light fw-bold btn-main mb-3 text-shadow">New Item</button>
+                            <a id="all-item" href="allItem.html" type="button" class="btn btn-lg bg-cyan text-light fw-bold btn-main text-shadow">All Items</a>
                         </div>
 
                         <div class="modal fade" id="item-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content radius-20">
                                     <div class="modal-header bg-purple">
-                                        <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold" id="exampleModalLabel">New Item</h1>
+                                        <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold" id="exampleModalLabel"><span>New</span> Item</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
