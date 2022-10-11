@@ -57,15 +57,58 @@
         </div>
         <div class="container-fluid bg-white h-100">
             <div class="row">
-                <div class="col-12" style="height: 330px;">
+                <div class="col-12" style="height: 320px;">
                     <div class="row h-100">
-                        <div class="col-7 search-box">
 
+                        <div class="col-7 search-box pt-2">
+                            <div class="container h-100 d-flex justify-content-center">
+                                <div class="row search-box-content h-100">
+                                    <div class="col-12 h-75">
+                                        <div class="content-box border border-dark border-1">
+                                            <div class="search-box-header bg-light-cyan d-flex align-items-center border-bottom border-dark border-1">
+                                                <h1 class="search-box-head text-light fs-4 text-shadow">Search Item</h1>
+                                            </div>
+                                            <div class="search-box-body d-flex justify-content-center align-items-center">
+                                                <div class="row container">
+                                                    <div class="col-12 box d-flex justify-content-center align-items-center">
+                                                        <div class="mb-3 w-75">
+                                                            <label for="search-bar" class="form-label"></label>
+                                                            <input type="text" class="form-control" id="search-bar" placeholder="Item Code / Unit Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 box d-flex justify-content-center align-items-center">
+                                                        <div class="dropdown mb-3">
+                                                            <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Item Code
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 box d-flex justify-content-center align-items-center">
+                                                        <button type="button" class="btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search mb-3 text-shadow text-hover-white">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 h-25 d-flex justify-content-end search-box-btn pt-2">
+                                        <button type="button" class="btn btn-primary btn-sm fw-bold bg-light-red border-0">Delete</button>
+                                        <button type="button" class="btn btn-primary btn-sm fw-bold bg-green border-0">Update</button>
+                                        <button type="button" class="btn btn-primary btn-sm fw-bold bg-blue border-0">View</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4 main-btn d-flex flex-column align-items-end justify-content-center">
-                            <button data-bs-toggle="modal" data-bs-target="#item-modal" type="button" class="btn btn-lg bg-purple text-light fw-bold btn-main">New Item</button>
-                            <a href="allItem.html" type="button" class="btn btn-lg bg-cyan text-light fw-bold btn-main">All Items</a>
+
+                        <div class="col-4 main-btn d-flex flex-column align-items-end justify-content-sm-start">
+                            <button data-bs-toggle="modal" data-bs-target="#item-modal" type="button" class="btn btn-lg bg-purple text-light fw-bold btn-main mb-3 text-shadow">New Item</button>
+                            <a href="allItem.html" type="button" class="btn btn-lg bg-cyan text-light fw-bold btn-main text-shadow">All Items</a>
                         </div>
+
                         <div class="modal fade" id="item-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content radius-20">
