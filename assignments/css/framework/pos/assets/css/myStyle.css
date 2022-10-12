@@ -67,12 +67,24 @@
     background-color: var(--cl-green) !important;
 }
 
+.bg-light-green{
+    background-color: var(--cl-light-green) !important;
+}
+
 .bg-blue{
     background-color: var(--cl-blue) !important;
 }
 
 .text-red{
     color: var(--cl-red) !important;
+}
+
+.text-light-red{
+    color: var(--cl-light-red) !important;
+}
+
+.text-blue{
+    color: var(--cl-blue) !important;
 }
 
 .text-shadow{
@@ -90,6 +102,10 @@
 
 .w-0{
     width: 0 !important;
+}
+
+.cursor-default{
+    cursor: default !important;
 }
 
 .center{
@@ -212,6 +228,10 @@ main>section:first-child>div>div .img-btn {
     border-radius: 0 15px 0 0;
 }
 
+.radius-10 {
+    border-radius: 10px;
+}
+
 .radius-20 {
     border-radius: 20px;
 }
@@ -265,4 +285,12 @@ main>section:first-child>div>div .img-btn {
 
 .btn:hover, .btn-logout:hover{
     transform: scale(1.02);
+}
+
+.order-box{
+    height: 350px;
+}
+
+.order-box .form-control{
+    height: 30px;
 }
