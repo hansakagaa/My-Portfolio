@@ -120,6 +120,10 @@
     width: 0 !important;
 }
 
+.w-80{
+    width: 80% !important;
+}
+
 .h-80{
     height: 80% !important;
 }
@@ -147,6 +151,11 @@
     transition: all 0.3s ease-in-out;
 }
 
+.fs-main{
+    font-size: 70px;
+    transition: all 0.3s ease-in-out;
+}
+
 .top-right-50{
     top:50px;
     right: 50px
@@ -163,42 +172,40 @@
     color: var(--cl-blue);
 }
 
+.login .form-content{
+    background: var(--cl-gray-65);
+    border-radius: 50px;
+}
+
+.login .fs-main {
+    font-size: 60px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.login .main-text p {
+    font-size: 18px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+
 .btn-login:hover{
     background-color: var(--cl-light-green) !important;
     border-color: var(--cl-white) !important;
 }
 
-.welcome-text{
-    top: 30%;
-    width: max-content;
+.text-them{
     color: var(--cl-theme);
 }
 
-.welcome-h1{
+.family-inter{
     font-family: var(--family-inter);
-    width: max-content;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 45px;
-    text-shadow: 0 4px 4px var(--cl-black-25);
 }
 
-.welcome-line{
+.main-line{
     width: 500px;
     height: 10px;
     border-radius: 10px;
     background-color: var(--cl-gray);
-}
-
-.welcome-p {
-    font-family: var(--family-inter);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 35px;
-    text-align: center;
-    color: var(--cl-white);
-    width: 800px;
-    padding-top: 50px;
 }
 
 main>section:first-child>div>div .img-btn {

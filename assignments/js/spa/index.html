@@ -8,15 +8,88 @@
     <meta name="theme-color" content="#ffb800">
     <title>Hasii POS System</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/myStyle.min.css">
+    <link rel="stylesheet" href="assets/css/myStyle.css">
     <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/font-icon/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
+<!--Dashboard-menu-->
+<div class="offcanvas show offcanvas-start border-0 bg-transparent" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="scroll-menu" aria-labelledby="offcanvasScrollingLabel">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <div class="menu-content w-100 mt-5 mb-5 bg-theme-60">
+            <div class="menu-header d-flex justify-content-center pt-3 pb-2 bg-theme-60">
+                <a class="menu-brand d-flex text-light fw-bold text-shadow" href="#">
+                    <img src="assets/images/favicon.png" alt="Logo" class="d-inline-block align-text-top menu-img me-3">
+                    Hasii POS System
+                </a>
+            </div>
+            <div class="menu-body">
+                <ul class="list-group menu-list mt-2 ms-3 mb-2">
+                    <li class="me-4 ps-3 radius-20">
+                        <a id="btn-dashboard" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/dashboard.svg" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20">
+                        <a id="btn-place-order" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/place-order.svg" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Place Order
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20">
+                        <a id="btn-customer" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/customer.svg" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Customer
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20" aria-disabled="true">
+                        <a id="btn-items" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/add-to-cart.png" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Items
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 disabled" aria-disabled="true">
+                        <a id="btn-order-details" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/order.png" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Order Details
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 disabled" aria-disabled="true">
+                        <a id="btn-supplier" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/supplier.png" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Supplier
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 disabled" aria-disabled="true">
+                        <a class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/report.png" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Reports
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 disabled" aria-disabled="true">
+                        <a id="btn-setting" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/setting.svg" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Setting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-footer d-flex justify-content-center align-items-center mb-2 pt-2 border-top border-1">
+                <div class="btn-logout text-shadow">
+                    <a id="btn-logout" class="text-red fw-bold text-decoration-none fs-5"><i class="fa-solid fa-power-off"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <main>
-    <section>
+<!--Slider-->
+    <section id="slider">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active img-btn" aria-current="true" aria-label="Slide 1"></button>
@@ -64,17 +137,66 @@
             </div>
         </div>
     </section>
-    <section class="d-flex flex-row position-absolute top-0 center">
-        <div class="position-relative welcome-text">
-            <h1 class="position-relative welcome-h1 center">Welcome</h1>
-            <div class="position-relative welcome-line center"></div>
-            <p class="position-relative welcome-p center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione. Aliquam debitis delectus, et harum impedit laudantium quaerat repellat sed!</p>
-        </div>
-        <div class="position-relative top-right-50">
-            <a href="page/login.html"><button type="button" class="btn btn-outline-primary btn-login">Log in</button></a>
+
+<!--Login-page-->
+    <section id="login" class="position-absolute top-0 container-fluid h-100">
+        <div class="d-flex flex-column h-100">
+            <div id="login-btn-parent" class="d-flex justify-content-end align-items-center h-25">
+                <div class="me-5">
+                    <button id="login-btn" type="button" class="btn btn-outline-primary btn-login">Log in</button>
+                </div>
+            </div>
+            <div class="d-flex flex-row h-100">
+                <div id="welcome-page" class="d-flex">
+                    <div class="d-flex align-items-center flex-column main-text">
+                        <h1 class="text-them family-inter fw-bold fs-main text-shadow">Welcome</h1>
+                        <div class="main-line"></div>
+                        <p class="family-inter text-light fw-bold fs-5 w-75 mt-5 text-center text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione. Aliquam debitis delectus, et harum impedit laudantium quaerat repellat sed!</p>
+                    </div>
+                </div>
+                <div id="login-page" class="d-flex justify-content-center align-items-center w-50 d-none">
+                    <div class="d-flex justify-content-center align-items-center container-fluid">
+                        <div class="form-content w-80 d-flex align-items-center flex-column pt-2">
+                            <div class="form-content-header w-100 mt-2">
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <h1 class="">Login Form</h1>
+                                    <button type="button" class="btn-close" id="exit-login" aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="form-content-body w-75 mt-2">
+                                <form class="d-flex align-items-center justify-content-center flex-column w-100">
+                                    <div class="w-80">
+                                        <label for="inputEmail" class="form-label"></label>
+                                        <input type="email" class="form-control p-2 radius-10" id="inputEmail" placeholder="User Name or Email">
+                                    </div>
+                                    <div class="w-80">
+                                        <label for="inputPassword" class="form-label"></label>
+                                        <input type="password" class="form-control p-2 radius-10" id="inputPassword" placeholder="Password">
+                                    </div>
+
+                                    <div class="d-flex justify-content-center w-80 mt-4 mb-2">
+                                        <button type="button" id="login-dashboard" class="btn btn-outline-primary btn-login" style="width: 200px;">Log in</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form-content-footer w-80 mt-4">
+                                <div class="mt-2">
+                                    <a href="#"> Forgot Password ? </a>
+                                    <p> Don't have an account? <a href="#"> Register Here </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+<!--Dashboard-page-->
+
 </main>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/myStyle.js"></script>
 </body>
 </html>
