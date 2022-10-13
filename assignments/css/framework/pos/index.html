@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ffb800">
     <title>Hasii POS System</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/myStyle.min.css">
+    <link rel="stylesheet" href="assets/css/myStyle.css">
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,14 +64,22 @@
             </div>
         </div>
     </section>
-    <section class="d-flex flex-row position-absolute top-0 center">
-        <div class="position-relative welcome-text">
-            <h1 class="position-relative welcome-h1 center">Welcome</h1>
-            <div class="position-relative welcome-line center"></div>
-            <p class="position-relative welcome-p center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione. Aliquam debitis delectus, et harum impedit laudantium quaerat repellat sed!</p>
-        </div>
-        <div class="position-relative top-right-50">
-            <a href="page/login.html"><button type="button" class="btn btn-outline-primary btn-login">Log in</button></a>
+    <section class="position-absolute top-0 container-fluid h-100">
+        <div class="row container-fluid h-100">
+            <div class="row container-fluid h-100">
+                <div class="col-12 container h-25">
+                    <div class="d-flex justify-content-end align-items-center h-100">
+                        <a href="page/login.html"><button type="button" class="btn btn-outline-primary btn-login">Log in</button></a>
+                    </div>
+                </div>
+                <div class="col-12 container h-75">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="text-them family-inter fw-bold fs-main text-shadow">Welcome</h1>
+                        <div class="main-line"></div>
+                        <p class="family-inter text-light fw-bold fs-5 w-75 mt-4 text-center text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione. Aliquam debitis delectus, et harum impedit laudantium quaerat repellat sed!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
