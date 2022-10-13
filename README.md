@@ -33,6 +33,25 @@
   
 </p>
 <br>
+<br>
+
+---
+<h3>Java Scrip Assignment</h3>
+<h4 align="center">Calculator</h4>
+<p align="left">
+  <img align="right" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/png/calculator.png" alt="Programmer" width="500">
+    
+  <a href="#" target="_blank"><img align="center" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assignments/js/calculator/assets/images/favicon.png" height="30" width="30" />  </a> <a href="#" target="_blank" > ∷ Website URL </a><br>
+  
+  <a href="https://www.gloomaps.com" target="_blank"><img align="center" src="https://www.gloomaps.com/favicon.ico" height="30" width="30" />  </a> <a href="#" target="_blank" > ∷ Site Map URL </a><br>
+  
+  <a href="https://wireframe.cc" target="_blank"><img align="center" src="https://wireframe.cc/favicon.ico" height="30" width="30" />  </a> <a href="#" target="_blank" > ∷ Wire-frame URL </a><br>
+  
+  <a href="https://www.figma.com" target="_blank"><img align="center" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" height="30" width="30" />  </a> <a href="#" target="_blank" > ∷ Mock-up URL </a><br>
+  
+</p>
+<br>
+<br>
 
 ---
 <div align="center">
