@@ -21,7 +21,7 @@
 <h3>Css Framework Assignment</h3>
 <h4 align="center">POS System</h4>
 <p align="left">
-  <img align="right" src="https://qph.fs.quoracdn.net/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13" alt="Programmer" width="500">
+  <img align="right" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/png/pos-dashboard.png" alt="Programmer" width="500">
     
   <a href="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assignments/css/framework/pos/index.html" target="_blank"><img align="center" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assignments/css/framework/pos/assets/images/favicon.png" height="30" width="30" />  </a> <a href="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assignments/css/framework/pos/index.html" target="_blank" > ∷ Website URL </a><br>
   
