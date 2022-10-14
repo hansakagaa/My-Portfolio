@@ -510,7 +510,7 @@
                                                     <div class="col-12 box d-flex justify-content-center align-items-center">
                                                         <div class="mb-3 w-75">
                                                             <label for="search-customer" class="form-label"></label>
-                                                            <input type="text" class="form-control" id="search-customer" placeholder="Customer Id / NIC / Name / Address">
+                                                            <input type="text" class="form-control customer-search-bar" id="search-customer" placeholder="Customer Id / NIC / Name / Address">
                                                         </div>
                                                     </div>
                                                     <div class="col-6 box d-flex justify-content-center align-items-center">
@@ -526,16 +526,16 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-6 box d-flex justify-content-center align-items-center">
-                                                        <button type="button" class="btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search mb-3 text-shadow text-hover-white">Search</button>
+                                                        <button type="button" class="search-customer btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search mb-3 text-shadow text-hover-white">Search</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 h-25 d-flex justify-content-end search-box-btn pt-2">
-                                        <button type="button" class="delete-customer btn btn-primary btn-sm fw-bold bg-light-red border-0">Delete</button>
-                                        <button type="button" data-bs-toggle="modal" data-bs-target="#update-customer-modal" class="update-customer btn btn-primary btn-sm fw-bold bg-green border-0">Update</button>
-                                        <button type="button" data-bs-toggle="modal" data-bs-target="#customer-details" class="view-customer btn btn-primary btn-sm fw-bold bg-blue border-0">View</button>
+                                        <button id="delete-customer" type="button" class="btn btn-primary btn-sm fw-bold bg-light-red border-0 disabled">Delete</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#update-customer-modal" class="update-customer btn btn-primary btn-sm fw-bold bg-green border-0 disabled">Update</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#customer-details" class="view-customer btn btn-primary btn-sm fw-bold bg-blue border-0 disabled">View</button>
                                     </div>
                                 </div>
                             </div>
@@ -559,25 +559,8 @@
                             <th class="bg-gray" scope="col">Address</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>C001</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <td>C002</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <td>C003</td>
-                            <td>Larry the Bird</td>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                        <tbody id="search-tblCustomer">
+
                         </tbody>
                     </table>
                 </div>
@@ -856,7 +839,7 @@
                         <div class="row container ms-0">
                             <div class="col-12 mb-4">
                                 <label for="customer-search-bar" class="form-label"></label>
-                                <input type="text" class="form-control" id="customer-search-bar" placeholder="Customer Id / NIC / Name / Address">
+                                <input type="text" class="form-control customer-search-bar" id="customer-search-bar" placeholder="Customer Id / NIC / Name / Address">
                             </div>
                             <div class="col-6 box d-flex justify-content-center align-items-end">
                                 <div class="dropdown">
@@ -871,7 +854,7 @@
                                 </div>
                             </div>
                             <div class="col-6 box d-flex justify-content-center align-items-end">
-                                <button type="button" class="btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search text-shadow text-hover-white">Search</button>
+                                <button type="button" class="search-customer btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search text-shadow text-hover-white">Search</button>
                             </div>
                         </div>
                     </form>
@@ -964,7 +947,7 @@
                 </div>
                 <div class="modal-footer justify-content-sm-around">
                     <button type="button" class="btn btn-outline-danger modal-btn fw-bold radius-20" data-bs-dismiss="modal">Close</button>
-                    <button id="save-update-customer" type="button" class="btn btn-outline-primary modal-btn fw-bold radius-20">Save Customer</button>
+                    <button id="save-update-customer" type="button" data-bs-toggle="modal" data-bs-target="#success-alert" class="btn btn-outline-primary modal-btn fw-bold radius-20">Save Customer</button>
                 </div>
             </div>
         </div>
@@ -982,19 +965,19 @@
                     <div>
                         <div class="mb-3">
                             <label class="col-form-label">Customer Id : </label>
-                            <span id="customer-id-details" class="fw-bold"></span>
+                            <span id="details-customer-id" class="fw-bold"></span>
                         </div>
                         <div class="mb-3">
                             <label class="col-form-label">Customer Name : </label>
-                            <span id="customer-name-details" class="fw-bold"></span>
+                            <span id="details-customer-name" class="fw-bold"></span>
                         </div>
                         <div class="mb-3">
                             <label class="col-form-label">Customer NIC : </label>
-                            <span id="customer-nic-details" class="fw-bold"></span>
+                            <span id="details-customer-nic" class="fw-bold"></span>
                         </div>
                         <div class="mb-3">
                             <label class="col-form-label">Customer Address : </label>
-                            <span id="customer-address-details" class="fw-bold"></span>
+                            <span id="details-customer-address" class="fw-bold"></span>
                         </div>
                     </div>
                     <div>
@@ -1008,61 +991,8 @@
                                 <th class="bg-gray" scope="col">Item Code</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <td>O001</td>
-                                <td>100</td>
-                                <td>2022-10-10</td>
-                                <td>1000.00</td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Item Code
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">I001</a></li>
-                                            <li><a class="dropdown-item" href="#">I002</a></li>
-                                            <li><a class="dropdown-item" href="#">I003</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>O001</td>
-                                <td>100</td>
-                                <td>2022-10-10</td>
-                                <td>1000.00</td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Item Code
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">I001</a></li>
-                                            <li><a class="dropdown-item" href="#">I002</a></li>
-                                            <li><a class="dropdown-item" href="#">I003</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>O001</td>
-                                <td>100</td>
-                                <td>2022-10-10</td>
-                                <td>1000.00</td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Item Code
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">I001</a></li>
-                                            <li><a class="dropdown-item" href="#">I002</a></li>
-                                            <li><a class="dropdown-item" href="#">I003</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
+                            <tbody id="details-tblCustomer">
+
                             </tbody>
                         </table>
                     </div>

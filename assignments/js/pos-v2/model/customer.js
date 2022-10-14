@@ -1,2 +1,1 @@
 const Customers = [];
-const Items = [];
