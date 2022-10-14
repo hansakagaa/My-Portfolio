@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ashen Hansaka | Student @ Institute of Java & Software Engineering (IJSE)">
+    <meta name="owner" content="Ashen Hansaka | Full stack software developer">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=2">
+    <meta name="theme-color" content="#ffb800">
+    <title>Hasii POS System</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/myStyle.min.css">
+    <link rel="stylesheet" href="../assets/font-icon/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-theme-80">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex text-light fw-bold text-shadow" href="#">
+                <img src="../assets/images/favicon.png" alt="Logo" class="d-inline-block align-text-top nav-img">
+                Hasii POS System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="parch-order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Report</a>
+                    </li>
+                </ul>
+                <div class="btn-logout text-shadow">
+                    <a href="../index.html" class="text-red fw-bold text-decoration-none"><i class="fa-solid fa-power-off"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="container-fluid bg-gray-65">
+        <div class="row">
+            <div class="col-12 pt-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 d-flex align-items-center justify-content-start">
+                            <div class="order-box order bg-white w-100 radius-10">
+                                <form>
+                                    <div class="row container ms-0">
+                                        <div class="col-6 mb-1">
+                                            <label for="order-id" class="col-form-label pb-0"></label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" placeholder="Order Id" id="order-id">
+                                        </div>
+                                        <div class="col-6 mb-1">
+                                            <label for="order-date" class="col-form-label pb-0"></label>
+                                            <input type="date" class="form-control bg-gray radius-10 cursor-default" placeholder="Order Date" id="order-date">
+                                        </div>
+                                        <div class="col-6 mb-1">
+                                            <label for="customer-id" class="col-form-label pb-0">Customer Id :</label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" id="customer-id">
+                                        </div>
+                                        <div class="col-6 mb-1 d-flex align-items-end justify-content-center">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#customer-modal"  class="btn btn-light btn-sm bg-purple text-light me-1 fw-semibold radius-10 ps-3 pe-3">New</button>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#customer-search"  class="btn btn-light btn-sm bg-light-cyan text-light ms-1 fw-semibold radius-10 ps-3 pe-3">Search</button>
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="customer-name" class="col-form-label pb-0">Customer Name :</label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" id="customer-name">
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="customer-nic" class="col-form-label pb-0">Customer NIC :</label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" id="customer-nic">
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="customer-address" class="col-form-label pb-0">Customer Address :</label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" id="customer-address">
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="modal fade" id="customer-search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content radius-20 border-dark border-1">
+                                            <div class="modal-header bg-light-cyan border-bottom border-dark border-1">
+                                                <i class="fa fa-search text-light fs-4 text-shadow ps-4"></i>
+                                                <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold text-shadow">Search Customer</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body pt-0">
+                                                <form>
+                                                    <div class="row container ms-0">
+                                                        <div class="col-12 mb-4">
+                                                            <label for="customer-search-bar" class="form-label"></label>
+                                                            <input type="text" class="form-control" id="customer-search-bar" placeholder="Customer Id / NIC / Name / Address">
+                                                        </div>
+                                                        <div class="col-6 box d-flex justify-content-center align-items-end">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Customer Id
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 box d-flex justify-content-center align-items-end">
+                                                            <button type="button" class="btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search text-shadow text-hover-white">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer justify-content-center">
+                                                <div class="row container">
+                                                    <div class="col-9">
+                                                        <button id="delete-customer" type="button" class="btn btn-primary btn-sm fw-bold bg-light-red border-0 disabled">Delete</button>
+                                                        <button id="update-customer" type="button" data-bs-toggle="modal" data-bs-target="#customer-modal" class="btn btn-primary btn-sm fw-bold bg-green border-0 disabled">Update</button>
+                                                        <button id="view-customer" type="button" data-bs-toggle="modal" data-bs-target="#customer-details" class="btn btn-primary btn-sm fw-bold bg-blue border-0 disabled">View</button>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <button type="button" class="btn btn-outline-danger fw-bold radius-10" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-start">
+                            <div class="order-box items bg-white w-100 radius-10">
+                                <form>
+                                    <div class="row container ms-0">
+                                        <div class="col-6 mb-1">
+                                            <label for="item-code" class="col-form-label pb-0"></label>
+                                            <input type="text" class="form-control bg-gray radius-10" placeholder="Item Code" id="item-code">
+                                        </div>
+                                        <div class="col-6 mb-1 d-flex align-items-end justify-content-end">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#item-search" class="btn btn-light btn-sm bg-light-cyan text-light me-5 fw-semibold radius-10 ps-3 pe-3">Search</button>
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="item-description" class="col-form-label pb-0">Description :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="item-description">
+                                        </div>
+                                        <div class="col-6 mb-1">
+                                            <label for="unit-price" class="col-form-label pb-0">Unit Price :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="unit-price">
+                                        </div>
+                                        <div class="col-6 mb-1">
+                                            <label for="qty-on-hand" class="col-form-label pb-0">Qty On Hand :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="qty-on-hand">
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="order-qty" class="col-form-label pb-0">Order QTY :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="order-qty">
+                                        </div>
+                                        <div class="col-12 mb-1 d-flex align-items-end justify-content-end">
+                                            <button type="button" class="btn btn-danger bg-light-red mt-4 me-4 radius-10 fw-semibold ps-5 pe-5">Add Cart</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="modal fade" id="item-search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content radius-20 border-dark border-1">
+                                            <div class="modal-header bg-light-cyan border-bottom border-dark border-1">
+                                                <i class="fa fa-search text-light fs-4 text-shadow ps-4"></i>
+                                                <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold text-shadow">Search Item</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body pt-0">
+                                                <form>
+                                                    <div class="row container ms-0">
+                                                        <div class="col-12 mb-4">
+                                                            <label for="item-search-bar" class="form-label"></label>
+                                                            <input type="text" class="form-control" id="item-search-bar" placeholder="Item Code / Unit Price">
+                                                        </div>
+                                                        <div class="col-6 box d-flex justify-content-center align-items-end">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Item code
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 box d-flex justify-content-center align-items-end">
+                                                            <button type="button" class="btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search text-shadow text-hover-white">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer justify-content-center">
+                                                <div class="row container">
+                                                    <div class="col-9">
+                                                        <button id="delete-item" type="button" class="btn btn-primary btn-sm fw-bold bg-light-red border-0 disabled">Delete</button>
+                                                        <button id="update-item" type="button" data-bs-toggle="modal" data-bs-target="#customer-modal" class="btn btn-primary btn-sm fw-bold bg-green border-0 disabled">Update</button>
+                                                        <button id="view-item" type="button" data-bs-toggle="modal" data-bs-target="#customer-details" class="btn btn-primary btn-sm fw-bold bg-blue border-0 disabled">View</button>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <button type="button" class="btn btn-outline-danger fw-bold radius-10" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-start">
+                            <div class="order-box parch bg-white w-100 radius-10">
+                                <form>
+                                    <div class="row container ms-0">
+                                        <div class="col-12 mt-3 fs-4 text-blue">
+                                            <label for="item-code" class="col-form-label pb-0">Total : </label>
+                                            <span id="total" class="fw-bold ms-3"> 0.00</span><span class="ms-2">/=</span>
+                                        </div>
+                                        <div class="col-12 mb-1 fs-4 text-light-red">
+                                            <label for="item-code" class="col-form-label pb-0">SubTotal : </label>
+                                            <span id="subTotal" class="fw-bold ms-3"> 0.00</span><span class="ms-2">/=</span>
+                                        </div>
+                                        <div class="col-7 mb-1 mt-3">
+                                            <label for="cash" class="col-form-label pb-0">Cash :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="cash">
+                                        </div>
+                                        <div class="col-5 mb-1 mt-3">
+                                            <label for="discount" class="col-form-label pb-0">Discount :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="discount">
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="balance" class="col-form-label pb-0">Balance :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="balance">
+                                        </div>
+                                        <div class="col-12 mb-1 d-flex align-items-end justify-content-end">
+                                            <button type="button" class="btn btn-danger border-0 bg-light-green mt-4 me-5 radius-10 fw-semibold w-50">Parches</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="height: 240px;">
+                <div class="container-fluid">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="bg-gray" scope="col">Item Code</th>
+                            <th class="bg-gray" scope="col">Description</th>
+                            <th class="bg-gray" scope="col">Unit Price</th>
+                            <th class="bg-gray" scope="col">Order QTY</th>
+                            <th class="bg-gray" scope="col">Total</th>
+                            <th class="bg-gray" scope="col">#</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>O001</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Clear</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>O002</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Clear</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>O003</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Clear</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>

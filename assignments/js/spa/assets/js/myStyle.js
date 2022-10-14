@@ -1,20 +1,21 @@
 /*---=== Dashboard Scroll Menu ===---*/
-// const menuBtn = document.querySelector('#scroll-menu-btn');
-// const main = document.querySelector('.main');
-// menuBtn.addEventListener('click', function () {
-//     main.classList.toggle('active');
-// });
+const menuBtn = document.querySelector('#scroll-menu-btn');
+const main = document.querySelector('.main');
+menuBtn.addEventListener('click', function () {
+    main.classList.toggle('active');
+});
 
+let POS =jQuery.noConflict();
 /*---=== Login Page Open ===---*/
 
-const slider = $('#slider');
-const loginPage = $('#login'),
-    loginBtn1 = $('#login-btn'),
-    welcomePage = $('#welcome-page'),
-    loginParent = $('#login-btn-parent'),
-    login = $('#login-page'),
-    exit = $('#login-dashboard'),
-    closeLogin = $('#exit-login');
+const slider = POS('#slider'),
+    loginPage = POS('#login'),
+    loginBtn1 = POS('#login-btn'),
+    welcomePage = POS('#welcome-page'),
+    loginParent = POS('#login-btn-parent'),
+    login = POS('#login-page'),
+    exit = POS('#login-dashboard'),
+    closeLogin = POS('#exit-login');
 
 loginBtn1.on('click', function () {
     loginPage.addClass('login');
@@ -31,8 +32,216 @@ closeLogin.on('click', function () {
 });
 
 /*---=== Dashboard Page Open ===---*/
+/*--- All Section ---*/
+const dashboard = POS('#dashboard'),
+    placeOrder = POS('#place-order'),
+    customer = POS('#customer'),
+    customers = POS('#customers'),
+    item = POS('#item'),
+    items = POS('#items'),
+    navBar = POS('#nav-bar');
+    /*--------*/
+    offCanvas = POS('.offcanvas');
 
 exit.on('click', function () {
     loginPage.addClass('d-none');
     slider.addClass('d-none');
+    offCanvas.removeClass('d-none');
+    dashboard.removeClass('d-none');
+});
+
+/*---=== Dashboard Page Menu Btn ===---*/
+/*--- All Menu Btn ---*/
+const btnPlaceOrder = POS('#btn-place-order'),
+    btnCustomer = POS('#btn-customer'),
+    btnItems = POS('#btn-items'),
+    btnOrderDetails = POS('#btn-order-details'),
+    btnSupplier = POS('#btn-supplier'),
+    btnReport = POS('#btn-report'),
+    btnSetting = POS('#btn-setting');
+
+/*--- Menu Btn Function ---*/
+btnPlaceOrder.on('click', function () {
+    placeOrder.removeClass('d-none');
+    navOrder.addClass('active');
+    navDashboard.removeClass('active');
+    navCustomer.removeClass('active');
+    navItems.removeClass('active');
+    menuBtnAlvRemoveNav();
+});
+
+btnCustomer.on('click', function () {
+    customer.removeClass('d-none');
+    navCustomer.addClass('active');
+    navDashboard.removeClass('active');
+    navOrder.removeClass('active');
+    navItems.removeClass('active');
+    menuBtnAlvRemoveNav();
+});
+
+btnItems.on('click', function () {
+    item.removeClass('d-none');
+    navItems.addClass('active');
+    navDashboard.removeClass('active');
+    navOrder.removeClass('active');
+    navCustomer.removeClass('active');
+    menuBtnAlvRemoveNav();
+});
+
+function menuBtnAlvRemoveNav(){
+    dashboard.addClass('d-none');
+    offCanvas.addClass('d-none');
+    navBar.removeClass('d-none');
+    navOrderDetails.removeClass('active');
+    navSupplier.removeClass('active');
+    navReport.removeClass('active');
+    navSetting.removeClass('active');
+}
+
+btnOrderDetails.on('click', function () {
+    /*----------------*/
+});
+
+btnSupplier.on('click', function () {
+    /*----------------*/
+});
+
+btnReport.on('click', function () {
+    /*----------------*/
+});
+
+btnSetting.on('click', function () {
+    /*----------------*/
+});
+
+/*---=== Nav Bar Section ===---*/
+/*--- All Nav Btn ---*/
+const navDashboard = POS('#nav-dashboard'),
+    navOrder = POS('#nav-order'),
+    navCustomer = POS('#nav-customer'),
+    navItems = POS('#nav-items'),
+    navOrderDetails = POS('#nav-order-details'),
+    navSupplier = POS('#nav-supplier'),
+    navReport = POS('#nav-report'),
+    navSetting = POS('#nav-setting');
+
+navDashboard.on('click', function () {
+    placeOrder.addClass('d-none');
+    customer.addClass('d-none');
+    customers.addClass('d-none');
+    item.addClass('d-none');
+    items.addClass('d-none');
+    // orderDetails.addClass('d-none');
+    // supplier.addClass('d-none');
+    // report.addClass('d-none');
+    // setting.addClass('d-none');
+    navBar.addClass('d-none');
+    offCanvas.removeClass('d-none');
+    dashboard.removeClass('d-none');
+});
+
+navOrder.on('click', function () {
+    placeOrder.removeClass('d-none');
+    customer.addClass('d-none');
+    customers.addClass('d-none');
+    item.addClass('d-none');
+    items.addClass('d-none');
+    // orderDetails.addClass('d-none');
+    // supplier.addClass('d-none');
+    // report.addClass('d-none');
+    // setting.addClass('d-none');
+    navDashboard.removeClass('active');
+    navOrder.addClass('active');
+    navCustomer.removeClass('active');
+    navItems.removeClass('active');
+    menuBtnAlvRemoveNav();
+});
+
+navCustomer.on('click', function () {
+    placeOrder.addClass('d-none');
+    customer.removeClass('d-none');
+    customers.addClass('d-none');
+    item.addClass('d-none');
+    items.addClass('d-none');
+    // orderDetails.addClass('d-none');
+    // supplier.addClass('d-none');
+    // report.addClass('d-none');
+    // setting.addClass('d-none');
+    navDashboard.removeClass('active');
+    navOrder.removeClass('active');
+    navCustomer.addClass('active');
+    navItems.removeClass('active');
+    menuBtnAlvRemoveNav();
+});
+
+navItems.on('click', function () {
+    placeOrder.addClass('d-none');
+    customer.addClass('d-none');
+    customers.addClass('d-none');
+    item.removeClass('d-none');
+    items.addClass('d-none');
+    // orderDetails.addClass('d-none');
+    // supplier.addClass('d-none');
+    // report.addClass('d-none');
+    // setting.addClass('d-none');
+    navDashboard.removeClass('active');
+    navOrder.removeClass('active');
+    navCustomer.removeClass('active');
+    navItems.addClass('active');
+    menuBtnAlvRemoveNav();
+});
+
+
+/*---=== Customer Page Btn ===---*/
+const allCustomer = POS('#all-customer');
+
+allCustomer.on('click', function () {
+    customer.addClass('d-none');
+    customers.removeClass('d-none');
+});
+
+/*---=== Item Page Btn ===---*/
+const allItem = POS('#all-item');
+
+allItem.on('click', function () {
+    item.addClass('d-none');
+    items.removeClass('d-none');
+});
+
+/*---=== Other Function ===---*/
+/*--- All Btn ---*/
+const saveCustomer = POS('.save-customer'),
+    deleteCustomer = POS('.delete-customer'),
+    updateCustomer = POS('.update-customer'),
+    viewCustomer = POS('.view-customer'),
+    newCustomer = POS('.new-customer'),
+    saveItem = POS('.save-item'),
+    deleteItem = POS('.delete-item'),
+    updateItem = POS('.update-item'),
+    newItem = POS('.new-item'),
+    viewItem = POS('.view-item');
+
+
+updateCustomer.on('click', function () {
+    POS('#customer-modal .modal-header').removeClass('bg-purple');
+    POS('#customer-modal .modal-header').addClass('bg-green');
+    POS('#customer-modal .modal-title span').text('Update');
+});
+
+updateItem.on('click', function () {
+    POS('#item-modal .modal-header').removeClass('bg-purple');
+    POS('#item-modal .modal-header').addClass('bg-green');
+    POS('#item-modal .modal-title span').text('Update');
+});
+
+newCustomer.on('click', function () {
+    POS('#customer-modal .modal-header').addClass('bg-purple');
+    POS('#customer-modal .modal-header').removeClass('bg-green');
+    POS('#customer-modal .modal-title span').text('New');
+});
+
+newItem.on('click', function () {
+    POS('#item-modal .modal-header').addClass('bg-purple');
+    POS('#item-modal .modal-header').removeClass('bg-green');
+    POS('#item-modal .modal-title span').text('New');
 });

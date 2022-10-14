@@ -444,3 +444,7 @@ main>section:first-child>div>div .img-btn {
     font-size: 2rem!important;
     transition: all 0.3s ease-in-out;
 }
+
+.cursor-pointer{
+    cursor: pointer;
+}
