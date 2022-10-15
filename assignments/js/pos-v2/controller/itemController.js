@@ -65,7 +65,7 @@ function deleteItemValue(id) {
 }
 
 function updateItemValue(code) {
-    const item = searchItemId(code);
+    const item = searchItemCode(code);
     if (item !== null) {
         item.code = ITM('#update-item-item-code').val();
         item.description = ITM('#update-item-description').val();
@@ -111,15 +111,15 @@ function setValueUpdateModal(code, description, unitPrice, qty) {
 
 function setTableRow(items) {
     ITM("#search-tblItem").empty();
-    for (let item of Items){
+    for (let item of items){
         const row = `<tr><td>${item.code}</td><td>${item.description}</td><td>${item.unitPrice}</td><td>${item.qty}</td></tr>`;
         ITM("#search-tblItem").append(row);
     }
 }
 
-function searchItemId(val) {
+function searchItemCode(code) {
     for (let item of Items) {
-        if (item.id === val) {
+        if (item.id === code) {
             return item;
         }
     }
@@ -142,11 +142,11 @@ function searchItem(val) {
     return itm;
 }
 
-function loadAllItem() {
+function loadAllItems() {
     ITM("#tblItem").empty();
 
     for (let item of Items) {
-        const row = `<tr><td>${item.code}</td><td>${item.description}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><button type="button" class="delete-customer btn btn-primary btn-sm fw-bold bg-light-red border-0 me-2">Delete</button><button id="update-customer" type="button" data-bs-toggle="modal" data-bs-target="#update-customer-modal" class="update-customer btn btn-primary btn-sm fw-bold bg-green border-0 ms-2">Update</button></td></tr>`;
+        const row = `<tr><td>${item.code}</td><td>${item.description}</td><td>${item.unitPrice}</td><td>${item.qty}</td><td><button type="button" class="delete-item btn btn-primary btn-sm fw-bold bg-light-red border-0 me-2">Delete</button><button id="update-item" type="button" data-bs-toggle="modal" data-bs-target="#update-item-modal" class="update-customer btn btn-primary btn-sm fw-bold bg-green border-0 ms-2">Update</button></td></tr>`;
         ITM("#tblItem").append(row);
     }
 }
