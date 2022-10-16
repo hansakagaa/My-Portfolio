@@ -16,4 +16,4 @@ box-sizing: border-box;padding:0;}[type="number"]::-webkit-inner-spin-button, [t
 [type="search"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{
 -webkit-appearance:button;font:inherit;}::-webkit-scrollbar{height:0;}details{display:block;}
 summary{display: list-item;}template{display:none;}[hidden]{display:none;}input, textarea{border: none;outline: none;}
-ul li{list-style: none;}h1,h2, h3, h4, h5, h6{font-style: normal;}
+ul li{list-style: none;}h1,h2, h3, h4, h5, h6{font-style: normal;margin: 0}

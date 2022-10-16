@@ -1,67 +1,67 @@
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: var(--ft-inter);
 }
 
 .header>.logo>p,  .header>.logo>p span{
-    font-family: 'Permanent Marker', cursive;
+    font-family: var(--ft-permanent-marker);
 }
 
 .name-txt{
-    font-family: 'DynaPuff', cursive;
+    font-family: var(--ft-dynaPuff);
 }
 
 main>section>header>h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--ft-poppins);
 }
 
 .sub-topic {
-    font-family: 'Permanent Marker', cursive;
+    font-family: var(--ft-permanent-marker);
 }
 
 .project>.img-box>div .box>div:nth-child(2) {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--ft-poppins);
 }
 
 .assignment aside>div>.text {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--ft-ubutu);
 }
 
 .assignment aside>div>.btn a {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--ft-ubutu);
 }
 
 .educate>div p{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--ft-poppins);
 }
 
 .about-topic {
-    font-family: 'Tomorrow', sans-serif;
+    font-family: var(--ft-tomorrow);
 }
 
 .about-txt-left {
-    font-family: 'Tinos', serif;
+    font-family: var(--ft-tinos);
 }
 
 .about-txt-right {
-    font-family: 'Tomorrow', sans-serif;
+    font-family: var(--ft-tomorrow);
 }
 
 .contact>article>p{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--ft-ubutu);
 }
 
 .contact-details>h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--ft-poppins);
 }
 
 .contact-details>h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--ft-poppins);
 }
 
 .foot>.logo p {
-    font-family: 'Permanent Marker', cursive;
+    font-family: var(--ft-permanent-marker);
 }
 
 .contact-form h1{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--ft-poppins);
 }

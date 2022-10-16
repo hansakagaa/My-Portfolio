@@ -6,16 +6,20 @@
     <meta name="author" content="Ashen Hansaka | Student @ Institute of Java & Software Engineering (IJSE)">
     <meta name="owner" content="Ashen Hansaka | Full stack software developer">
     <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=2">
-    <meta name="theme-color" content="#ffb800">
+    <meta name="theme-color" content=var(-cl--main)>
 
     <title>Ashen Hansaka | Full Stack Software Developer</title>
 
     <link rel="icon" href="assets/images/png/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/font.min.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/reboot.min.css">
+    <link rel="stylesheet" href="assets/css/skins/color-1.css" class="alternate-style" title="color-1" >
+    <link rel="stylesheet" href="assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,9 +46,13 @@
         <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
     </header>
     <main class="main">
+
         <div class="side-vector"></div>
+
         <div class="vector"></div>
+
         <section class="home" id="home">
+
             <aside>
                 <div class="dot-bord-01"><div class="div">
                     <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
@@ -59,12 +67,12 @@
                     <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
                 </div></div>
                 <div class="hello-txt">Hello !</div>
-                <div class="name-txt">I'm <u>Ashen</u><img src="assets/images/png/waving-hand-icon.png" alt=""></div>
+                <div class="name-txt">I<span>'m </span><u><span>A</span>shen</u><i class="fa-solid fa-hand-peace"></i></div>
                 <div class="des-txt">Full Stack Software Developer in Sri Lanka</div>
             </aside>
             <aside class="home-btn">
-                <abbr title="To download my Curriculum vitae PDF file"><a style="--cl:#ffb800" class="downloadCV-btn" download="Ashen_Hansaka-CV" href="assets/" target="_blank"><span>Download CV</span><i></i></a></abbr>
-                <a style="--cl:#000000" class="contact-btn" href="#contact"><span>Contact ME</span><i></i></a>
+                <abbr title="To download my Curriculum vitae PDF file"><a style="--cl:var(--cl-main)" class="downloadCV-btn" download="Ashen_Hansaka-CV" href="assets/" target="_blank"><span>Download CV</span><i></i></a></abbr>
+                <a style="--cl:var(--cl-dark)" class="contact-btn" href="#contact"><span>Contact ME</span><i></i></a>
             </aside>
             <aside>
                 <div class="home-img">
@@ -80,7 +88,9 @@
                         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
                         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
                     </div></div>
+                    <div class="side-lin one"></div>
                     <img src="assets/images/png/ashen-logo.png" alt="" class="img">
+                    <div class="side-lin"></div>
                 </div>
             </aside>
             <nav class="social-bar">
@@ -460,17 +470,17 @@
             <aside class="gallery">
                 <h2 class="sub-topic">#Gallery :</h2>
                 <section>
-                    <div class="photo">
-                        <div><img src="" alt="Photo-01"></div>
-                        <div><img src="" alt="Photo-02"></div>
-                        <div><img src="" alt="Photo-03"></div>
-                        <div><img src="" alt="Photo-04"></div>
-                        <div><img src="" alt="Photo-05"></div>
-                        <div><img src="" alt="Photo-06"></div>
-                        <div><img src="" alt="Photo-07"></div>
-                        <div><img src="" alt="Photo-08"></div>
-                        <div><img src="" alt="Photo-09"></div>
-                        <div><img src="" alt="Photo-10"></div>
+                    <div class="photo visibility-hidden">
+                        <span><img style="--i:1" src="assets/images/jpg/photo-01.jpg" alt="Photo-01"></span>
+                        <span><img style="--i:2" src="assets/images/jpg/photo-02.jpg" alt="Photo-02"></span>
+                        <span><img style="--i:3" src="assets/images/jpg/photo-03.jpg" alt="Photo-03"></span>
+                        <span><img style="--i:4" src="assets/images/jpg/photo-04.jpg" alt="Photo-04"></span>
+                        <span><img style="--i:5" src="assets/images/jpg/photo-05.jpg" alt="Photo-05"></span>
+                        <span><img style="--i:6" src="assets/images/jpg/photo-06.jpg" alt="Photo-06"></span>
+                        <span><img style="--i:7" src="assets/images/jpg/photo-07.jpg" alt="Photo-07"></span>
+                        <span><img style="--i:8" src="assets/images/jpg/photo-08.jpg" alt="Photo-08"></span>
+                        <span><img style="--i:9" src="assets/images/jpg/photo-09.jpg" alt="Photo-09"></span>
+                        <span><img style="--i:10" src="assets/images/jpg/photo-10.jpg" alt="Photo-10"></span>
                     </div>
                 </section>
 
@@ -481,11 +491,11 @@
                     <hr>
                 </div>
                 <h3 class="about-topic">About Me ..</h3>
-                <p class="about-txt-left"><span style="color: #FFB800"><b>✔ </b></span> Full Name : <span class="about-txt-right">G. A. Ashen Hansaka</span></p>
-                <p class="about-txt-left"><span style="color: #FFB800"><b>✔ </b></span> Age : <span class="about-txt-right">21</span></p>
-                <p class="about-txt-left"><span style="color: #FFB800"><b>✔ </b></span> Birth Day : <span class="about-txt-right">2001 - 04 - 30</span></p>
-                <p class="about-txt-left"><span style="color: #FFB800"><b>✔ </b></span> Nationality : <span class="about-txt-right">Sri Lanka</span></p>
-                <p class="about-txt-left"><span style="color: #FFB800"><b>✔ </b></span> Religion : <span class="about-txt-right">Buddhist</span></p>
+                <p class="about-txt-left"><span style="color: var(--cl-main)"><b>✔ </b></span> Full Name : <span class="about-txt-right">G. A. Ashen Hansaka</span></p>
+                <p class="about-txt-left"><span style="color: var(--cl-main)"><b>✔ </b></span> Age : <span class="about-txt-right">21</span></p>
+                <p class="about-txt-left"><span style="color: var(--cl-main)"><b>✔ </b></span> Birth Day : <span class="about-txt-right">2001 - 04 - 30</span></p>
+                <p class="about-txt-left"><span style="color: var(--cl-main)"><b>✔ </b></span> Nationality : <span class="about-txt-right">Sri Lanka</span></p>
+                <p class="about-txt-left"><span style="color: var(--cl-main)"><b>✔ </b></span> Religion : <span class="about-txt-right">Buddhist</span></p>
                 <div class="about-line-right">
                     <hr>
                     <hr>
@@ -543,19 +553,19 @@
             </article>
             <address>
                 <div class="contact-details">
-                    <img src="assets/images/png/location.png" alt="location">
+                    <i class="fa-solid fa-location-dot"></i>
                     <h3>Address</h3>
                     <h4>Yakkalamulla<br>Galle.</h4>
                     <abbr title="View Google location"><a href="" target="_blank">View...</a> </abbr>
                 </div>
 
                 <div class="contact-details">
-                    <img src="assets/images/png/mobile.png" alt="mobile">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
                     <h3>Mobile</h3>
                     <h4>+947 62 02 312<br>+947 11 02 312</h4>
                 </div>
                 <div class="contact-details">
-                    <img src="assets/images/png/mail.png" alt="mail">
+                    <i class="fa-solid fa-envelope"></i>
                     <h3>Email</h3>
                     <h4>hansakagaa@gmail.com</h4>
                 </div>
@@ -592,15 +602,30 @@
                 </div>
             </form>
         </section>
-        <div class="call">
-            <div>
-                <a href="#contact">
-                    <i class="fa-solid fa-phone">
 
-                    </i>
-                </a>
+        <div class="style-switcher">
+            <div class="style-switcher-toggle s-icon">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fa-solid "></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colours">
+                <span class="color-1" style="--cl:rgb(255, 195, 18)" onclick="setActionStyle('color-1')"></span>
+                <span class="color-2" style="--cl:rgb(55, 66, 250)" onclick="setActionStyle('color-2')"></span>
+                <span class="color-3" style="--cl:rgb(255, 71, 87)" onclick="setActionStyle('color-3')"></span>
+                <span class="color-4" style="--cl:rgb(50, 255, 126)" onclick="setActionStyle('color-4')"></span>
+                <span class="color-5" style="--cl:rgb(243, 104, 224)" onclick="setActionStyle('color-5')"></span>
             </div>
         </div>
+
+        <div class="call">
+            <div>
+                <a href="#contact"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+
     </main>
 
     <footer class="foot" id="foot">

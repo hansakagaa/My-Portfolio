@@ -106,3 +106,55 @@ function changeItem() {
     discBoxText.innerHTML = items[itemIndex].querySelector('p').innerHTML;
 }
 
+/*--------Skin color handler--------*/
+//*--------Toggle switcher--------
+const styleSwitchToggle = document.querySelector('.style-switcher-toggle');
+styleSwitchToggle.addEventListener('click', function () {
+    document.querySelector('.style-switcher').classList.toggle('open');
+});
+
+//*--------Scroll on switcher hide--------
+window.addEventListener('scroll',function () {
+    if (document.querySelector('.style-switcher').classList.toggle('open')){
+        document.querySelector('.style-switcher').classList.remove('open');
+    }
+});
+
+//*--------Theme color--------
+const alternateStyle = document.querySelectorAll('.alternate-style');
+function setActionStyle(color) {
+    for(let style of alternateStyle){
+        if (color === style.getAttribute('title')){
+            style.removeAttribute('disabled');
+        }else {
+            style.setAttribute('disabled','true');
+        }
+    }
+}
+
+//*--------Theme color--------
+const dayNight= document.querySelector('.day-night');
+dayNight.addEventListener('click', function () {
+    dayNight.querySelector('i').classList.toggle('fa-sun');
+    dayNight.querySelector('i').classList.toggle('fa-moon');
+    document.body.classList.toggle('dark');
+});
+window.addEventListener('load', function () {
+    if (document.body.classList.contains('dark')){
+        dayNight.querySelector('i').classList.add('fa-sun');
+    }else {
+        dayNight.querySelector('i').classList.add('fa-moon');
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+

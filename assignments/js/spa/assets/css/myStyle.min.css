@@ -1,6 +1,6 @@
 :root {--cl-theme: rgba(255, 184, 0, 1);--cl-theme-60: rgba(255, 184, 0, 0.6);--cl-theme-80: rgba(255, 184, 0, 0.8);
 --cl-white: rgba(255, 255, 255, 1);--cl-white-50: rgba(255, 255, 255, 0.5);--cl-black: rgb(0, 0, 0);
---cl-black-60: rgba(0, 0, 0, 0.6);--cl-text-shadow: rgba(0, 0, 0, 0.25);--cl-gray: rgba(238, 238, 238, 1);
+--cl-black-60: rgba(0, 0, 0, 0.6);--cl-text-shadow: rgba(0, 0, 0, 0.25);--cl-gray: rgb(238, 238, 238);
 --cl-gray-65: rgba(238, 238, 238, 0.65);--cl-blue: rgba(6, 82, 221, 1);--cl-light-red: rgba(235, 59, 90, 1);
 --cl-light-red-75: rgba(235, 59, 90, 0.75);--cl-light-green: rgba(50, 255, 126, 1);--cl-cyan: rgba(15, 185, 177, 1);
 --cl-purple: rgba(165, 94, 234, 1);--cl-light-cyan: rgb(10, 189, 227);--cl-red: rgba(234, 32, 39, 1);

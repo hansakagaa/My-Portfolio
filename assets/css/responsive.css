@@ -8,6 +8,10 @@
 
 @media all and (min-width: 320px) and (max-width: 1023px){
 
+    .vector {
+        display: none;
+    }
+
     main>section>header {
         left: 40px;
         margin: 0;
@@ -186,24 +190,6 @@
         transform: skewX(-45deg);
     }
 
-    .contact-btn{
-        background-color: rgba(255, 184, 0, 0.9);
-    }
-    .contact-btn::before{
-        background-color: rgba(255, 184, 0, 0.8);
-    }
-    .contact-btn::after{
-        background-color: rgba(255, 184, 0, 0.7);
-    }
-    .downloadCV-btn{
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    .downloadCV-btn::before{
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .downloadCV-btn::after{
-        background-color: rgba(0, 0, 0, 0.7);
-    }
     /*-------------*/
 
     .home-img {
@@ -645,10 +631,6 @@
         }
     }
 
-    .certificate>.img>div>div {
-        border: 3px solid #FFB800;
-    }
-
     .certificate>.img img{
         width: 295px;
     }
@@ -822,10 +804,6 @@
         margin: auto;
     }
 
-    .contact-details img{
-        top: 0;
-        width: 35px;
-    }
 
     .contact-details h3 {
         font-size: 15px;
@@ -1091,10 +1069,6 @@
         }
     }
 
-    .certificate>.img>div>div {
-        border: 5px solid #FFB800;
-    }
-
     .certificate>.img img{
         width: 340px;
     }
@@ -1111,10 +1085,6 @@
 
     .contact>address>div {
         width: 102px;
-    }
-
-    .contact-details img{
-        width: 40px;
     }
 
     .contact-details h3 {
@@ -1164,6 +1134,17 @@
 /*====================================================================*/
 
 @media all and (min-width: 768px) and (max-width: 1023px){
+
+    .vector {
+        display: block;
+        width: 45%;
+        height: 95%;
+        clip-path: none;
+    }
+
+    main>section {
+        padding-top: 90px;
+    }
 
     main>section>header {
         left: 100px;
@@ -1235,12 +1216,6 @@
 
     .home-img {
         display: initial;
-    }
-
-    .home-img .vector {
-        width: 270px;
-        right: 10px;
-        top: 110px;
     }
 
     .home-img .img {
@@ -1344,6 +1319,7 @@
 
     .assignment>section{
         width: 610px;
+        top: 180px;
     }
 
     .assignment aside{
@@ -1398,6 +1374,11 @@
     }
     .education{
         height: 1050px;
+    }
+
+    .educate{
+        top: -55px;
+        position: relative;
     }
 
     .education .educate>div {
@@ -1644,11 +1625,11 @@
     }
 
     .contact{
-        height: 870px;
+        height: 765px;
     }
 
     .contact>article{
-        top: 80px;
+        top: 155px;
         left: 55px;
     }
 
@@ -1671,7 +1652,7 @@
         height: 385px;
         width: 155px;
         position: absolute;
-        top: 40px;
+        top: 120px;
         left: unset;
         right: 35px;
     }
@@ -1680,10 +1661,6 @@
         width: 100%;
         height: calc(100%/3);
         position: relative;
-    }
-
-    .contact-details>img{
-        width: 40px;
     }
 
     .contact-details>h3{
@@ -1821,12 +1798,7 @@
         position: relative;
         left: 10px;
         letter-spacing: 0.01em;
-        color: #000;
         font-weight: 600;
-    }
-
-    .foot>.social-bar>.social li:hover a::after {
-        color: white;
     }
 
     .foot>.social-bar>.social li:nth-child(1) a::after {
@@ -1853,6 +1825,15 @@
 /*====================================================================*/
 
 @media all and (min-width: 1024px) and (max-width: 1300px){
+
+    .side-vector {
+        width: 175px;
+        height: 205px;
+    }
+
+    .vector {
+        width: 700px;
+    }
 
     .menu-bar {
         top: 13px;
@@ -1894,11 +1875,6 @@
         top: 160px;
         right: 370px;
         gap: 30px;
-    }
-
-    .home-img>.vector {
-        right: 40px;
-        width: 370px;
     }
 
     .home-img>.img {
@@ -2153,10 +2129,6 @@
     .contact>address {
         width: 500px;
         bottom: 20px;
-    }
-
-    .contact-details>img {
-        width: 47px;
     }
 
     .contact-details>h3 {
