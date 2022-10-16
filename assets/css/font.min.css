@@ -1,5 +1,5 @@
 *{font-family: var(--ft-inter);}.header>.logo>p,  .header>.logo>p span{font-family: var(--ft-permanent-marker);}
-.name-txt, .name-txt span{font-family: var(--ft-dynaPuff);} main>section>header>h1 {font-family: var(--ft-poppins);}.sub-topic {
+.name-txt, .name-txt span {font-family: var(--ft-dynaPuff);} main>section>header>h1, .name-txt u{font-family: var(--ft-poppins);}.sub-topic {
 font-family: var(--ft-permanent-marker);}.project>.img-box>div .box>div:nth-child(2){font-family: var(--ft-poppins);}
 .assignment aside>div>.text {font-family: var(--ft-ubutu);}.assignment aside>div>.btn a {font-family: var(--ft-ubutu);}
 .educate>div p{font-family: var(--ft-poppins);}.about-topic {font-family: var(--ft-tomorrow);} .about-txt-left {
