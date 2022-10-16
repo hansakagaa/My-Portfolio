@@ -292,112 +292,7 @@
 
     /*----------Project-Start----------*/
 
-    .project{
-        height: 580px;
-    }
 
-    .project>.img-box{
-        top: 70px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 250px;
-        height: 150px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-    .project>.img-box aside {
-        display: flex;
-        flex-flow: row;
-        height: max-content;
-        width: max-content;
-        gap: 0;
-    }
-
-    .project>.img-box .item{
-        border-radius: 0;
-    }
-
-    .project>.img-box aside {
-        animation-name: project-img;
-        animation-duration: 25s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-    }
-
-    @keyframes project-img {
-
-        0%, 10% {
-            transform: translateX(0);
-        }
-        15%, 25% {
-            transform: translateX(-250px);
-        }
-        30%, 40% {
-            transform: translateX(-500px);
-        }
-        45%, 55% {
-            transform: translateX(-750px);
-        }
-        60%, 70% {
-            transform: translateX(-1000px);
-        }
-        75%, 85% {
-            transform: translateX(-1250px);
-        }
-        90%, 100% {
-            /* transform: translateX(-1800px); */
-        }
-    }
-
-    .project>.disc-box{
-        top: 235px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: 295px;
-        width: 285px;
-    }
-
-    @keyframes project {
-
-        0%, 10% {
-            transform: translateY(0);
-        }
-        15%, 25% {
-            transform: translateY(-295px);
-        }
-        30%, 40% {
-            transform: translateY(-590px);
-        }
-        45%, 55% {
-            transform: translateY(-885px);
-        }
-        60%, 70% {
-            transform: translateY(-1180px);
-        }
-        75%, 85% {
-            transform: translateY(-1475px);
-        }
-        90%, 100% {
-            /* transform: translateY(-1800px); */
-        }
-    }
-
-    .project>.disc-box>aside>div{
-        height: 295px;
-        width: 285px;
-    }
-
-    .project>.disc-box>aside>div h3{
-        font-size: 19px;
-    }
-
-    .project>.disc-box>aside>div P{
-        font-size: 15px;
-        width: 255px;
-    }
 
     /*----------Assignment-Start----------*/
 
@@ -1215,13 +1110,31 @@
     }
 
     .home-img {
-        display: initial;
+        display: block;
+        right: 60px;
+        top: 60px;
     }
 
     .home-img .img {
         width: 190px;
-        right: 50px;
+        right: unset;
+        left: 120px;
+        top: 65px;
+    }
+
+    .home-img .side-lin.one {
+        top: 35px;
+        right: -170px;
+    }
+
+    .home-img .side-lin {
+        right: -70px;
         top: 120px;
+        background-color: var(--cl-text-light);
+    }
+
+    .home-img .side-lin::before {
+        background-color: var(--cl-text-light);
     }
 
     .dot-bord-02>.div{
@@ -1256,65 +1169,15 @@
         top: 260px;
     }
 
-    .project{
-        height: 590px;
+
+    .project .img-box aside {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .project>.img-box{
-        width: 752px;
-    }
-
-    .project>.img-box aside {
-        gap: 1px;
-    }
-
-    .project>.img-box aside {
-        animation-name: project;
-    }
-
-    .project>.disc-box{
-        width: 752px;
-        top: 225px;
-    }
-
-    .project>.disc-box>aside {
-        gap: 1px;
-        flex-flow: row;
-    }
-
-    @keyframes project {
-
-        0%, 10% {
-            transform: translateX(0);
-        }
-        15%, 25% {
-            transform: translateX(-251px);
-        }
-        30%, 40% {
-            transform: translateX(-502px);
-        }
-        45%, 55% {
-            transform: translateX(-753px);
-        }
-        60%, 70% {
-            /*transform: translateX(-1004px);*/
-        }
-        75%, 85% {
-            /*transform: translateX(-1255px);*/
-        }
-        90%, 100% {
-            /* transform: translateX(-1506px); */
-        }
-    }
-
-    .project>.disc-box>aside>div{
-        width: 250px;
-    }
-
-    .project>.disc-box>aside>div P{
-        font-size: 14px;
-        width: 220px;
-        bottom: 20px;
+    .project .img-box {
+        height: max-content;
+        margin-top: 50px;
     }
 
     .assignment>section{
@@ -1879,7 +1742,17 @@
 
     .home-img>.img {
         width: 260px;
-        right: 90px;
+        left: 90px;
+    }
+
+    .home-img .side-lin.one {
+        left: 155px;
+        right: unset;
+    }
+
+    .home-img .side-lin {
+        left: 30px;
+        right: unset;
     }
 
     .home>.social-bar>.social {
@@ -1907,70 +1780,11 @@
 
     .project>.img-box {
         top: 175px;
-        left: 85px;
-        width: 515px;
-        overflow: hidden;
     }
 
-    .project>.img-box aside {
-        gap: 15px;
-        animation-name: project-img;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-    }
-
-    @keyframes project-img {
-        0%, 10%{
-            transform: translateX(0);
-        }
-        20%, 30%{
-            transform: translateX(-265px);
-        }
-    }
-
-    .project>.disc-box {
-        top: 175px;
-        left: 660px;
-    }
-
-    .assignment>section {
-        width: 890px;
-        top: 155px;
-    }
-
-    @keyframes assign {
-        0%, 5% {
-            transform: translateX(0);
-        }
-        10%, 15% {
-            transform: translateX(-300px);
-        }
-        20%, 25% {
-            transform: translateX(-600px);
-        }
-        30%, 35% {
-            transform: translateX(-900px);
-        }
-        40%, 45% {
-            transform: translateX(-1200px);
-        }
-        50%, 55% {
-            transform: translateX(-1500px);
-        }
-        60%, 65% {
-            transform: translateX(-1800px);
-        }
-        70%, 75% {
-            transform: translateX(-2100px);
-        }
-        80%, 85% {
-            transform: translateX(-2400px);
-        }
-        90%, 95% {
-        }
-        100% {
-        }
+    .project .img-box aside {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .educate>div {
@@ -2105,14 +1919,9 @@
         }
     }
 
-
-
-
     .gallery{
         display: none;
     }
-
-
 
     .details {
         left: 50px;
@@ -2127,8 +1936,9 @@
     }
 
     .contact>address {
-        width: 500px;
-        bottom: 20px;
+        width: 550px;
+        bottom: 50px;
+        left: 0;
     }
 
     .contact-details>h3 {
