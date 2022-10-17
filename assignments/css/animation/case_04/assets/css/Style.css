@@ -25,26 +25,23 @@ main > div:nth-child(3)>div>div{
     width: 1347px;
     height: 275px;
     background-image: url(../images/road.jpg);
-
-    animation-name: city;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation: city 5s linear infinite;
 }
 
 main > div:nth-child(2)>div>div{
     width: 1347px;
     height: 335px;
     background-image: url(../images/city.png);
-
-    animation-name: city;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation: city 5s linear infinite;
 }
 
 @keyframes city {
-
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
 
 main > div:nth-child(2){
@@ -86,15 +83,16 @@ main > div:nth-child(4)>div:last-child>div{
     position: absolute;
     background-size: cover;
     top: 149px;
-
-    animation-name: wheel;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation: wheel 3s linear infinite;
 }
 
 @keyframes wheel {
-
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 main > div:nth-child(4)>div:last-child>div:first-child{
