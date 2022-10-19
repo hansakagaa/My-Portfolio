@@ -1740,10 +1740,10 @@ h6>span{
 
 .contact-form{
     position: absolute;
-    top: 175px;
+    top: 140px;
     right: 100px;
     width: max-content;
-    height: 430px;
+    height: 480px;
 }
 
 .contact-form>h1{
@@ -1752,13 +1752,13 @@ h6>span{
     font-size: 30px;
     line-height: 45px;
     width: max-content;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .contact-form>.txt-box{
     width: 400px;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -1800,27 +1800,19 @@ h6>span{
 
 .contact-form .txt-box .text:valid{
     outline: var(--cl-main) solid 2px;
+    color: var(--cl-dark);
 }
 
-.contact-form .txt-box .text:focus ~ label{
-    top: 6px;
-    left: 10px;
-    color: var(--cl-main);
-    background: var(--cl-card-gray);
-    font-weight: bold;
-    -webkit-text-stroke: 0.01em var(--cl-light);
-}
-
+.contact-form .text:focus ~ label,
 .contact-form .txt-box .text:valid ~ label{
-    top: 6px;
+    top: -10px;
     left: 10px;
     color: var(--cl-main);
-    background: var(--cl-text-light);
     font-weight: bold;
     -webkit-text-stroke: 0.01em var(--cl-light);
 }
 
-input:invalid{
+input:invalid, textarea:invalid{
     color: var(--cl-text-light);
 }
 
@@ -1843,15 +1835,6 @@ input:invalid{
 .contact-form textarea:focus{
     background: var(--cl-card-gray);
     outline: var(--cl-main) solid 2px;
-}
-
-.contact-form textarea:focus ~ label{
-    top: 6px;
-    left: 10px;
-    color: var(--cl-main);
-    background: var(--cl-card-gray);
-    font-weight: bold;
-    -webkit-text-stroke: 0.01em var(--cl-light);
 }
 
 .contact-form .txt-btn{
