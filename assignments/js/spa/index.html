@@ -6,14 +6,1054 @@
     <meta name="owner" content="Ashen Hansaka | Full stack software developer">
     <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=2">
     <meta name="theme-color" content="#ffb800">
-    <title>Que System</title>
+    <title>Hasii POS System</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/myStyle.min.css">
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/font-icon/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
+<!--Dashboard-menu-->
+<div class="offcanvas show offcanvas-start border-0 bg-transparent d-none" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="scroll-menu" aria-labelledby="offcanvasScrollingLabel">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <div class="menu-content w-100 mt-5 mb-5 bg-theme-60">
+            <div class="menu-header d-flex justify-content-center pt-3 pb-2 bg-theme-60">
+                <a class="menu-brand d-flex text-light fw-bold text-shadow" href="#">
+                    <img src="assets/images/favicon.png" alt="Logo" class="d-inline-block align-text-top menu-img me-3">
+                    Hasii POS System
+                </a>
+            </div>
+            <div class="menu-body">
+                <ul class="list-group menu-list mt-2 ms-3 mb-2">
+                    <li class="me-4 ps-3 radius-20 cursor-pointer">
+                        <a class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/dashboard.svg" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 cursor-pointer">
+                        <a id="btn-place-order" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/place-order.svg" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Place Order
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 cursor-pointer">
+                        <a id="btn-customer" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/customer.svg" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Customer
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 cursor-pointer">
+                        <a id="btn-items" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/add-to-cart.png" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Items
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 cursor-pointer">
+                        <a id="btn-order-details" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/order.png" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Order Details
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 cursor-pointer">
+                        <a id="btn-supplier" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/supplier.png" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Supplier
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 cursor-pointer">
+                        <a id="btn-report" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/report.png" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Reports
+                        </a>
+                    </li>
+                    <li class="me-4 ps-3 radius-20 cursor-pointer">
+                        <a id="btn-setting" class="menu-brand d-flex align-items-center text-black fw-bold text-shadow">
+                            <img src="assets/images/setting.svg" alt="Logo" class="d-inline-block align-text-top menu-list-img me-2">
+                            Setting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-footer d-flex justify-content-center align-items-center mb-2 pt-2 border-top border-1">
+                <div class="btn-logout text-shadow">
+                    <a href="index.html" class="btn-logout text-red fw-bold text-decoration-none fs-5"><i class="fa-solid fa-power-off"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<main class="container-fluid p-0">
+    <!--Nav-bar-->
+    <nav id="nav-bar" class="navbar navbar-expand-lg bg-theme-80 d-none">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex text-light fw-bold text-shadow" href="#">
+                <img src="assets/images/favicon.png" alt="Logo" class="d-inline-block align-text-top nav-img">
+                Hasii POS System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="nav-dashboard" class="nav-link" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-order" class="nav-link" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-customer" class="nav-link" href="#">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-items" class="nav-link" href="#">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-order-details" class="nav-link disabled" href="#">Order-Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-supplier" class="nav-link disabled" href="#">Supplier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-report" class="nav-link disabled" href="#">Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-setting" class="nav-link disabled" href="#">Setting</a>
+                    </li>
+                </ul>
+                <div class="btn-logout text-shadow">
+                    <a href="index.html" class="text-red fw-bold text-decoration-none"><i class="fa-solid fa-power-off"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Slider-->
+    <section id="slider">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active img-btn" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="img-btn"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="img-btn"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4" class="img-btn"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5" class="img-btn"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6" class="img-btn"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7" class="img-btn"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8" class="img-btn"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9" class="img-btn"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10" class="img-btn"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets/images/background-01.jpg" class="d-block w-100 full-view-point" alt="background-01">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/background-02.jpg" class="d-block w-100 full-view-point" alt="background-02">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/background-03.jpg" class="d-block w-100 full-view-point" alt="background-03">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/background-04.jpg" class="d-block w-100 full-view-point" alt="background-04">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/background-05.jpg" class="d-block w-100 full-view-point" alt="background-05">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/images/background-06.jpg" class="d-block w-100 full-view-point" alt="background-06">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/background-07.jpg" class="d-block w-100 full-view-point" alt="background-07">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/images/background-08.jpg" class="d-block w-100 full-view-point" alt="background-08">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/background-09.jpg" class="d-block w-100 full-view-point" alt="background-09">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/background-10.jpg" class="d-block w-100 full-view-point" alt="background-10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Login-page-->
+    <section id="login" class="position-absolute top-0 container-fluid h-100">
+        <div class="d-flex flex-column h-100">
+            <div id="login-btn-parent" class="d-flex justify-content-end align-items-center h-25">
+                <div class="me-5">
+                    <button id="login-btn" type="button" class="btn btn-outline-primary btn-login">Log in</button>
+                </div>
+            </div>
+            <div class="d-flex flex-row h-100">
+                <div id="welcome-page" class="d-flex">
+                    <div class="d-flex align-items-center flex-column main-text">
+                        <h1 class="text-them family-inter fw-bold fs-main text-shadow">Welcome</h1>
+                        <div class="main-line"></div>
+                        <p class="family-inter text-light fw-bold fs-5 w-75 mt-5 text-center text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga neque praesentium quaerat ratione. Aliquam debitis delectus, et harum impedit laudantium quaerat repellat sed!</p>
+                    </div>
+                </div>
+                <div id="login-page" class="d-flex justify-content-center align-items-center w-50 d-none">
+                    <div class="d-flex justify-content-center align-items-center container-fluid">
+                        <div class="form-content w-80 d-flex align-items-center flex-column pt-2">
+                            <div class="form-content-header w-100 mt-2">
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <h1 class="">Login Form</h1>
+                                    <button type="button" class="btn-close" id="exit-login" aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="form-content-body w-75 mt-2">
+                                <form class="d-flex align-items-center justify-content-center flex-column w-100">
+                                    <div class="w-80">
+                                        <label for="inputEmail" class="form-label"></label>
+                                        <input type="email" class="form-control p-2 radius-10" id="inputEmail" placeholder="User Name or Email">
+                                    </div>
+                                    <div class="w-80">
+                                        <label for="inputPassword" class="form-label"></label>
+                                        <input type="password" class="form-control p-2 radius-10" id="inputPassword" placeholder="Password">
+                                    </div>
+
+                                    <div class="d-flex justify-content-center w-80 mt-4 mb-2">
+                                        <button type="button" id="login-dashboard" class="btn btn-outline-primary btn-login" style="width: 200px;">Log in</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form-content-footer w-80 mt-4">
+                                <div class="mt-2">
+                                    <a href="#"> Forgot Password ? </a>
+                                    <p> Don't have an account? <a href="#"> Register Here </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Dashboard-page-->
+    <section id="dashboard" class="main active a container-fluid bg-theme-60 p-0 d-none">
+        <nav class="navbar navbar-expand-lg bg-light ps-2 pe-2 pt-4 bg-transparent">
+            <div class="container-fluid">
+                <button class="btn fs-2" data-bs-toggle="offcanvas" id="scroll-menu-btn" data-bs-target="#scroll-menu" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="navbar-brand fs-1 me-auto fw-medium">Dashboard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="dashboard-navbar">
+                    <div class="nav-item dropdown bg-purple p-2 radius-10">
+                        <a class="nav-link dropdown-toggle fw-bold text-hover-white text-end pe-3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user ps-1 pe-2"></i> G.A.A.Hansaka
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../index.html">Profile</a></li>
+                            <li>
+                                <div class="btn-logout text-shadow">
+                                    <a class="btn-logout text-red fw-bold text-decoration-none"><i class="fa-solid fa-power-off"></i>Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="body-content d-flex justify-content-center ps-2 pe-2">
+            <div class="row container-fluid">
+                <div class="col-12 d-flex justify-content-center pt-4">
+                    <div class="row container-fluid d-flex justify-content-center">
+                        <div class="col-lg-4 col-md-6 mt-sm-3 d-flex justify-content-center align-items-center">
+                            <div class="card radius-20 bg-light-green border border-2 border-dark d-flex justify-content-end align-items-end flex-column">
+                                <span class="order-count fs-card pe-4 pb-4">528</span>
+                                <h1 class="fs-1 text-light text-end pb-3 pe-4">Orders</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-sm-3 d-flex justify-content-center align-items-center">
+                            <div class="card radius-20 bg-light-red border border-2 border-dark d-flex justify-content-end align-items-end flex-column">
+                                <span class="order-count fs-card pe-4 pb-4">528</span>
+                                <h1 class="fs-1 text-light text-end pb-3 pe-4">Customers</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mt-md-3 mt-sm-3  d-flex justify-content-center align-items-center">
+                            <div class="card radius-20 bg-light-blue border border-2 border-dark d-flex justify-content-end align-items-end flex-column">
+                                <span class="order-count fs-card pe-4 pb-4">528</span>
+                                <h1 class="fs-1 text-light text-end pb-3 pe-4">Items</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center pt-5">
+                    <div class="row container-fluid d-flex justify-content-center">
+                        <div class="col-lg-6 col-md-12 d-flex justify-content-center pb-3">
+                            <div class="min-cart d-flex align-items-center justify-content-center bg-white-50 border border-2 border-cyan w-100">
+                                <h1 class="fs-5 text-cyan text-center mb-0">Today's closeout Report</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 d-flex justify-content-center pb-3">
+                            <div class="min-cart d-flex align-items-center justify-content-center bg-white-50 border border-2 border-cyan w-100">
+                                <h1 class="fs-5 text-cyan text-center mb-0">Today's Supplier Report</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 d-flex justify-content-center pb-3">
+                            <div class="min-cart d-flex align-items-center justify-content-center bg-white-50 border border-2 border-cyan w-100">
+                                <h1 class="fs-5 text-cyan text-center mb-0">Today's sale Report</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 d-flex justify-content-center pb-3">
+                            <div class="min-cart d-flex align-items-center justify-content-center bg-white-50 border border-2 border-cyan w-100">
+                                <h1 class="fs-5 text-cyan text-center mb-0">Today's Item Report</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ps-2 pe-2">
+                    <div class="container-fluid d-flex flex-column align-items-center date-time">
+                        <p class="fw-bold mb-1"><span>Sunday</span> the <span>9th</span> of <span>October</span> <span>2022</span></p>
+                        <span class="fw-bold">10 : 10 : 10</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!--Place-order-page-->
+    <section id="place-order" class="container-fluid bg-gray-65 d-none">
+        <div class="row">
+            <div class="col-12 pt-3">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-4 col-md-6 mt-3 mt-md-0 d-flex align-items-center justify-content-start">
+                            <div class="order-box order bg-white w-100 radius-10">
+                                <form>
+                                    <div class="row container ms-0">
+                                        <div class="col-6 mb-1">
+                                            <label for="order-id" class="col-form-label pb-0"></label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" placeholder="Order Id" id="order-id">
+                                        </div>
+                                        <div class="col-6 mb-1">
+                                            <label for="order-date" class="col-form-label pb-0"></label>
+                                            <input type="date" class="form-control bg-gray radius-10 cursor-default" placeholder="Order Date" id="order-date">
+                                        </div>
+                                        <div class="col-6 mb-1">
+                                            <label for="customer-id-order" class="col-form-label pb-0">Customer Id :</label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" id="customer-id-order">
+                                        </div>
+                                        <div class="col-6 mb-1 d-flex align-items-end justify-content-center">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#new-customer-modal"  class="new-customer btn btn-light btn-sm bg-purple text-light me-1 fw-semibold radius-10 ps-3 pe-3">New</button>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#customer-search"  class="search-customer btn btn-light btn-sm bg-light-cyan text-light ms-1 fw-semibold radius-10 ps-3 pe-3">Search</button>
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="customer-name-order" class="col-form-label pb-0">Customer Name :</label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" id="customer-name-order">
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="customer-nic-order" class="col-form-label pb-0">Customer NIC :</label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" id="customer-nic-order">
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="customer-address-order" class="col-form-label pb-0">Customer Address :</label>
+                                            <input type="text" class="form-control bg-gray radius-10 cursor-default" id="customer-address-order">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3 mt-md-0 d-flex align-items-center justify-content-start">
+                            <div class="order-box items bg-white w-100 radius-10">
+                                <form>
+                                    <div class="row container ms-0">
+                                        <div class="col-6 mb-1">
+                                            <label for="item-code-order" class="col-form-label pb-0"></label>
+                                            <input type="text" class="form-control bg-gray radius-10" placeholder="Item Code" id="item-code-order">
+                                        </div>
+                                        <div class="col-6 mb-1 d-flex align-items-end justify-content-end">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#item-search" class="item-search btn btn-light btn-sm bg-light-cyan text-light me-5 fw-semibold radius-10 ps-3 pe-3">Search</button>
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="item-description-order" class="col-form-label pb-0">Description :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="item-description-order">
+                                        </div>
+                                        <div class="col-6 mb-1">
+                                            <label for="unit-price-order" class="col-form-label pb-0">Unit Price :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="unit-price-order">
+                                        </div>
+                                        <div class="col-6 mb-1">
+                                            <label for="qty-on-hand" class="col-form-label pb-0">Qty On Hand :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="qty-on-hand">
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="order-qty" class="col-form-label pb-0">Order QTY :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="order-qty">
+                                        </div>
+                                        <div class="col-12 mb-1 d-flex align-items-end justify-content-end">
+                                            <button id="btn-add-cart" type="button" class="btn btn-danger bg-light-red mt-4 me-4 radius-10 fw-semibold ps-5 pe-5">Add Cart</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-8 mt-3 mt-lg-0 d-flex align-items-center justify-content-start">
+                            <div class="order-box parch bg-white w-100 radius-10">
+                                <form>
+                                    <div class="row container ms-0">
+                                        <div class="col-12 mt-3 fs-4 text-blue">
+                                            <label for="total" class="col-form-label pb-0">Total : </label>
+                                            <span id="total" class="fw-bold ms-3"> 0.00</span><span class="ms-2">/=</span>
+                                        </div>
+                                        <div class="col-12 mb-1 fs-4 text-light-red">
+                                            <label for="subTotal" class="col-form-label pb-0">SubTotal : </label>
+                                            <span id="subTotal" class="fw-bold ms-3"> 0.00</span><span class="ms-2">/=</span>
+                                        </div>
+                                        <div class="col-7 mb-1 mt-3">
+                                            <label for="cash" class="col-form-label pb-0">Cash :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="cash">
+                                        </div>
+                                        <div class="col-5 mb-1 mt-3">
+                                            <label for="discount" class="col-form-label pb-0">Discount :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="discount">
+                                        </div>
+                                        <div class="col-12 mb-1">
+                                            <label for="balance" class="col-form-label pb-0">Balance :</label>
+                                            <input type="text" class="form-control bg-gray radius-10" id="balance">
+                                        </div>
+                                        <div class="col-12 mb-1 d-flex align-items-end justify-content-end">
+                                            <button type="button" class="btn btn-danger border-0 bg-light-green mt-4 me-5 radius-10 fw-semibold w-50">Parches</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12" style="height: 240px;">
+                <div class="container-fluid">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="bg-gray" scope="col">Item Code</th>
+                            <th class="bg-gray" scope="col">Description</th>
+                            <th class="bg-gray" scope="col">Unit Price</th>
+                            <th class="bg-gray" scope="col">Order QTY</th>
+                            <th class="bg-gray" scope="col">Total</th>
+                            <th class="bg-gray" scope="col">#</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>O001</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Clear</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>O002</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Clear</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>O003</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Clear</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Customer-page-->
+    <section id="customer" class="container-fluid bg-gray-65 d-none">
+        <div class="head">
+            <img src="assets/images/customer.svg" alt="" class="head-img">
+            Customer
+        </div>
+        <div class="container-fluid bg-white">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row d-flex justify-content-center align-items-center">
+
+                        <div class="col-lg-7 col-md-8 search-box pt-2">
+                            <div class="container h-100 d-flex justify-content-center">
+                                <div class="row search-box-content h-100">
+                                    <div class="col-12 h-75">
+                                        <div class="content-box border border-dark border-1">
+                                            <div class="search-box-header bg-light-cyan d-flex align-items-center border-bottom border-dark border-1">
+                                                <i class="fa fa-search text-light fs-4 text-shadow ps-4"></i>
+                                                <h1 class="search-box-head text-light fs-4 text-shadow">Search Customer</h1>
+                                            </div>
+                                            <div class="search-box-body d-flex justify-content-center align-items-center">
+                                                <div class="row container">
+                                                    <div class="col-12 box d-flex justify-content-center align-items-center">
+                                                        <div class="mb-3 w-75">
+                                                            <label for="search-customer" class="form-label"></label>
+                                                            <input type="text" class="form-control customer-search-bar" id="search-customer" placeholder="Customer Id / NIC / Name / Address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 box d-flex justify-content-center align-items-center">
+                                                        <div class="dropdown mb-3">
+                                                            <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Customer Id
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 box d-flex justify-content-center align-items-center">
+                                                        <button type="button" class="search-customer btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search mb-3 text-shadow text-hover-white">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 h-25 mt-3 d-flex justify-content-end search-box-btn pt-2">
+                                        <button id="delete-customer" type="button" class="btn btn-primary btn-sm fw-bold bg-light-red border-0 disabled">Delete</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#update-customer-modal" class="update-customer btn btn-primary btn-sm fw-bold bg-green border-0 disabled">Update</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#customer-details" class="view-customer btn btn-primary btn-sm fw-bold bg-blue border-0 disabled">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 main-btn d-flex flex-lg-column flex-sm-row align-items-end justify-content-center">
+                            <button data-bs-toggle="modal" data-bs-target="#new-customer-modal" type="button" class="new-customer btn btn-lg bg-purple text-light fw-bold btn-main text-shadow">New Customer</button>
+                            <button id="all-customer" type="button" class="btn btn-lg bg-cyan text-light fw-bold btn-main text-shadow ms-sm-4 ms-lg-0 mt-sm-0 mt-lg-4">All Customer</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 mt-3">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="bg-gray" scope="col">Customer Id</th>
+                            <th class="bg-gray" scope="col">Name</th>
+                            <th class="bg-gray" scope="col">NIC</th>
+                            <th class="bg-gray" scope="col">Address</th>
+                        </tr>
+                        </thead>
+                        <tbody id="search-tblCustomer">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Item-page-->
+    <section id="item" class="container-fluid bg-gray-65 d-none">
+        <div class="head">
+            <img src="assets/images/add-to-cart.png" alt="" class="head-img">
+            Item
+        </div>
+        <div class="container-fluid bg-white h-100">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row d-flex justify-content-center align-items-center">
+
+                        <div class="col-lg-7 col-md-8 search-box pt-2">
+                            <div class="container h-100 d-flex justify-content-center">
+                                <div class="row search-box-content h-100">
+                                    <div class="col-12 h-75">
+                                        <div class="content-box border border-dark border-1">
+                                            <div class="search-box-header bg-light-cyan d-flex align-items-center border-bottom border-dark border-1">
+                                                <i class="fa fa-search text-light fs-4 text-shadow ps-4"></i>
+                                                <h1 class="search-box-head text-light fs-4 text-shadow">Search Item</h1>
+                                            </div>
+                                            <div class="search-box-body d-flex justify-content-center align-items-center">
+                                                <div class="row container">
+                                                    <div class="col-12 box d-flex justify-content-center align-items-center">
+                                                        <div class="mb-3 w-75">
+                                                            <label for="search-item" class="form-label"></label>
+                                                            <input type="text" class="form-control" id="search-item" placeholder="Item Code / Unit Price">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 box d-flex justify-content-center align-items-center">
+                                                        <div class="dropdown mb-3">
+                                                            <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Item Code
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 box d-flex justify-content-center align-items-center">
+                                                        <button type="button" class="search-item btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search mb-3 text-shadow text-hover-white">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 h-25 d-flex justify-content-end search-box-btn pt-2">
+                                        <button id="delete-item" type="button" class="btn btn-primary btn-sm fw-bold bg-light-red border-0">Delete</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#update-item-modal" class="update-item btn btn-primary btn-sm fw-bold bg-green border-0">Update</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#item-details" class="view-item btn btn-primary btn-sm fw-bold bg-blue border-0">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 main-btn d-flex flex-lg-column flex-sm-row align-items-end justify-content-center">
+                            <button data-bs-toggle="modal" data-bs-target="#new-item-modal" type="button" class="new-item btn btn-lg bg-purple text-light fw-bold btn-main mb-3 text-shadow">New Item</button>
+                            <button id="all-item" type="button" class="btn btn-lg bg-cyan text-light fw-bold btn-main text-shadow ms-sm-4 ms-lg-0 mt-sm-0 mt-lg-4">All Items</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="bg-gray" scope="col">Item Code</th>
+                            <th class="bg-gray" scope="col">Description</th>
+                            <th class="bg-gray" scope="col">Unit Price</th>
+                            <th class="bg-gray" scope="col">Item QTY</th>
+                        </tr>
+                        </thead>
+                        <tbody id="search-tblItem">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--All-Customer-page-->
+    <section id="customers" class="container-fluid bg-gray-65 d-none">
+        <div class="head">
+            <img src="assets/images/customer.svg" alt="" class="head-img">
+            Customers
+        </div>
+        <div class="head-btn">
+            <button data-bs-toggle="modal" data-bs-target="#new-customer-modal" type="button" class="new-customer btn btn-lg bg-purple text-light fw-bold btn-main">New Customer</button>
+        </div>
+        <div class="container-fluid bg-white h-100">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="bg-gray" scope="col">Id</th>
+                            <th class="bg-gray" scope="col">Name</th>
+                            <th class="bg-gray" scope="col">NIC</th>
+                            <th class="bg-gray" scope="col">Address</th>
+                            <th class="bg-gray" scope="col">Update/Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblCustomer"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--All-Item-page-->
+    <section id="items" class="container-fluid bg-gray-65 d-none">
+        <div class="head">
+            <img src="assets/images/add-to-cart.png" alt="" class="head-img">
+            Items
+        </div>
+        <div class="head-btn">
+            <button data-bs-toggle="modal" data-bs-target="#new-item-modal" type="button" class="new-item btn btn-lg bg-purple text-light fw-bold btn-main">New Item</button>
+        </div>
+        <div class="container-fluid bg-white h-100">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="bg-gray" scope="col">Item Code</th>
+                            <th class="bg-gray" scope="col">Description</th>
+                            <th class="bg-gray" scope="col">Unit Price</th>
+                            <th class="bg-gray" scope="col">Item QTY</th>
+                            <th class="bg-gray" scope="col">Update/Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblItem">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Customer-search-modal-->
+    <div class="modal fade" id="customer-search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius-20 border-dark border-1">
+                <div class="modal-header bg-light-cyan border-bottom border-dark border-1">
+                    <i class="fa fa-search text-light fs-4 text-shadow ps-4"></i>
+                    <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold text-shadow">Search Customer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form>
+                        <div class="row container ms-0">
+                            <div class="col-12 mb-4">
+                                <label for="customer-search-bar" class="form-label"></label>
+                                <input type="text" class="form-control customer-search-bar" id="customer-search-bar" placeholder="Customer Id / NIC / Name / Address">
+                            </div>
+                            <div class="col-6 box d-flex justify-content-center align-items-end">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Customer Id
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 box d-flex justify-content-center align-items-end">
+                                <button type="button" class="search-customer btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search text-shadow text-hover-white">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <div class="row container">
+                        <div class="col-9">
+                            <button type="button" class="delete-customer btn btn-primary btn-sm fw-bold bg-light-red border-0 disabled">Delete</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#update-customer-modal" class="update-customer btn btn-primary btn-sm fw-bold bg-green border-0">Update</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#customer-details" class="view-customer btn btn-primary btn-sm fw-bold bg-blue border-0">View</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-outline-danger fw-bold radius-10" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Customer-modal-->
+    <div class="modal fade" id="new-customer-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius-20">
+                <div class="modal-header bg-purple">
+                    <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold"><span>New</span> Customer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-2">
+                            <label for="new-customer-id" class="col-form-label">Customer Id :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="new-customer-id">
+                            <span class="lblCusId ps-3 fw-light pt-1" style="font-size: 14px;"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label for="new-customer-name" class="col-form-label">Customer Name :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="new-customer-name">
+                            <span class="lblCusName ps-3 fw-light pt-1" style="font-size: 14px;"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label for="new-customer-nic" class="col-form-label">Customer NIC :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="new-customer-nic">
+                            <span class="lblCusNIC ps-3 fw-light pt-1" style="font-size: 14px;"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label for="new-customer-address" class="col-form-label">Customer Address :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="new-customer-address">
+                            <span class="lblCusAddress ps-3 fw-light pt-1" style="font-size: 14px;"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-sm-around">
+                    <button type="button" class="btn btn-outline-danger modal-btn fw-bold radius-20" data-bs-dismiss="modal">Close</button>
+                    <button id="save-new-customer" type="button" data-bs-toggle="modal" data-bs-target="#success-alert" class="btn btn-outline-primary modal-btn fw-bold radius-20">Save Customer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="update-customer-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius-20">
+                <div class="modal-header bg-green">
+                    <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold"><span>Update</span> Customer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-2">
+                            <label for="update-customer-id" class="col-form-label">Customer Id :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="update-customer-id">
+                            <span id="lblCusId" class="ps-3 fw-light pt-1" style="font-size: 14px;"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label for="update-customer-name" class="col-form-label">Customer Name :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="update-customer-name">
+                            <span id="lblCusName" class="ps-3 fw-light pt-1" style="font-size: 14px;"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label for="update-customer-nic" class="col-form-label">Customer NIC :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="update-customer-nic">
+                            <span id="lblCusNIC" class="ps-3 fw-light pt-1" style="font-size: 14px;"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label for="update-customer-address" class="col-form-label">Customer Address :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="update-customer-address">
+                            <span id="lblCusAddress" class="ps-3 fw-light pt-1" style="font-size: 14px;"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-sm-around">
+                    <button type="button" class="btn btn-outline-danger modal-btn fw-bold radius-20" data-bs-dismiss="modal">Close</button>
+                    <button id="save-update-customer" type="button" data-bs-toggle="modal" data-bs-target="#success-alert" class="btn btn-outline-primary modal-btn fw-bold radius-20">Save Customer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Customer-details-modal-->
+    <div class="modal fade" id="customer-details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 800px;">
+            <div class="modal-content radius-20">
+                <div class="modal-header bg-blue">
+                    <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold">Customer Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Customer Id : </label>
+                            <span id="details-customer-id" class="fw-bold"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Customer Name : </label>
+                            <span id="details-customer-name" class="fw-bold"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Customer NIC : </label>
+                            <span id="details-customer-nic" class="fw-bold"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Customer Address : </label>
+                            <span id="details-customer-address" class="fw-bold"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="bg-gray" scope="col">Order Id</th>
+                                <th class="bg-gray" scope="col">Order Qty</th>
+                                <th class="bg-gray" scope="col">Order Date</th>
+                                <th class="bg-gray" scope="col">Total</th>
+                                <th class="bg-gray" scope="col">Item Code</th>
+                            </tr>
+                            </thead>
+                            <tbody id="details-tblCustomer">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-sm-around">
+                    <button type="button" class="btn btn-outline-danger modal-btn fw-bold radius-20" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Item-search-modal-->
+    <div class="modal fade" id="item-search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius-20 border-dark border-1">
+                <div class="modal-header bg-light-cyan border-bottom border-dark border-1">
+                    <i class="fa fa-search text-light fs-4 text-shadow ps-4"></i>
+                    <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold text-shadow">Search Item</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form>
+                        <div class="row container ms-0">
+                            <div class="col-12 mb-4">
+                                <label for="item-search-bar" class="form-label"></label>
+                                <input type="text" class="form-control" id="item-search-bar" placeholder="Item Code / Unit Price">
+                            </div>
+                            <div class="col-6 box d-flex justify-content-center align-items-end">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Item code
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 box d-flex justify-content-center align-items-end">
+                                <button type="button" class="search-item btn btn-primary btn-sm fw-bold bg-light-cyan border-0 text-black fs-5 btn-search text-shadow text-hover-white">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <div class="row container">
+                        <div class="col-9">
+                            <button type="button" class="delete-item btn btn-primary btn-sm fw-bold bg-light-red border-0 disabled">Delete</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#update-item-modal" class="update-item btn btn-primary btn-sm fw-bold bg-green border-0">Update</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#item-details" class="view-item btn btn-primary btn-sm fw-bold bg-blue border-0">View</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-outline-danger fw-bold radius-10" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Item-modal-->
+    <div class="modal fade" id="new-item-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius-20">
+                <div class="modal-header bg-purple">
+                    <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold" id="exampleModalLabel"><span>New</span> Item</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="new-item-code" class="col-form-label">Item code :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="new-item-code">
+                        </div>
+                        <div class="mb-3">
+                            <label for="new-item-description" class="col-form-label">Item Description :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="new-item-description">
+                        </div>
+                        <div class="mb-3">
+                            <label for="new-unit-price" class="col-form-label">Unit Price :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="new-unit-price">
+                        </div>
+                        <div class="mb-3">
+                            <label for="new-item-qty" class="col-form-label">Item QY :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="new-item-qty">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-sm-around">
+                    <button type="button" class="btn btn-outline-danger modal-btn fw-bold radius-20" data-bs-dismiss="modal">Close</button>
+                    <button id="save-new-item" type="button" class="btn btn-outline-primary modal-btn fw-bold radius-20">Save Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="update-item-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius-20">
+                <div class="modal-header bg-purple">
+                    <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold" ><span>New</span> Item</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="update-item-code" class="col-form-label">Item code :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="update-item-code">
+                        </div>
+                        <div class="mb-3">
+                            <label for="update-item-description" class="col-form-label">Item Description :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="update-item-description">
+                        </div>
+                        <div class="mb-3">
+                            <label for="update-unit-price" class="col-form-label">Unit Price :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="update-unit-price">
+                        </div>
+                        <div class="mb-3">
+                            <label for="update-item-qty" class="col-form-label">Item QY :</label>
+                            <input type="text" class="form-control bg-gray radius-20" id="update-item-qty">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-sm-around">
+                    <button type="button" class="btn btn-outline-danger modal-btn fw-bold radius-20" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="save-update-item btn btn-outline-primary modal-btn fw-bold radius-20">Save Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Item-details-modal-->
+    <div class="modal fade" id="item-details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius-20">
+                <div class="modal-header bg-blue">
+                    <h1 class="modal-title fs-4 text-center text-light w-100 fw-bold">Item Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Item Code : </label>
+                            <span id="item-code-details" class="fw-bold"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Description : </label>
+                            <span id="item-description-details" class="fw-bold"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Unit Price : </label>
+                            <span id="item-unit-price-details" class="fw-bold"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label">Item QTY : </label>
+                            <span id="item-qty-details" class="fw-bold"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-sm-around">
+                    <button type="button" class="btn btn-outline-danger modal-btn fw-bold radius-20" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="success-alert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content border-top border-0 border-5 border-primary" style="border-radius: 5px 20px 5px 20px !important;">
+                <div class="modal-header border-top border-0 border-5 border-primary" style="border-radius: 0 16px 0 !important;">
+                    <h1 class="modal-title text-primary fs-4">Success</h1>
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/myStyle.min.js"></script>
