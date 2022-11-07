@@ -36,4 +36,11 @@ function renderQue(){
     first.append(`<div  class="person" style="background-color: ${cueData.persons[2].color}">${cueData.persons[2].name}</div>`);
 }
 
-setInterval(renderQue,900);
+setInterval(renderQue,1000);
+
+// add new person -------
+CUE('#addNew').click(function () {
+    let name = CUE('#name').val();
+    let color = CUE('#color').val();
+    cueData.persons.unshift({name:name,color:color});
+});
