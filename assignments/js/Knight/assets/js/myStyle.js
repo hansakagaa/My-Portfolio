@@ -1,0 +1,1 @@
+const KR = jQuery.noConflict();
