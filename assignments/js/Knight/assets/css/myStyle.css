@@ -1,0 +1,13 @@
+.col-2 {
+    border: 1px solid;
+    width: 120px;
+    height: 55px;
+}
+
+.container{
+    height: 99vh;
+}
+
+.col-2:first-child {
+    border-radius: 10px 0 0 10px;
+}
