@@ -85,13 +85,13 @@ main>section>header>h1 {
     font-weight: 400;
     line-height: 40px;
     font-size: 30px;
-    color: var(--cl-text-dark);
+    color: var(--cl-dark);
 }
 
 main>section>header .topic .i{
     width: 60%;
     height: 4px;
-    background-color: var(--cl-text-dark);
+    background-color: var(--cl-dark);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -102,7 +102,7 @@ main>section>header .topic .i::before{
     content: '';
     width: 25%;
     height: 4px;
-    background-color: var(--cl-text-dark);
+    background-color: var(--cl-dark);
     position: absolute;
     left: 110%;
     border-radius: 50px;
@@ -112,7 +112,7 @@ main>section>header .topic .i::after{
     content: '';
     width: 18%;
     height: 4px;
-    background-color: var(--cl-text-dark);
+    background-color: var(--cl-dark);
     position: absolute;
     left: 140%;
     border-radius: 50px;
@@ -977,7 +977,7 @@ body>header{
 .assignment .button{
     padding: 8px 16px;
     color: var(--cl-light);
-    border:3px solid var(--cl-light);
+    border:3px solid var(--cl-text-light);
     font-weight: bold;
     background-color: var(--cl-main);
     border-radius: 10px;
@@ -2053,6 +2053,37 @@ input:invalid, textarea:invalid{
 
 .style-switcher .colours span:hover{
     border: 2px solid var(--cl);
+}
+
+.map-container{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    background-color: var(--cl-dark-50);
+}
+
+.map-container.open{
+    display: flex;
+}
+
+.map-container .map-content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container iframe {
+    width: 95%;
+    height: 85%;
+    border: 5px solid var(--cl-main);
+    border-radius: 20px;
 }
 
 @media all and (min-width: 320px) and (max-width: 1023px){
