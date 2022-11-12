@@ -47,7 +47,7 @@ const items = document.querySelectorAll('.project .item');
 let itemsCount = items.length;
 const discBox = document.querySelector('.discBox'),
     discBoxImg = discBox.querySelector('.discBox-img .img'),
-    close = discBox.querySelector('.discBox-close'),
+    disBoxClose = discBox.querySelector('.discBox-close'),
     discBoxCaption = discBox.querySelector('.discBox-caption'),
     discBoxText = discBox.querySelector('.discBox-text'),
     prevItem = discBox.querySelector('.prev-item'),
@@ -77,7 +77,7 @@ prevItem.addEventListener('click', function () {
     changeItem();
 });
 discBox.addEventListener('click', function (e) {
-    if (e.target === close || e.target === discBox){
+    if (e.target === disBoxClose || e.target === discBox){
         toggleDiscBox()
     }
 });
@@ -188,9 +188,26 @@ function moveCard() {
     secondDescription.innerHTML = cards[cardIndex+1].querySelector('p').innerHTML;
     secondButton.href = cards[cardIndex+1].querySelector('.button').getAttribute('href');
 }
+/*--------Contact Section--------*/
+//*--------Open map box--------
+const mapBox = document.querySelector('.map-container');
+const mapBtn = document.querySelector('.map-open');
 
+mapBtn.addEventListener('click', function () {
+   toggleMap();
+});
 
-
-
-
+mapBox.addEventListener('click', function (e) {
+    if (e.target === mapBox){
+        toggleMap();
+    }
+});
+function toggleMap() {
+    mapBox.classList.toggle('open');
+}
+window.addEventListener('scroll',function () {
+    if (mapBox.classList.toggle('open')){
+        mapBox.classList.remove('open');
+    }
+});
 
