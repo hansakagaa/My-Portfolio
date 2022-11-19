@@ -1,0 +1,21 @@
+
+.swipper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swipper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 350px;
+}
+
+.swipper-slide .image img{
+    position: absolute;
+    border: 5px solid var(--cl-text-light);
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}

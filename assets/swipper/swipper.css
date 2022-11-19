@@ -1,0 +1,543 @@
+:root {
+    --swipper-theme-color: var(--cl-main);
+}
+
+.swipper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swipper-container-vertical > .swipper-wrapper {
+    flex-direction: column;
+}
+
+.swipper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swipper-container-android .swipper-slide, .swipper-wrapper {
+    transform: translate3d(0px, 0, 0);
+}
+
+.swipper-container-multi-row > .swipper-wrapper {
+    flex-wrap: wrap;
+}
+
+.swipper-container-multi-row-column > .swipper-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.swipper-container-free-mode > .swipper-wrapper {
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+}
+
+.swipper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.swipper-slide-invisible-blank {
+    visibility: hidden;
+}
+
+.swipper-container-auto-height, .swipper-container-auto-height .swipper-slide {
+    height: auto;
+}
+
+.swipper-container-auto-height .swipper-wrapper {
+    align-items: flex-start;
+    transition-property: transform, height;
+}
+
+.swipper-container-3d {
+    perspective: 1200px;
+}
+
+.swipper-container-3d .swipper-cube-shadow, .swipper-container-3d .swipper-slide, .swipper-container-3d .swipper-slide-shadow-bottom, .swipper-container-3d .swipper-slide-shadow-left, .swipper-container-3d .swipper-slide-shadow-right, .swipper-container-3d .swipper-slide-shadow-top, .swipper-container-3d .swipper-wrapper {
+    transform-style: preserve-3d;
+}
+
+.swipper-container-3d .swipper-slide-shadow-bottom, .swipper-container-3d .swipper-slide-shadow-left, .swipper-container-3d .swipper-slide-shadow-right, .swipper-container-3d .swipper-slide-shadow-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.swipper-container-3d .swipper-slide-shadow-left {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swipper-container-3d .swipper-slide-shadow-right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swipper-container-3d .swipper-slide-shadow-top {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swipper-container-3d .swipper-slide-shadow-bottom {
+    background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swipper-container-css-mode > .swipper-wrapper {
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+
+.swipper-container-css-mode > .swipper-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.swipper-container-css-mode > .swipper-wrapper > .swipper-slide {
+    scroll-snap-align: start start;
+}
+
+.swipper-container-horizontal.swipper-container-css-mode > .swipper-wrapper {
+    scroll-snap-type: x mandatory;
+}
+
+.swipper-container-vertical.swipper-container-css-mode > .swipper-wrapper {
+    scroll-snap-type: y mandatory;
+}
+
+:root {
+    --swipper-navigation-size: 44px;
+}
+
+.swipper-button-next, .swipper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swipper-navigation-size) / 44 * 27);
+    height: var(--swipper-navigation-size);
+    margin-top: calc(-1 * var(--swipper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swipper-theme-color));
+}
+
+.swipper-button-next.swipper-button-disabled, .swipper-button-prev.swipper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swipper-button-next:after, .swipper-button-prev:after {
+    font-size: var(--swipper-navigation-size);
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+}
+
+.swipper-button-prev, .swipper-container-rtl .swipper-button-next {
+    left: 10px;
+    right: auto;
+}
+
+.swipper-button-prev:after, .swipper-container-rtl .swipper-button-next:after {
+    content: 'prev';
+}
+
+.swipper-button-next, .swipper-container-rtl .swipper-button-prev {
+    right: 10px;
+    left: auto;
+}
+
+.swipper-button-next:after, .swipper-container-rtl .swipper-button-prev:after {
+    content: 'next';
+}
+
+.swipper-button-next.swipper-button-white, .swipper-button-prev.swipper-button-white {
+    --swiper-navigation-color: var(--cl-light);
+}
+
+.swipper-button-next.swipper-button-black, .swipper-button-prev.swipper-button-black {
+    --swiper-navigation-color: var(--cl-dark);
+}
+
+.swipper-button-lock {
+    display: none;
+}
+
+.swipper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10
+}
+
+.swipper-pagination.swipper-pagination-hidden {
+    opacity: 0
+}
+
+.swipper-container-horizontal > .swipper-pagination-bullets, .swipper-pagination-custom, .swipper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%
+}
+
+.swipper-pagination-bullets-dynamic {
+    overflow: hidden;
+    font-size: 0
+}
+
+.swipper-pagination-bullets-dynamic .swipper-pagination-bullet {
+    transform: scale(.33);
+    position: relative
+}
+
+.swipper-pagination-bullets-dynamic .swipper-pagination-bullet-active {
+    transform: scale(1)
+}
+
+.swipper-pagination-bullets-dynamic .swipper-pagination-bullet-active-main {
+    transform: scale(1)
+}
+
+.swipper-pagination-bullets-dynamic .swipper-pagination-bullet-active-prev {
+    transform: scale(.66)
+}
+
+.swipper-pagination-bullets-dynamic .swipper-pagination-bullet-active-prev-prev {
+    transform: scale(.33)
+}
+
+.swipper-pagination-bullets-dynamic .swipper-pagination-bullet-active-next {
+    transform: scale(.66)
+}
+
+.swipper-pagination-bullets-dynamic .swipper-pagination-bullet-active-next-next {
+    transform: scale(.33)
+}
+
+.swipper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: var(--cl-dark);
+    opacity: .2;
+}
+
+button.swipper-pagination-bullet {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.swipper-pagination-clickable .swipper-pagination-bullet {
+    cursor: pointer;
+}
+
+.swipper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--swiper-pagination-color, var(--swipper-theme-color));
+}
+
+.swipper-container-vertical > .swipper-pagination-bullets {
+    right: 10px;
+    top: 50%;
+    transform: translate3d(0px, -50%, 0);
+}
+
+.swipper-container-vertical > .swipper-pagination-bullets .swipper-pagination-bullet {
+    margin: 6px 0;
+    display: block;
+}
+
+.swipper-container-vertical > .swipper-pagination-bullets.swipper-pagination-bullets-dynamic {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+}
+
+.swipper-container-vertical > .swipper-pagination-bullets.swipper-pagination-bullets-dynamic .swipper-pagination-bullet {
+    display: inline-block;
+    transition: .2s transform, .2s top;
+}
+
+.swipper-container-horizontal > .swipper-pagination-bullets .swipper-pagination-bullet {
+    margin: 0 4px;
+}
+
+.swipper-container-horizontal > .swipper-pagination-bullets.swipper-pagination-bullets-dynamic {
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.swipper-container-horizontal > .swipper-pagination-bullets.swiper-pagination-bullets-dynamic .swipper-pagination-bullet {
+    transition: .2s transform, .2s left;
+}
+
+.swipper-container-horizontal.swipper-container-rtl > .swipper-pagination-bullets-dynamic .swipper-pagination-bullet {
+    transition: .2s transform, .2s right;
+}
+
+.swipper-pagination-progressbar {
+    background: var(--cl-dark-25);
+    position: absolute;
+}
+
+.swipper-pagination-progressbar .swipper-pagination-progressbar-fill {
+    background: var(--swiper-pagination-color, var(--swipper-theme-color));
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: left top;
+}
+
+.swipper-container-rtl .swipper-pagination-progressbar .swipper-pagination-progressbar-fill {
+    transform-origin: right top
+}
+
+.swipper-container-horizontal > .swipper-pagination-progressbar, .swipper-container-vertical > .swipper-pagination-progressbar.swipper-pagination-progressbar-opposite {
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 0;
+}
+
+.swipper-container-horizontal > .swipper-pagination-progressbar.swipper-pagination-progressbar-opposite, .swipper-container-vertical > .swipper-pagination-progressbar {
+    width: 4px;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.swipper-pagination-white {
+    --swiper-pagination-color: var(--cl-light);
+}
+
+.swipper-pagination-black {
+    --swiper-pagination-color: var(--cl-dark);
+}
+
+.swipper-pagination-lock {
+    display: none;
+}
+
+.swipper-scrollbar {
+    border-radius: 10px;
+    position: relative;
+    -ms-touch-action: none;
+    background: var(--cl-dark-10);
+}
+
+.swipper-container-horizontal > .swipper-scrollbar {
+    position: absolute;
+    left: 1%;
+    bottom: 3px;
+    z-index: 50;
+    height: 5px;
+    width: 98%;
+}
+
+.swipper-container-vertical > .swipper-scrollbar {
+    position: absolute;
+    right: 3px;
+    top: 1%;
+    z-index: 50;
+    width: 5px;
+    height: 98%;
+}
+
+.swipper-scrollbar-drag {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: var(--cl-dark-50);
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+}
+
+.swier-scrollbar-cursor-drag {
+    cursor: move;
+}
+
+.swipper-scrollbar-lock {
+    display: none;
+}
+
+.swipper-zoom-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.swipper-zoom-container > canvas, .swipper-zoom-container > img, .swipper-zoom-container > svg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.swipper-slide-zoomed {
+    cursor: move;
+}
+
+.swipper-lazy-preloader {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -21px;
+    margin-top: -21px;
+    z-index: 10;
+    transform-origin: 50%;
+    animation: swiper-preloader-spin 1s infinite linear;
+    box-sizing: border-box;
+    border: 4px solid var(--swipper-preloader-color, var(--swipper-theme-color));
+    border-radius: 50%;
+    border-top-color: transparent;
+}
+
+.swipper-lazy-preloader-white {
+    --swipper-preloader-color: var(--cl-light);
+}
+
+.swipper-lazy-preloader-black {
+    --swipper-preloader-color: var(--cl-dark);
+}
+
+@keyframes swipper-preloader-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.swipper-container .swipper-notification {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1000;
+}
+
+.swipper-container-fade.swipper-container-free-mode .swipper-slide {
+    transition-timing-function: ease-out;
+}
+
+.swipper-container-fade .swipper-slide {
+    pointer-events: none;
+    transition-property: opacity;
+}
+
+.swipper-container-fade .swipper-slide .swipper-slide {
+    pointer-events: none;
+}
+
+.swipper-container-fade .swipper-slide-active, .swipper-container-fade .swipper-slide-active .swipper-slide-active {
+    pointer-events: auto;
+}
+
+.swipper-container-cube {
+    overflow: visible;
+}
+
+.swipper-container-cube .swipper-slide {
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+    visibility: hidden;
+    transform-origin: 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.swipper-container-cube .swipper-slide .swipper-slide {
+    pointer-events: none;
+}
+
+.swipper-container-cube.swipper-container-rtl .swipper-slide {
+    transform-origin: 100% 0;
+}
+
+.swipper-container-cube .swipper-slide-active, .swipper-container-cube .swipper-slide-active .swipper-slide-active {
+    pointer-events: auto;
+}
+
+.swipper-container-cube .swipper-slide-active, .swipper-container-cube .swipper-slide-next, .swipper-container-cube .swipper-slide-next + .swipper-slide, .swipper-container-cube .swipper-slide-prev {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.swipper-container-cube .swipper-slide-shadow-bottom, .swipper-container-cube .swipper-slide-shadow-left, .swipper-container-cube .swipper-slide-shadow-right, .swipper-container-cube .swipper-slide-shadow-top {
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.swipper-container-cube .swipper-cube-shadow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--cl-dark);
+    opacity: .6;
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.swipper-container-flip {
+    overflow: visible;
+}
+
+.swipper-container-flip .swipper-slide {
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.swipper-container-flip .swipper-slide .swipper-slide {
+    pointer-events: none;
+}
+
+.swipper-container-flip .swipper-slide-active, .swipper-container-flip .swipper-slide-active .swipper-slide-active {
+    pointer-events: auto;
+}
+
+.swipper-container-flip .swipper-slide-shadow-bottom, .swipper-container-flip .swipper-slide-shadow-left, .swipper-container-flip .swipper-slide-shadow-right, .swipper-container-flip .swipper-slide-shadow-top {
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}

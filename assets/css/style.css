@@ -6,6 +6,8 @@
     --cl-dark-80: rgba(0, 0, 0, 0.8);
     --cl-dark-70: rgba(0, 0, 0, 0.7);
     --cl-dark-50: rgba(0, 0, 0, 0.5);
+    --cl-dark-25: rgba(0, 0, 0, 0.25);
+    --cl-dark-10: rgba(0, 0, 0, 0.1);
     --cl-text-dark: rgba(65, 65, 65, 1);
     --cl-text-light-dark: rgba(65, 65, 65, 0.5);
     --cl-black: rgba(0, 0, 0, 1);
@@ -32,6 +34,8 @@
     --cl-dark-80: rgba(255, 255, 255, 0.8);
     --cl-dark-70: rgba(255, 255, 255, 0.7);
     --cl-dark-50: rgba(255, 255, 255, 0.5);
+    --cl-dark-25: rgba(255, 255, 255, 0.25);
+    --cl-dark-10: rgba(255, 255, 255, 0.1);
     --cl-text-dark: rgba(240, 240, 240, 1);
     --cl-text-light-dark: rgba(240, 240, 240, 0.5);
 }
@@ -1064,7 +1068,7 @@ body>header{
 /*----------Assignment-End----------*/
 /*----------Education-Start----------*/
 .education{
-    height: 180vh;
+    height: 170vh;
 }
 
 .educate>div{
@@ -1240,7 +1244,7 @@ body>header{
 
 .certificate{
     position: absolute;
-    bottom: 500px;
+    bottom: 0;
     width: 100%;
 }
 
@@ -1249,57 +1253,6 @@ body>header{
     margin: 0;
     left: 35px;
     display: inline;
-}
-
-.certificate>.img{
-    position: absolute;
-    top: 90px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 1345px;
-    overflow: hidden;
-}
-
-.certificate>.img>div{
-    display: flex;
-    height: 100%;
-    gap: 5px;
-}
-
-.certificate>.img>div>div{
-    border: 5px solid var(--cl-text-light);
-    border-radius: 25px;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.certificate>.img img{
-    width: 435px;
-    border-radius: 20px;
-}
-
-.certificate>.img>div{
-    animation-name: certificate;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-
-@keyframes certificate {
-    0%, 10%{
-        transform: translateX(0);
-    }
-
-    20%, 30%{
-        transform: translateX(-450px);
-    }
-
-    40%, 50%{
-        transform: translateX(-900px);
-    }
 }
 /*----------Education-End----------*/
 /*----------About-Start----------*/

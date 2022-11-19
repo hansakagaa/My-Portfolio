@@ -495,40 +495,7 @@
         display: none;
     }
 
-    .certificate {
-        bottom: 300px;
-    }
 
-    .certificate>.img {
-        width: 305px;
-        top: 70px;
-    }
-
-    .certificate>.img>div {
-        animation-duration: 20s;
-    }
-
-    @keyframes certificate {
-        0%, 5% {
-            transform: translateX(0);
-        }
-        10%, 15% {
-            transform: translateX(-310px);
-        }
-        20%, 25% {
-            transform: translateX(-620px);
-        }
-        30%, 35% {
-            transform: translateX(-930px);
-        }
-        40%, 45% {
-            transform: translateX(-1240px);
-        }
-    }
-
-    .certificate>.img img{
-        width: 295px;
-    }
 
     /*----------About-Start----------*/
 
@@ -937,36 +904,7 @@
         height: 950px;
     }
 
-    .certificate {
-        bottom: 330px;
-    }
 
-    .certificate>.img {
-        width: 350px;
-        top: 65px;
-    }
-
-    @keyframes certificate {
-        0%, 5% {
-            transform: translateX(0);
-        }
-        10%, 15% {
-            transform: translateX(-355px);
-        }
-        20%, 25% {
-            transform: translateX(-710px);
-        }
-        30%, 35% {
-            transform: translateX(-1065px);
-        }
-        40%, 45% {
-            transform: translateX(-1420px);
-        }
-    }
-
-    .certificate>.img img{
-        width: 340px;
-    }
 
     .contact>article>p {
         font-size: 16px;
@@ -1350,35 +1288,7 @@
         top: 362px;
     }
 
-    .certificate {
-        bottom: 450px;
-    }
 
-    .certificate>.img {
-        width: 470px;
-    }
-
-    @keyframes certificate {
-        0%, 5% {
-            transform: translateX(0);
-        }
-        10%, 15% {
-            transform: translateX(-475px);
-        }
-        20%, 25% {
-            transform: translateX(-950px);
-        }
-        30%, 35% {
-            transform: translateX(-1425px);
-        }
-        40%, 45% {
-            transform: translateX(-1900px);
-        }
-    }
-
-    .certificate>.img img{
-        width: 460px;
-    }
 
     /*!*----------About-Start----------*!*/
 
@@ -1895,29 +1805,8 @@
         top: 413px;
     }
 
-    .certificate {
-        bottom: 400px;
-    }
 
-    .certificate>.img {
-        top: 75px;
-        width: 895px;
-    }
 
-    @keyframes certificate {
-        0%, 10% {
-            transform: translateX(0);
-        }
-        20%, 30% {
-            transform: translateX(-450px);
-        }
-        40%, 50% {
-            transform: translateX(-900px);
-        }
-        60%, 70% {
-            transform: translateX(-1350px);
-        }
-    }
 
     .gallery{
         display: none;
