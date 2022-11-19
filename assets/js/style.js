@@ -34,7 +34,6 @@ function scrollActive() {
        let sectionId = current.getAttribute('id');
        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
            document.querySelector('.menu a[href*=' + sectionId + ']').classList.add('active');
-
        }else{
            document.querySelector('.menu a[href*=' + sectionId + ']').classList.remove('active');
        }
@@ -194,7 +193,7 @@ const mapBox = document.querySelector('.map-container');
 const mapBtn = document.querySelector('.map-open');
 
 mapBtn.addEventListener('click', function () {
-   toggleMap();
+    toggleMap();
 });
 
 mapBox.addEventListener('click', function (e) {
@@ -210,4 +209,3 @@ window.addEventListener('scroll',function () {
         mapBox.classList.remove('open');
     }
 });
-
