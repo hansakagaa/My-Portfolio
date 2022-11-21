@@ -369,8 +369,10 @@
 
     /*----------Education-Start----------*/
     .education{
-        height: 935px;
+        height: 1000px;
     }
+
+
 
     .education>.educate>div {
         width: 265px;
