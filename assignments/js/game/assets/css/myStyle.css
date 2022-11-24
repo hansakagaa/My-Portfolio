@@ -1,0 +1,11 @@
+.container{
+    height: 100vh;
+}
+
+.tank{
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/tank-01.png);
+    background-size: cover;
+    bottom: 0;
+}
