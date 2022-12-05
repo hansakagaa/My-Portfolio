@@ -633,7 +633,7 @@ body>header{
 
 /*----------Skill-End----------*/
 /*----------Project-Start----------*/
-.project .img-box{
+.project .container{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -642,14 +642,14 @@ body>header{
     align-items: center;
 }
 
-.project .img-box aside{
+.project .container .content{
     display: grid;
     gap: 20px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
 }
 
-.project .img-box .item{
+.project .container .item{
     border-radius: 10px;
     background-color: var(--cl-card-gray);
     width: 275px;
@@ -657,7 +657,7 @@ body>header{
     position: relative;
 }
 
-.project .img-box .item .box .img{
+.project .container .item .box .img{
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -666,7 +666,7 @@ body>header{
     border-radius: 10px;
 }
 
-.project .img-box .item .text{
+.project .container .item .text{
     font-weight: 600;
     font-size: 15px;
     line-height: 22px;
@@ -684,7 +684,7 @@ body>header{
     margin: auto;
 }
 
-.project .img-box .item .box .icon{
+.project .container .item .box .icon{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -694,11 +694,11 @@ body>header{
     opacity: 0;
 }
 
-.project .img-box .item:hover .icon{
+.project .container .item:hover .icon{
     opacity: 1;
 }
 
-.project .img-box .item .box .icon-box{
+.project .container .item .box .icon-box{
     display: flex;
     gap: 5px;
     flex-flow: row;
@@ -709,7 +709,7 @@ body>header{
     padding-right: 15px;
 }
 
-.project .img-box .item .box .icon-box .icon-back {
+.project .container .item .box .icon-box .icon-back {
     background-color: var(--cl-card-gray);
     border-radius: 20px;
     width: 30px;
@@ -719,12 +719,12 @@ body>header{
     align-items: center;
 }
 
-.project .img-box .item .box .icon-box img{
+.project .container .item .box .icon-box img{
     width: 20px;
     height: 20px;
 }
 
-.project .img-box .item .box .icon a{
+.project .container .item .box .icon a{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -739,7 +739,7 @@ body>header{
     left: 15px;
 }
 
-.project .img-box .item .box .icon a:hover{
+.project .container .item .box .icon a:hover{
     color: var(--cl-main);
     background-color: var(--cl-light);
     border: 2px solid var(--cl-main);
