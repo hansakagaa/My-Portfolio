@@ -14,8 +14,20 @@
 </head>
 <body>
 <main class="container-fluid">
-    <section class="container">
-        <div id="tank" class="tank position-absolute mb-5"></div>
+    <section class="container d-flex justify-content-center align-items-center">
+        <div class="container bomb h-75 w-75 position-absolute">
+
+        </div>
+        <div class="dam position-relative w-100 h-100">
+            <i class="i out left"></i><i class="i out left"></i><i class="i out left"></i><i class="i out left"></i>
+            <i class="i out right"></i><i class="i out right"></i><i class="i out right"></i><i class="i out right"></i>
+        </div>
+        <div class="tank-content position-absolute d-flex justify-content-center mb-5">
+            <div class="fair d-flex flex-column position-relative">
+                <i></i><i></i><i></i>
+            </div>
+            <div class="tank position-absolute bottom-0 w-100"></div>
+        </div>
     </section>
 </main>
 <script src="assets/js/bootstrap.min.js"></script>

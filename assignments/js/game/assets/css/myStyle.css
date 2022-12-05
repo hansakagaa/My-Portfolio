@@ -1,11 +1,101 @@
-.container{
+.container:not(.container.bomb){
     height: 100vh;
+    background-color: #464646;
+}
+
+.tank-content{
+    width: 100px;
+    height: 175px;
+    bottom: 0;
+}
+
+.fair{
+    gap: 10px;
+}
+
+.fair i{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #eee;
+    border-bottom: 20px solid #eee;
+}
+
+.fair i:first-child{
+    width: 6px;
+    height: 6px;
+    border-bottom: 16px solid #eee;
+}
+
+.fair i:nth-child(2){
+    width: 8px;
+    height: 8px;
+    border-bottom: 18px solid #eee;
 }
 
 .tank{
-    width: 100px;
     height: 100px;
     background-image: url(../images/tank-01.png);
     background-size: cover;
-    bottom: 0;
+}
+
+.dam .i{
+    width: 25px;
+    height: 100px;
+    background-color: indianred;
+    position: absolute;
+    padding-top: 50px;
+}
+
+.dam .i::before{
+    content: '';
+    width: 10px;
+    height: 100px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 25px;
+    top: 5px;
+    transform: skewY(45deg);
+}
+
+.dam .i::after{
+    content: '';
+    width: 25px;
+    height: 10px;
+    background-color: deeppink;
+    position: absolute;
+    bottom: -10px;
+    left: 5px;
+    transform: skewX(45deg);
+}
+
+.dam .i.left{
+    left: 0;
+}
+
+.dam .i.right{
+    right: 10px;
+}
+
+.dam .i.out:nth-child(1),.dam .i.out:nth-child(5){
+    top: 50px;
+}
+
+.dam .i.out:nth-child(2),.dam .i.out:nth-child(6){
+    top: 200px;
+}
+
+.dam .i.out:nth-child(3),.dam .i.out:nth-child(7){
+    top: 360px;
+}
+
+.dam .i.out:nth-child(4),.dam .i.out:nth-child(8){
+    bottom: 50px;
+}
+
+.span{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
 }
