@@ -874,16 +874,93 @@ body>header{
 
 /*----------Project-End----------*/
 /*----------Assignment-Start----------*/
-.assignment .assignment-content{
+.assignment .container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     width: 99.5vw;
     position: relative;
-    top: 20%;
+    top: 90px;
     height: max-content;
 }
 
+.assignment .container .content{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: max-content;
+}
+
+.assignment .container .content .content-header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.assignment .container .content .content-header button{
+    margin: 0 5px 0 5px;
+    padding: 5px 10px 5px 10px;
+    background-color: var(--cl-main);
+    color: var(--cl-light);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid var(--cl-light);
+    box-shadow: 3px 5px 2px rgba(72, 76, 84, 1);
+}
+
+.assignment .container .content .content-header button.active,
+.assignment .container .content .content-header button:hover{
+    background-color: var(--cl-light);
+    color: var(--cl-main);
+    border: 2px solid var(--cl-main);
+}
+
+.assignment .content .content-body {
+    position: relative;
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.assignment .content .content-body .card-wrapper {
+    width: 93%;
+    overflow: auto;
+    height: 365px;
+}
+
+.assignment .item-card{
+    display: inline-block;
+}
+
+.assignment .item-card .card-content {
+    padding: 10px;
+}
+
+.assignment .item-card .image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.assignment .item-card .card-image {
+    position: relative;
+    height: 150px;
+    width: 280px;
+    border: 5px solid var(--cl-text-light);
+    border-radius: 10px;
+}
+
+.assignment .item-card .card-image .card-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+/*------------------------------------*/
 .assignment .slide-container{
     position: relative;
     width: 99.5vw;
@@ -903,6 +980,7 @@ body>header{
     gap: 44px;
     width: max-content;
 }
+/*
 
 .assignment .card{
     width: 320px;
@@ -967,6 +1045,7 @@ body>header{
     border-radius: 10px;
     border: 2px solid var(--cl-text-light);
 }
+*/
 
 .assignment .name{
     color: var(--cl-text-dark);
