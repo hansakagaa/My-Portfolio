@@ -2,7 +2,7 @@
   <img align="right" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/svg/w3_css-icon.svg" alt="Programmer" width="50">
   <img align="right" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/svg/w3_html5-icon.svg" alt="Programmer" width="50">
   <img align="right" src="https://github.com/hansakagaa/My-Portfoliyo/blob/master/assets/images/svg/javascript.webp" alt="Programmer" width="50">
-  <h1 align="left">My Portfolio</h1>
+  <h1 align="left">My Portfolio V_2</h1>
 </p>
 
 <h3 align="left">This is my portfolio reference</h3>
