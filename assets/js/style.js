@@ -33,9 +33,9 @@ function scrollActive() {
        const  sectionTop = current.offsetTop - 50;
        let sectionId = current.getAttribute('id');
        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-           document.querySelector('.menu a[href*=' + sectionId + ']').classList.add('active');
+           // document.querySelector('.menu a[href*=' + sectionId + ']').classList.add('active');
        }else{
-           document.querySelector('.menu a[href*=' + sectionId + ']').classList.remove('active');
+           // document.querySelector('.menu a[href*=' + sectionId + ']').classList.remove('active');
        }
     }
 }
